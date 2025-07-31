@@ -3,6 +3,7 @@
 #include <fstream>
 #include <string>
 #include <sstream>
+#include <iostream>
 
 using std::ifstream;
 using std::string;
@@ -59,6 +60,7 @@ bool Decoder::decode(const Codeword& c, int errCorr, int& id, int& shift)
 	for (unsigned int i = 0; i < codewords.size(); i++)
 	{
 		Codeword xorResult = c ^ codewords[i]; // XOR
+		//std::cout << xorResult;
 
 		if (xorResult.count() <= errCorr)
 		{

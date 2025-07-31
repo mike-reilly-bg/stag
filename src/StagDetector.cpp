@@ -1,6 +1,7 @@
 #include "StagDetector.h"
 #include "Ellipse.h"
 #include "utility.h"
+#include <iostream>
 
 #define HALF_PI 1.570796326794897
 
@@ -34,6 +35,12 @@ void StagDetector::detectMarkers(const Mat& inImage)
 	for (auto & quad : quads)
 	{
 		quad.estimateHomography();
+		for (int i = 0; i < 4; ++i) {
+			cv::circle(image, quad.corners[i], 5, cv::Scalar(255), -1);  // Draw corner
+			cv::putText(image, std::to_string(i), quad.corners[i] + cv::Point2d(5, 5),
+				cv::FONT_HERSHEY_SIMPLEX, 0.5, cv::Scalar(255), 1);
+		}
+		cv::imwrite("quad_corners.png", image);
 		Codeword c = readCode(quad);
 		int shift;
 		int id;
@@ -50,6 +57,9 @@ void StagDetector::detectMarkers(const Mat& inImage)
 		}
 		else
 			falseCandidates.push_back(quad);
+			//std::cout << c;
+			//std::cout << "fin";
+			//std::cout << "\n";
 	}
 
 	for (auto & marker : markers)
@@ -79,7 +89,11 @@ Codeword StagDetector::readCode(const Quad &q)
 	for (int i = 0; i < 48; i++)
 	{
 		Mat projectedPoint = q.H * codeLocs[i];
+		//std::cout << projectedPoint << "\n";
 		samples[i] = readPixelSafeBilinear(image, Point2d(projectedPoint.at<double>(0) / projectedPoint.at<double>(2), projectedPoint.at<double>(1) / projectedPoint.at<double>(2)));
+		//std::cout << static_cast<int>(samples[i]) << "\n";
+		//printf("%d", (int)samples[i]);
+		//std::cout << "\n";
 	}
 	for (int i = 0; i < 12; i++)
 	{
@@ -91,6 +105,34 @@ Codeword StagDetector::readCode(const Quad &q)
 		Mat projectedPoint = q.H * whiteLocs[i];
 		samples[i + 60] = readPixelSafeBilinear(image, Point2d(projectedPoint.at<double>(0) / projectedPoint.at<double>(2), projectedPoint.at<double>(1) / projectedPoint.at<double>(2)));
 	}
+
+
+	for (int i = 0; i < 48; i++) {
+		Mat projectedPoint = q.H * codeLocs[i];
+		double x = projectedPoint.at<double>(0) / projectedPoint.at<double>(2);
+		double y = projectedPoint.at<double>(1) / projectedPoint.at<double>(2);
+		cv::circle(image, cv::Point2d(x, y), 2, cv::Scalar(255), -1);  // White dots
+	}cv::imwrite("code_sample_points.png", image);
+
+
+	for (double u = 0.1; u < 1.0; u += 0.2) {
+		for (double v = 0.1; v < 1.0; v += 0.2) {
+			cv::Mat pt = (cv::Mat_<double>(3, 1) << u, v, 1);
+			Mat proj = q.H * pt;
+			double x = proj.at<double>(0) / proj.at<double>(2);
+			double y = proj.at<double>(1) / proj.at<double>(2);
+			cv::circle(image, cv::Point2d(x, y), 2, cv::Scalar(127), -1);  // Gray grid dots
+		}
+	}
+	cv::imwrite("homography_grid_overlay.png", image);
+
+
+
+	//std::cout << "samples\n";
+	//for (int i = 0; i < 48; i++)
+	//	std::cout << samples[i] / 255;
+	//	std::cout << "\n";
+	//std::cout << "endsamples\n";
 
 	// threshold the readings using Otsu's method
 	cv::threshold(samples, samples, 0, 255, cv::THRESH_OTSU + cv::THRESH_BINARY_INV);

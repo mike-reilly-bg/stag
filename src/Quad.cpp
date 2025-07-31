@@ -1,5 +1,6 @@
 #include "Quad.h"
 #include "utility.h"
+#include <iostream>
 
 using cv::Point2d;
 using cv::Point3d;
@@ -50,6 +51,10 @@ void Quad::estimateHomography()
 	origCenter = H * origCenter;
 	center.x = origCenter.at<double>(0) / origCenter.at<double>(2);
 	center.y = origCenter.at<double>(1) / origCenter.at<double>(2);
+	//std::cout << center.x << "\n";
+	//std::cout << center.y << "\n";
+	//std::cout << H << "\n";
+
 }
 
 

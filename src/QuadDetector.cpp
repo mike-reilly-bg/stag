@@ -1,11 +1,188 @@
+﻿// QuadDetector.cpp
+
 #include <vector>
 #include <algorithm>
 #include "opencv2/opencv.hpp"
-
+#include <opencv2/flann.hpp>
 #include "QuadDetector.h"
 #include "utility.h"
+#include <random>
 
 using cv::Point2d;
+
+
+struct MergedLine {
+	cv::Point2d start, end;
+};
+
+void drawMergedLines(
+	const std::vector<MergedLine>& merged,
+	const std::vector<std::vector<int>>& lineGroups,
+	const EDLines* edLines,
+	cv::Mat& image)
+{	
+
+	if (image.channels() == 1)
+		cv::cvtColor(image, image, cv::COLOR_GRAY2BGR);
+	// First draw original segments in white
+	for (const auto& group : lineGroups) {
+		for (int idx : group) {
+			const auto& l = edLines->lines[idx];
+			cv::line(image, cv::Point2d(l.sx, l.sy), cv::Point2d(l.ex, l.ey), cv::Scalar(255, 255, 255), 1); // White
+		}
+	}
+
+	// Then draw merged lines in red
+	for (const auto& line : merged) {
+		cv::line(image, line.start, line.end, cv::Scalar(0, 0, 255), 2); // Red
+	}
+}
+
+
+
+void drawQuadsColored(const std::vector<Quad>& quads, cv::Mat& image)
+{
+	if (image.channels() == 1)
+		cv::cvtColor(image, image, cv::COLOR_GRAY2BGR);
+	std::mt19937 rng(54321);
+	std::uniform_int_distribution<int> colorDist(80, 255);
+
+	for (const auto& q : quads) {
+		cv::Scalar color(colorDist(rng), colorDist(rng), colorDist(rng));
+		for (int i = 0; i < 4; ++i) {
+			const cv::Point2d& p1 = q.corners[i];
+			const cv::Point2d& p2 = q.corners[(i + 1) % 4];
+			cv::line(image, p1, p2, color, 2);
+		}
+	}
+}
+
+
+
+
+std::vector<MergedLine> computeMergedLines(const std::vector<std::vector<int>>& lineGroups, const EDLines* edLines, double angleThresholdDeg = 20.0) {
+	std::vector<MergedLine> mergedLines;
+
+	for (const auto& group : lineGroups) {
+		if (group.size() < 2) continue;
+
+		std::vector<cv::Point2d> mergedPoints;
+
+		// Start with first line
+		int prevIdx = group[0];
+		const LineSegment* prev = &edLines->lines[prevIdx];
+		cv::Point2d prevVec(prev->ex - prev->sx, prev->ey - prev->sy);
+		mergedPoints.push_back(cv::Point2d(prev->sx, prev->sy));
+		mergedPoints.push_back(cv::Point2d(prev->ex, prev->ey));
+
+		for (size_t i = 1; i < group.size(); ++i) {
+			int currIdx = group[i];
+			const LineSegment* curr = &edLines->lines[currIdx];
+			cv::Point2d currVec(curr->ex - curr->sx, curr->ey - curr->sy);
+
+			double dot = prevVec.x * currVec.x + prevVec.y * currVec.y;
+			double mag1 = cv::norm(prevVec);
+			double mag2 = cv::norm(currVec);
+
+			if (mag1 == 0 || mag2 == 0)
+				continue;
+
+			double angleDeg = std::acos(dot / (mag1 * mag2)) * 180.0 / CV_PI;
+
+			if (std::abs(angleDeg) < angleThresholdDeg || std::abs(angleDeg - 180.0) < angleThresholdDeg) {
+				// Merge: accumulate endpoints
+				mergedPoints.push_back(cv::Point2d(curr->sx, curr->sy));
+				mergedPoints.push_back(cv::Point2d(curr->ex, curr->ey));
+			}
+			else {
+				// Finish current merged line
+				cv::Point2d minPt = *std::min_element(mergedPoints.begin(), mergedPoints.end(), [](const auto& a, const auto& b) {
+					return a.x + a.y < b.x + b.y;
+					});
+				cv::Point2d maxPt = *std::max_element(mergedPoints.begin(), mergedPoints.end(), [](const auto& a, const auto& b) {
+					return a.x + a.y < b.x + b.y;
+					});
+				mergedLines.push_back({ minPt, maxPt });
+				mergedPoints.clear();
+
+				// Start new sequence
+				mergedPoints.push_back(cv::Point2d(curr->sx, curr->sy));
+				mergedPoints.push_back(cv::Point2d(curr->ex, curr->ey));
+			}
+			prevVec = currVec;
+		}
+
+		// Final flush
+		if (mergedPoints.size() >= 2) {
+			cv::Point2d minPt = *std::min_element(mergedPoints.begin(), mergedPoints.end(), [](const auto& a, const auto& b) {
+				return a.x + a.y < b.x + b.y;
+				});
+			cv::Point2d maxPt = *std::max_element(mergedPoints.begin(), mergedPoints.end(), [](const auto& a, const auto& b) {
+				return a.x + a.y < b.x + b.y;
+				});
+			mergedLines.push_back({ minPt, maxPt });
+		}
+	}
+
+	return mergedLines;
+}
+
+
+
+
+void mergeNearbyCorners(std::vector<std::vector<Corner>>& cornerGroups, double mergeThreshold = 10.0) {
+	std::vector<cv::Point2f> allPoints;
+	std::vector<Corner> allCorners;
+
+	// Flatten all corner groups
+	for (const auto& group : cornerGroups) {
+		for (const auto& c : group) {
+			allPoints.emplace_back(static_cast<cv::Point2f>(c.loc));  // Ensure Point2f
+			allCorners.push_back(c);
+		}
+	}
+
+	if (allPoints.empty()) return;
+
+	// Convert points to a 2D float matrix
+	cv::Mat pointsMat(static_cast<int>(allPoints.size()), 2, CV_32F);
+	for (size_t i = 0; i < allPoints.size(); ++i) {
+		pointsMat.at<float>(static_cast<int>(i), 0) = allPoints[i].x;
+		pointsMat.at<float>(static_cast<int>(i), 1) = allPoints[i].y;
+	}
+
+	// Create FLANN index
+	cv::flann::KDTreeIndexParams indexParams(1);
+	cv::flann::Index kdtree(pointsMat, indexParams);
+
+	std::vector<bool> used(allCorners.size(), false);
+	std::vector<std::vector<Corner>> mergedGroups;
+
+	for (size_t i = 0; i < allCorners.size(); ++i) {
+		if (used[i]) continue;
+
+		std::vector<int> indices;
+		std::vector<float> dists;
+
+		cv::Mat query = (cv::Mat_<float>(1, 2) << allPoints[i].x, allPoints[i].y);
+
+		// radiusSearch requires squared radius
+		kdtree.radiusSearch(query, indices, dists, mergeThreshold * mergeThreshold, static_cast<int>(allCorners.size()));
+
+		std::vector<Corner> group;
+		for (int idx : indices) {
+			if (!used[idx]) {
+				group.push_back(allCorners[idx]);
+				used[idx] = true;
+			}
+		}
+
+		if (group.size() >= 3)  // Or 2 if needed
+			mergedGroups.push_back(group);
+	}
+
+	cornerGroups = mergedGroups;
+}
 
 
 QuadDetector::QuadDetector() = default;
@@ -23,7 +200,27 @@ void QuadDetector::detectQuads(const cv::Mat &image, EDInterface* edInterface)
 
 	vector<vector<int>> lineGroups = groupLines(image, edInterface);
 
+	cv::Mat debugImage = image.clone();  // Make a modifiable copy
+
+	std::vector<MergedLine> mergedLines = computeMergedLines(lineGroups, edLines, 20.0);
+	drawMergedLines(mergedLines, lineGroups, edLines, debugImage);
+	cv::imwrite("merged_lines.png", debugImage);
+	
 	detectCorners(edInterface, lineGroups);
+	mergeNearbyCorners(cornerGroups, /* mergeThreshold= */ 10.0);
+
+
+	cv::Mat quadCornersImage = image.clone();
+	for (int i = 0; i < edLines->noLines; ++i) {
+		auto& l = edLines->lines[i];
+		cv::line(quadCornersImage, cv::Point2d(l.sx, l.sy), cv::Point2d(l.ex, l.ey), cv::Scalar(100), 1);
+	}
+
+	// After cornerGroups are filled:
+	for (auto& group : cornerGroups)
+		for (auto& corner : group)
+			cv::circle(quadCornersImage, corner.loc, 3, cv::Scalar(255), -1);
+	cv::imwrite("quad_corners2.png", quadCornersImage);
 
 	// create quads using corner groups
 	for (int indCornerGroup = 0; indCornerGroup < cornerGroups.size(); indCornerGroup++)
@@ -55,15 +252,23 @@ void QuadDetector::detectQuads(const cv::Mat &image, EDInterface* edInterface)
 			Quad quad(cornerLocs);
 
 			// eliminate if projective distortion is larger than the threshold
+			/*std::cout << "Quad distortion: " << quad.projectiveDistortion << std::endl;
+			if (quad.projectiveDistortion > thresProjectiveDistortion)
+				std::cout << "Quad rejected: distortion " << quad.projectiveDistortion << "\n";
 			if (quad.projectiveDistortion > thresProjectiveDistortion)
 			{
                 distortedQuads.push_back(quad);
 			}
 			else {
                 quads.push_back(quad);
-            }
+            }*/
+			quads.push_back(quad);
 		}
 	}
+
+	cv::Mat quadImage = image.clone();
+	drawQuadsColored(quads, quadImage);
+	cv::imwrite("quads_colored.png", quadImage);
 }
 
 
@@ -128,6 +333,26 @@ vector<vector<int>> QuadDetector::groupLines(const cv::Mat &image, EDInterface* 
 		// ensure this order: line1.start->line1.end->line2.start->line2.end->line3.start...
 		LineSegment line1 = edLines->lines[lineGroups[i][0]];
 		LineSegment line2 = edLines->lines[lineGroups[i][1]];
+
+		// ############################################
+		// Mod for ignoring fisheye distortion
+		// Compute direction vectors for each line
+		cv::Point2d v1(line1.ex - line1.sx, line1.ey - line1.sy);
+		cv::Point2d v2(line2.ex - line2.sx, line2.ey - line2.sy);
+
+		// Normalize vectors
+		double mag1 = std::sqrt(v1.x * v1.x + v1.y * v1.y);
+		double mag2 = std::sqrt(v2.x * v2.x + v2.y * v2.y);
+		if (mag1 == 0 || mag2 == 0) continue; // skip degenerate lines
+
+		double dot = v1.x * v2.x + v1.y * v2.y;
+		double angle = std::acos(dot / (mag1 * mag2)) * 180.0 / CV_PI;
+
+		if (std::abs(angle) < 20.0 || std::abs(angle - 180.0) < 20.0) {
+			// Lines are nearly colinear → skip forming a corner here
+			continue;
+		}
+		// ############################################
 
 		Point2d inters = edInterface->intersectionOfLineSegments(line1, line2);
 
@@ -203,6 +428,10 @@ bool QuadDetector::checkIfCornersFormQuad(vector<Corner> &corners, EDInterface* 
 	estC1 = Corner(edInterface->intersectionOfLineSegments(corners[0].l1, corners[2].l1), corners[0].l1, corners[2].l1);
 	estC3 = Corner(edInterface->intersectionOfLineSegments(corners[0].l2, corners[2].l2), corners[0].l2, corners[2].l2);
 	vector<Corner> estCorners = { corners[0], estC1, corners[2], estC3 };
+	/*if (!checkIfQuadIsSimple(estCorners)) {
+		std::cout << "Quad rejected: Not simple\n";
+		return false;
+	}
 	if (!checkIfQuadIsSimple(estCorners))
 	{
 		estC1 = Corner(edInterface->intersectionOfLineSegments(corners[0].l1, corners[2].l2), corners[0].l1, corners[2].l2);
@@ -211,7 +440,7 @@ bool QuadDetector::checkIfCornersFormQuad(vector<Corner> &corners, EDInterface* 
 		estCorners[3] = estC3;
 	}
 	if (!checkIfQuadIsSimple(estCorners))
-		return false;
+		return false;*/
 
 	// check the distances between detected corners and estimated corners
 	// if they are close enough, detected corners are used
