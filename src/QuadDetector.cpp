@@ -285,6 +285,7 @@ const vector<Quad>& QuadDetector::getQuads() const
 
 
 const vector<Quad>& QuadDetector::getDistortedQuads() const
+const std::vector<Quad>& QuadDetector::getDistortedQuads() const
 {
 	return distortedQuads;
 }
