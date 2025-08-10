@@ -26,7 +26,8 @@ extern "C" STAG_API void FindStagCorners(
 
     std::vector<std::vector<cv::Point2f>> corners;
     std::vector<int> ids;
-    stag::detectMarkers(img, 21, corners, ids, {});
+    auto rejectedImgPoints = std::vector<std::vector<cv::Point2f>>(); // optional, helpful for debugging
+    stag::detectMarkers(img, 21, corners, ids, -1, rejectedImgPoints);
 
     std::fill(result, result + resultLen, 0.0f);      // safety
 

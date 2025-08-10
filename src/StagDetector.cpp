@@ -4,6 +4,7 @@
 #include <iostream>
 
 #define HALF_PI 1.570796326794897
+#define DEBUG 0
 
 using cv::Mat;
 using cv::Point2d;
@@ -35,12 +36,14 @@ void StagDetector::detectMarkers(const Mat& inImage)
 	for (auto & quad : quads)
 	{
 		quad.estimateHomography();
+#if DEBUG
 		for (int i = 0; i < 4; ++i) {
 			cv::circle(image, quad.corners[i], 5, cv::Scalar(255), -1);  // Draw corner
 			cv::putText(image, std::to_string(i), quad.corners[i] + cv::Point2d(5, 5),
 				cv::FONT_HERSHEY_SIMPLEX, 0.5, cv::Scalar(255), 1);
 		}
 		cv::imwrite("quad_corners.png", image);
+#endif
 		Codeword c = readCode(quad);
 		int shift;
 		int id;
@@ -69,6 +72,7 @@ void StagDetector::detectMarkers(const Mat& inImage)
 
 void StagDetector::logResults(const string& path)
 {
+#if DEBUG
 	drawer.drawEdgeMap(path + "1_edges.png", image, edInterface.getEdgeMap());
 	drawer.drawLines(path + "2_lines.png", image, edInterface.getEDLines());
 	drawer.drawCorners(path + "3_corners.png", image, quadDetector.getCornerGroups());
@@ -77,6 +81,7 @@ void StagDetector::logResults(const string& path)
 	drawer.drawMarkers(path + "6_markers.png", image, markers);
     drawer.drawQuads(path + "7_false_quads.png", image, falseCandidates);
 	drawer.drawEllipses(path + "8_ellipses.png", image, markers);
+#endif
 }
 
 
@@ -106,7 +111,7 @@ Codeword StagDetector::readCode(const Quad &q)
 		samples[i + 60] = readPixelSafeBilinear(image, Point2d(projectedPoint.at<double>(0) / projectedPoint.at<double>(2), projectedPoint.at<double>(1) / projectedPoint.at<double>(2)));
 	}
 
-
+#if DEBUG
 	for (int i = 0; i < 48; i++) {
 		Mat projectedPoint = q.H * codeLocs[i];
 		double x = projectedPoint.at<double>(0) / projectedPoint.at<double>(2);
@@ -125,6 +130,7 @@ Codeword StagDetector::readCode(const Quad &q)
 		}
 	}
 	cv::imwrite("homography_grid_overlay.png", image);
+#endif
 
 
 

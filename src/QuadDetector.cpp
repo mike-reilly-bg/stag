@@ -10,7 +10,7 @@
 #include <iostream>
 #include <algorithm>
 
-# define DEBUG 0
+#define DEBUG 0
 
 using cv::Point2d;
 
@@ -411,19 +411,24 @@ void QuadDetector::detectQuads(const cv::Mat& image, EDInterface* edInterface)
 
     EDLines* edLines = edInterface->getEDLines();
 
+#if DEBUG
     // Debug
     cv::Mat segmentColorImg = image.clone();
     drawLinesBySegmentNo(edLines, segmentColorImg);
     cv::imwrite("edLines_by_segment.png", segmentColorImg);
+#endif
 
     std::vector<std::vector<int>> lineGroups = groupLines(image, edInterface, edLines);
     // std::cout << "lineGroups size: " << static_cast<int>(lineGroups.size());
 
+    std::vector<MergedLine> mergedLines = computeMergedLines(lineGroups, edLines, 20.0);
+
+#if DEBUG
     // Debug
     cv::Mat debugImage = image.clone(); // Make a modifiable copy
-    std::vector<MergedLine> mergedLines = computeMergedLines(lineGroups, edLines, 20.0);
     drawMergedLines(mergedLines, lineGroups, edLines, debugImage);
     cv::imwrite("merged_lines.png", debugImage);
+#endif
 
     // Create a synthetic EDLines object
     EDLines* mergedEDLines = new EDLines(1, 1);
@@ -452,6 +457,7 @@ void QuadDetector::detectQuads(const cv::Mat& image, EDInterface* edInterface)
         mergedEDLines->add(a, b, invert, m.start.x, m.start.y, m.end.x, m.end.y, m.SegmentNo, 0, static_cast<int>(len));
     }
 
+#if DEBUG
     // Debug
     cv::Mat mergedsegmentColorImg = image.clone();
     drawLinesBySegmentNo_Vector(mergedLines, mergedsegmentColorImg);
@@ -461,6 +467,7 @@ void QuadDetector::detectQuads(const cv::Mat& image, EDInterface* edInterface)
     cv::Mat mergedsegmentColorImg2 = image.clone();
     drawLinesBySegmentNo(mergedEDLines, mergedsegmentColorImg2);
     cv::imwrite("mergedEDLines_by_segment.png", mergedsegmentColorImg2);
+#endif
 
     // Group merged lines
     std::vector<std::vector<int>> mergedLineGroups = groupLines(image, edInterface, mergedEDLines);
@@ -472,6 +479,7 @@ void QuadDetector::detectQuads(const cv::Mat& image, EDInterface* edInterface)
     std::mt19937 rng(54321);
     std::uniform_int_distribution<int> colorDist(80, 255);
 
+#if DEBUG
     // Debug
     // std::cout << "merged line corner group count: " << static_cast<int>(cornerGroups.size()) << "\n";
     cv::Mat merged_line_corners_before_corner_merge_image = image.clone();
@@ -517,6 +525,7 @@ void QuadDetector::detectQuads(const cv::Mat& image, EDInterface* edInterface)
         }
     }
     cv::imwrite("merged_line_corners_and_unique_lines.png", merged_line_corners_after_corner_merge_image);
+#endif
 
     int i_debug = -1;
     // Find quads from merged line groups
@@ -577,6 +586,7 @@ void QuadDetector::detectQuads(const cv::Mat& image, EDInterface* edInterface)
     {
         detectCorners(edInterface, edLines, lineGroups);
 
+#if DEBUG
         // Debug
         // std::cout << "nonmerged line corner group count: " << static_cast<int>(cornerGroups.size()) << "\n";
         cv::Mat nonmerged_line_corners_before_corner_merge_image = image.clone();
@@ -602,6 +612,7 @@ void QuadDetector::detectQuads(const cv::Mat& image, EDInterface* edInterface)
             for (auto& corner : group)
                 cv::circle(nonmerged_line_corners_after_corner_merge_image, corner.loc, 3, cv::Scalar(0, 255, 0), -1);
         cv::imwrite("nonmerged_line_corners_with_unique_lines.png", nonmerged_line_corners_after_corner_merge_image);
+#endif
 
         // === PASTE THE SAME LOOP HERE for fallback ===
         for (const auto& group : cornerGroups)
@@ -624,13 +635,15 @@ void QuadDetector::detectQuads(const cv::Mat& image, EDInterface* edInterface)
             }
         }
     }
+#if DEBUG
     cv::Mat quadImage = image.clone();
     if (quadImage.channels() == 1)
         cv::cvtColor(quadImage, quadImage, cv::COLOR_GRAY2BGR);
     drawQuadsColored(quads, quadImage);
     cv::imwrite("quads_colored.png", quadImage);
     delete mergedEDLines;
-}
+#endif
+} 
 
 const std::vector<std::vector<Corner>>& QuadDetector::getCornerGroups() { return cornerGroups; }
 const std::vector<Quad>& QuadDetector::getQuads() const { return quads; }
