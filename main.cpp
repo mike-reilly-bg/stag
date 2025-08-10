@@ -4,6 +4,8 @@
 #include <iostream>
 using cv::Mat;
 
+# define DEBUG 0
+
 int main() {
     // load image
     cv::Mat image = cv::imread("../example.jpg");
@@ -18,8 +20,11 @@ int main() {
     // detect markers
     stag::detectMarkers(image, libraryHD, corners, ids, -1, rejectedImgPoints);
     //std::cout << static_cast<int>(rejectedImgPoints.size()) << std::endl;
-    int a;
+#if DEBUG
+    char a;
+    std::cout << "\n\n";
     std::cin >> a;
+#endif
 
     // draw and save results
     stag::drawDetectedMarkers(image, corners, ids);

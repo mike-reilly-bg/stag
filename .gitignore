@@ -19,3 +19,5 @@
 *.user
 .gitignore
 stagdll/x64/Release/stagdll.vcxproj.FileListAbsolute.txt
+test/bin/
+test/obj/

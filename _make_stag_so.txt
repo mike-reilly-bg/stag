@@ -1,0 +1,41 @@
+# if apt is broken / dns not working, do:
+sudo rm /etc/resolv.conf
+sudo nano /etc/resolv.conf
+# add to file:
+# nameserver 8.8.8.8
+# to prevent from happening again:
+sudo nano /etc/wsl.conf
+# add to file:
+# [network]
+# generateResolvConf = false
+
+# on build machine
+sudo apt update
+sudo apt install build-essential
+sudo apt install ninja-build
+
+# on camera, check gcc version
+gcc --version
+
+# be in stag/stagdll
+# on build machine, install correct major gcc version, minor does not matter
+sudo apt install gcc-12 g++-12
+mkdir build-Linux
+cmake -S . -B build-linux -GNinja \
+      -DCMAKE_BUILD_TYPE=Release \
+      -DCMAKE_C_COMPILER=gcc-12 \
+      -DCMAKE_CXX_COMPILER=g++-12 \
+      -DOpenCV_DIR=/usr/local/lib/cmake/opencv4
+cmake --build build-inux
+
+
+# build on camera
+rm -rf build && mkdir build && cd build
+cmake .. -G"Unix Makefiles" -DCMAKE_BUILD_TYPE=Release \
+        -DOpenCV_DIR=/usr/local/lib64/cmake/opencv4
+make -j$(nproc)
+
+
+
+#build stag on windows
+cmake .. -G "Visual Studio 17 2022" -A x64 -DOpenCV_DIR="C:/tools/opencv/build/x64/vc16/lib/"

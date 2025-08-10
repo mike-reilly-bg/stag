@@ -1,61 +1,75 @@
+# ──────────────────────────────────────────────────────────────
+#  root   CMakeLists.txt   (…/stag/CMakeLists.txt)
+# ──────────────────────────────────────────────────────────────
 cmake_minimum_required(VERSION 3.16)
-project(Stag)
+project(Stag LANGUAGES C CXX)
 
-IF(NOT CMAKE_BUILD_TYPE)
-  SET(CMAKE_BUILD_TYPE Release)
-ENDIF()
+# ----------- 0. Defaults -------------------------------------------------
+if(NOT CMAKE_BUILD_TYPE)
+    set(CMAKE_BUILD_TYPE Release CACHE STRING "Build type" FORCE)
+endif()
+message(STATUS "Build type: ${CMAKE_BUILD_TYPE}")
 
-MESSAGE("Build type: " ${CMAKE_BUILD_TYPE})
+# MSVC niceties
+if(MSVC)
+    set(CMAKE_DEBUG_POSTFIX "d")
+    set(CMAKE_WINDOWS_EXPORT_ALL_SYMBOLS ON)
+endif()
 
-IF (WIN32)
-  set(CMAKE_DEBUG_POSTFIX "d")
-  set(CMAKE_WINDOWS_EXPORT_ALL_SYMBOLS ON)
-ENDIF (WIN32)
+# Build everything PIC so STATIC code can live in a shared object
+set(CMAKE_POSITION_INDEPENDENT_CODE ON)
 
-set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS}  -Wall -w  ")
-set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall -w ")
+# ----------- 1. Compiler flags ------------------------------------------
+set(CMAKE_C_STANDARD   11)
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-# Check C++11 or C++0x support
-include(CheckCXXCompilerFlag)
-CHECK_CXX_COMPILER_FLAG("-std=c++11" COMPILER_SUPPORTS_CXX11)
-CHECK_CXX_COMPILER_FLAG("-std=c++0x" COMPILER_SUPPORTS_CXX0X)
-
-set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
-
-find_package(OpenCV 4 REQUIRED)
-
-file(GLOB SRC_FILE1 "src/*.c*")
-file(GLOB SRC_FILE2 "src/ED/*.c*")
-
-include_directories(
-    ${OpenCV_INCLUDE_DIRS}
-    src/
-    src/ED/
+if(CMAKE_COMPILER_IS_GNUCXX)
+add_compile_options(
+    $<$<C_COMPILER_ID:GNU,Clang>:-Wall -Wextra>
+    $<$<CXX_COMPILER_ID:GNU,Clang>:-Wall -Wextra>
 )
-add_library(
-    staglib
-    ${SRC_FILE1}
-    ${SRC_FILE2}
-        src/Stag.cpp
-        src/Stag.h
-)
-target_link_libraries(
-    staglib
-    ${OpenCV_LIBS}
-)
+endif(CMAKE_COMPILER_IS_GNUCXX)
 
-add_executable(
-    stag_example
-    main.cpp
-)
+# ----------- 2. Dependencies --------------------------------------------
+find_package(OpenCV 4.12 REQUIRED COMPONENTS world)
+# world supplies all headers; no need to list imgproc/imgcodecs separately
 
-target_link_libraries(
-    stag_example
-    staglib
+# ----------- 3. staglib (STATIC) ----------------------------------------
+file(GLOB SRC_CORE "src/*.c*")
+file(GLOB SRC_ED   "src/ED/*.c*")
+
+set(CMAKE_POSITION_INDEPENDENT_CODE ON)
+
+add_library(staglib STATIC
+    ${SRC_CORE}
+    ${SRC_ED}
+    src/Stag.cpp     # explicit if not matched by GLOB
+)
+target_include_directories(staglib PUBLIC
+    $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/src>
+    $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/src/ED>
+)
+target_link_libraries(staglib PUBLIC
+    opencv_world            # PUBLIC so dependents inherit include dirs
 )
 
-IF (MSVC)
-  set_target_properties(stag_example PROPERTIES RUNTIME_OUTPUT_DIRECTORY ${PROJECT_BINARY_DIR})
-  set_target_properties(stag_example PROPERTIES RUNTIME_OUTPUT_DIRECTORY_DEBUG ${PROJECT_BINARY_DIR})
-  set_target_properties(stag_example PROPERTIES RUNTIME_OUTPUT_DIRECTORY_RELEASE ${PROJECT_BINARY_DIR})
-ENDIF (MSVC)
+# ----------- 4. (optional) sample executable -----------------------------
+add_executable(stag_example main.cpp)
+target_link_libraries(stag_example PRIVATE staglib)
+
+# Keep Windows output next to the .exe for convenience
+if(MSVC)
+    set_target_properties(stag_example PROPERTIES
+        RUNTIME_OUTPUT_DIRECTORY          ${PROJECT_BINARY_DIR}
+        RUNTIME_OUTPUT_DIRECTORY_DEBUG    ${PROJECT_BINARY_DIR}
+        RUNTIME_OUTPUT_DIRECTORY_RELEASE  ${PROJECT_BINARY_DIR}
+    )
+endif()
+
+# ----------- 5. Wrapper --------------------------------------------------
+# Build stagdll in a subdirectory; its own CMakeLists handles linkage
+add_subdirectory(stagdll)       # ← path relative to this root
+
+
+# ──────────────────────────────────────────────────────────────

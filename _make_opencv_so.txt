@@ -1,0 +1,81 @@
+# replace gcc version with the camera's gcc version, see _make_stag_so.txt
+export CC=gcc-12  CXX=g++-12
+
+# if you need to rebuild, do this in the OpenCV root directory:
+rm -f  CMakeCache.txt              # if present
+rm -rf CMakeFiles/                 # dir created by CMake
+rm -f  build.ninja .ninja_log .ninja_deps
+rm -f  cmake_install.cmake
+rm -f  libstaglib.so stag_example  # any stray binaries/libraries
+rm -rf build
+
+git clone https://github.com/opencv/opencv.git --branch 4.12.0
+cd opencv && mkdir build && cd build
+
+
+
+# On a build PC:
+cmake .. \
+      -GNinja \
+      -DCMAKE_BUILD_TYPE=Release \
+      -DBUILD_SHARED_LIBS=ON \
+      -DBUILD_opencv_world=ON \
+      -DBUILD_LIST=core,imgproc,imgcodecs,highgui
+cmake --build . -j$(nproc)            # Ninja works too :contentReference[oaicite:2]{index=2}
+sudo cmake --install .
+
+
+
+
+
+# on just the camera
+cmake .. -G"Unix Makefiles" \
+        -DCMAKE_BUILD_TYPE=Release \
+        -DBUILD_SHARED_LIBS=ON \
+        -DBUILD_opencv_world=ON \
+        -DBUILD_LIST=core,imgproc,imgcodecs,highgui
+cmake --build .
+sudo cmake --install .
+
+
+
+
+# in a container
+# work in stag/docker
+sudo apt install docker.io
+# create Dockerfile.builder:
+
+# ---------- base image with glibc 2.36 ---------------------------------
+FROM rockylinux:9           # same ABI as your camera (glibc 2.36)
+
+# ---------- developer tool-chain ---------------------------------------
+RUN dnf -y groupinstall "Development Tools"  \
+    && dnf -y install epel-release           \
+    && dnf -y install cmake3 git             \
+       python3 python3-pip                   \
+       opencv opencv-devel                   \
+    && ln -sf /usr/bin/cmake3 /usr/local/bin/cmake \
+    && dnf clean all
+
+# ---------- optional: a non-root user ----------------------------------
+ARG USER=builder UID=1000
+RUN useradd -m -u ${UID} ${USER}
+USER ${USER}
+WORKDIR /home/${USER}/work            # mount your source tree here
+
+# ---------- default shell ---------- (so `docker run` drops you in)
+CMD ["/bin/bash"]
+
+sudo docker build -t stag-builder -f Dockerfile.builder .
+sudo docker run --rm -it \
+    -v "$PWD":/home/builder/work \
+    -w /home/builder/work  \
+    stag-builder
+cd opencv
+mkdir build
+cd build
+cmake .. -G"Unix Makefiles" \
+        -DCMAKE_BUILD_TYPE=Release \
+        -DBUILD_SHARED_LIBS=ON \
+        -DBUILD_opencv_world=ON \
+        -DBUILD_LIST=core,imgproc,imgcodecs,highgui
