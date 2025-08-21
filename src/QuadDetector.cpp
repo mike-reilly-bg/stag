@@ -10,7 +10,7 @@
 #include <iostream>
 #include <algorithm>
 
-#define DEBUG 0
+#define DEBUG 1
 
 using cv::Point2d;
 
@@ -531,9 +531,9 @@ void QuadDetector::detectQuads(const cv::Mat& image, EDInterface* edInterface)
     // Find quads from merged line groups
     for (const auto& group : cornerGroups)
     {
-        std::cout << "\n";
         i_debug++;
 #if DEBUG
+        std::cout << "\n";
         std::cout << "\nExamining group  " << i_debug << ".";
         std::cout << "\n--> Group size is " << group.size() << ".";
 #endif

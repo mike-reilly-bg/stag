@@ -24,9 +24,9 @@ set(CMAKE_C_STANDARD   11)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-if(CMAKE_CXX_COMPILER_ID MATCHES "GNU|Clang")
-    add_compile_options(-Wall -Wextra)
-endif()
+# if(CMAKE_CXX_COMPILER_ID MATCHES "GNU|Clang")
+#     add_compile_options(-Wall -Wextra)
+# endif()
 
 # ----------- 2. Dependencies --------------------------------------------
 find_package(OpenCV 4.12 REQUIRED COMPONENTS world)

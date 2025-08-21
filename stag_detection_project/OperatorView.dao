@@ -1,0 +1,358 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<operatorView id="e25f60d4-783d-46a9-94b2-47a575323c5e" name="OperatorView" version="10.0.454.0" auth-enabled="False" type="normal">
+  <htmlAnnotators>
+    <HTMLAnnotator name="Display" type="Matrox.DesignAssistant.Core.OperatorViews.Display, Matrox.DesignAssistant.Core, Version=10.0.454.0, Culture=neutral, PublicKeyToken=726f03a4652993c7" id="a9b2cd29-3045-4763-824c-6331f4ceeb14" Version="10.0.454.0">
+      <inputs>
+        <objectCollection name="AnnotationGroups" type="Matrox.DesignAssistant.Core.Annotations.Groups.AnnotationGroupCollection, Matrox.DesignAssistant.Core, Version=10.0.454.0, Culture=neutral, PublicKeyToken=726f03a4652993c7" id="f87dbecc-5a22-4b4b-8ab3-6a4f11053163" Version="10.0.454.0">
+          <expression>
+            <expression-string></expression-string>
+          </expression>
+          <collectionItems>
+            <subObject name="Group2" type="Matrox.DesignAssistant.Core.Annotations.Groups.AnnotationGroup, Matrox.DesignAssistant.Core, Version=10.0.454.0, Culture=neutral, PublicKeyToken=726f03a4652993c7" id="af953620-abd0-4128-b254-d715490e4309" Version="10.0.454.0">
+              <inputs>
+                <input name="Visible">
+                  <expression>
+                    <expression-string>True</expression-string>
+                  </expression>
+                </input>
+              </inputs>
+              <userXML />
+              <sharedInputProvider name="Group2" type="Matrox.DesignAssistant.Core.Annotations.Groups.SharedAnnotationGroup, Matrox.DesignAssistant.Core, Version=10.0.454.0, Culture=neutral, PublicKeyToken=726f03a4652993c7" id="2251f875-0816-4e9d-8f3c-dd8f6568b3b2" Version="10.0.454.0">
+                <inputs>
+                  <objectCollection name="Annotations" type="Matrox.DesignAssistant.Core.Annotations.AnnotationCollection, Matrox.DesignAssistant.Core, Version=10.0.454.0, Culture=neutral, PublicKeyToken=726f03a4652993c7" id="c006500b-118d-4617-ad9a-3ec849788e07" Version="10.0.454.0">
+                    <expression>
+                      <expression-string></expression-string>
+                    </expression>
+                    <collectionItems>
+                      <subObject name="STagMarkers" type="STagFinderPackage.STagAnnotation, STagFinderPackage, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" id="8a7d2e09-1b9d-4630-a99d-4073f313db88" Version="10.0.454.0">
+                        <inputs>
+                          <input name="Visible">
+                            <expression>
+                              <expression-string>True</expression-string>
+                            </expression>
+                          </input>
+                          <input name="Editable">
+                            <expression available="False">
+                              <expression-string>False</expression-string>
+                            </expression>
+                          </input>
+                          <objectCollection name="Options" type="Matrox.DesignAssistant.Core.Steps.Annotations.AnnotationOptionCollection, Matrox.DesignAssistant.Core, Version=10.0.454.0, Culture=neutral, PublicKeyToken=726f03a4652993c7" id="974aa64e-4560-470a-b32c-e64d0765aadd" Version="10.0.454.0">
+                            <expression>
+                              <expression-string></expression-string>
+                            </expression>
+                            <collectionItems>
+                              <subObject name="ShowSTags" type="STagFinderPackage.STagDrawOption, STagFinderPackage, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" id="59216ce7-6e5e-41e6-97d2-89270f40bcb1" Version="10.0.454.0">
+                                <inputs>
+                                  <input name="Visible">
+                                    <expression>
+                                      <expression-string>True</expression-string>
+                                    </expression>
+                                  </input>
+                                  <input name="Color">
+                                    <expression>
+                                      <expression-string>COLOR("Red")</expression-string>
+                                    </expression>
+                                  </input>
+                                </inputs>
+                                <userXML />
+                                <option name="ShowSTags" />
+                              </subObject>
+                            </collectionItems>
+                            <userXML />
+                          </objectCollection>
+                          <input name="Step">
+                            <expression>
+                              <expression-string>Flowcharts("MainFlowchart").STagFinderStep</expression-string>
+                            </expression>
+                          </input>
+                          <subObject name="Label" type="Matrox.DesignAssistant.Core.Steps.Annotations.AnnotationLabel, Matrox.DesignAssistant.Core, Version=10.0.454.0, Culture=neutral, PublicKeyToken=726f03a4652993c7" id="63379f47-2294-49ae-9a63-8c98d204237e" Version="10.0.454.0">
+                            <expression available="False">
+                              <expression-string></expression-string>
+                            </expression>
+                            <inputs>
+                              <input name="Visible">
+                                <expression available="False">
+                                  <expression-string>False</expression-string>
+                                </expression>
+                              </input>
+                              <input name="Text">
+                                <expression available="False">
+                                  <expression-string></expression-string>
+                                </expression>
+                              </input>
+                              <input name="TextColor">
+                                <expression available="False">
+                                  <expression-string>Default</expression-string>
+                                </expression>
+                              </input>
+                              <input name="BackgroundColor">
+                                <expression available="False">
+                                  <expression-string>COLOR("LightGray")</expression-string>
+                                </expression>
+                              </input>
+                              <input name="BackgroundMode">
+                                <expression available="False">
+                                  <expression-string>Transparent</expression-string>
+                                </expression>
+                              </input>
+                              <input name="AutoselectFont">
+                                <expression available="False">
+                                  <expression-string>True</expression-string>
+                                </expression>
+                              </input>
+                              <input name="Font">
+                                <expression available="False">
+                                  <expression-string>Default</expression-string>
+                                </expression>
+                              </input>
+                              <input name="FontType">
+                                <expression available="False">
+                                  <expression-string>TrueType</expression-string>
+                                </expression>
+                              </input>
+                              <input name="BitmapFontSize">
+                                <expression available="False">
+                                  <expression-string>Small</expression-string>
+                                </expression>
+                              </input>
+                              <input name="TrueTypeFontSize">
+                                <expression available="False">
+                                  <expression-string>12</expression-string>
+                                </expression>
+                              </input>
+                              <input name="FontScaleX">
+                                <expression available="False">
+                                  <expression-string>1</expression-string>
+                                </expression>
+                              </input>
+                              <input name="IsBold">
+                                <expression available="False">
+                                  <expression-string>False</expression-string>
+                                </expression>
+                              </input>
+                              <input name="FontScaleY">
+                                <expression available="False">
+                                  <expression-string>1</expression-string>
+                                </expression>
+                              </input>
+                              <input name="IsItalic">
+                                <expression available="False">
+                                  <expression-string>False</expression-string>
+                                </expression>
+                              </input>
+                              <input name="TextDirection">
+                                <expression available="False">
+                                  <expression-string>LeftToRight</expression-string>
+                                </expression>
+                              </input>
+                              <input name="HorizontalAlignment">
+                                <expression available="False">
+                                  <expression-string>Left</expression-string>
+                                </expression>
+                              </input>
+                              <input name="VerticalAlignment">
+                                <expression available="False">
+                                  <expression-string>Top</expression-string>
+                                </expression>
+                              </input>
+                            </inputs>
+                            <userXML />
+                          </subObject>
+                          <subObject name="DrawAction" type="Matrox.DesignAssistant.Core.Annotations.DrawAction, Matrox.DesignAssistant.Core, Version=10.0.454.0, Culture=neutral, PublicKeyToken=726f03a4652993c7" id="0405babc-0c30-4e53-a62d-e3cc79c15edc" Version="10.0.454.0">
+                            <expression>
+                              <expression-string></expression-string>
+                            </expression>
+                            <inputs>
+                              <input name="CanRun">
+                                <expression>
+                                  <expression-string>None</expression-string>
+                                </expression>
+                              </input>
+                              <input name="Enabled">
+                                <expression available="False">
+                                  <expression-string>True</expression-string>
+                                </expression>
+                              </input>
+                              <input name="TriggerEvent">
+                                <expression>
+                                  <expression-string>Default</expression-string>
+                                </expression>
+                              </input>
+                              <input name="WaitInspectionEnd">
+                                <expression available="False">
+                                  <expression-string>False</expression-string>
+                                </expression>
+                              </input>
+                            </inputs>
+                            <userXML />
+                          </subObject>
+                          <input name="MaximumAccumulations">
+                            <expression>
+                              <expression-string>2000</expression-string>
+                            </expression>
+                          </input>
+                          <input name="Thickness">
+                            <expression>
+                              <expression-string>Default</expression-string>
+                            </expression>
+                          </input>
+                        </inputs>
+                        <userXML />
+                        <annotation name="STag Markers" type="STagFinderPackage.STagAnnotation" isordered="False" drawingorder="1" />
+                      </subObject>
+                    </collectionItems>
+                    <userXML />
+                  </objectCollection>
+                  <objectCollection name="ClearActions" type="Matrox.DesignAssistant.Core.Annotations.Groups.ClearGroupActionCollection, Matrox.DesignAssistant.Core, Version=10.0.454.0, Culture=neutral, PublicKeyToken=726f03a4652993c7" id="c81a7766-7d8a-4b8c-8553-0b4e64e63c6c" Version="10.0.454.0">
+                    <expression>
+                      <expression-string></expression-string>
+                    </expression>
+                    <collectionItems>
+                      <subObject name="ClearAction" type="Matrox.DesignAssistant.Core.Annotations.Groups.ClearGroupAction, Matrox.DesignAssistant.Core, Version=10.0.454.0, Culture=neutral, PublicKeyToken=726f03a4652993c7" id="07130a3d-565b-424a-93b1-7258eba131cd" Version="10.0.454.0">
+                        <inputs>
+                          <input name="CanRun">
+                            <expression>
+                              <expression-string>None</expression-string>
+                            </expression>
+                          </input>
+                          <input name="Enabled">
+                            <expression available="False">
+                              <expression-string>True</expression-string>
+                            </expression>
+                          </input>
+                          <input name="TriggerEvent">
+                            <expression>
+                              <expression-string>Inspection.StartEvent</expression-string>
+                            </expression>
+                          </input>
+                          <input name="WaitInspectionEnd">
+                            <expression available="False">
+                              <expression-string>False</expression-string>
+                            </expression>
+                          </input>
+                        </inputs>
+                        <userXML />
+                      </subObject>
+                    </collectionItems>
+                    <userXML />
+                  </objectCollection>
+                </inputs>
+                <userXML />
+              </sharedInputProvider>
+            </subObject>
+          </collectionItems>
+          <userXML />
+        </objectCollection>
+        <input name="Image">
+          <expression>
+            <expression-string need-link-container="True">Remap.OutputImage</expression-string>
+          </expression>
+        </input>
+        <input name="Width">
+          <expression>
+            <expression-string>640</expression-string>
+          </expression>
+        </input>
+        <input name="Height">
+          <expression>
+            <expression-string>480</expression-string>
+          </expression>
+        </input>
+        <input name="Region">
+          <expression>
+            <expression-string>WholeImage</expression-string>
+          </expression>
+        </input>
+        <input name="SelectionRadius">
+          <expression>
+            <expression-string>5</expression-string>
+          </expression>
+        </input>
+        <input name="ColorMode">
+          <expression>
+            <expression-string>Default</expression-string>
+          </expression>
+        </input>
+        <input name="ColorMap">
+          <expression>
+            <expression-string>Default</expression-string>
+          </expression>
+        </input>
+        <input name="ScaleImage">
+          <expression>
+            <expression-string>Enabled</expression-string>
+          </expression>
+        </input>
+        <input name="ImageAlignment">
+          <expression>
+            <expression-string>Center</expression-string>
+          </expression>
+        </input>
+        <input name="Zoom">
+          <expression available="False">
+            <expression-string>1</expression-string>
+          </expression>
+        </input>
+        <input name="MouseZoomAndPan">
+          <expression>
+            <expression-string>Enabled</expression-string>
+          </expression>
+        </input>
+        <input name="KeyboardZoomAndPan">
+          <expression>
+            <expression-string>Enabled</expression-string>
+          </expression>
+        </input>
+        <input name="BackgroundColor">
+          <expression>
+            <expression-string>Default</expression-string>
+          </expression>
+        </input>
+      </inputs>
+      <userXML />
+    </HTMLAnnotator>
+    <HTMLAnnotator name="FrameRateValue" type="Matrox.DesignAssistant.Core.OperatorViews.Value, Matrox.DesignAssistant.Core, Version=10.0.454.0, Culture=neutral, PublicKeyToken=726f03a4652993c7" id="c270ed8d-3177-4955-8a74-84065df15e59" Version="10.0.454.0">
+      <inputs>
+        <input name="BackgroundColor">
+          <expression>
+            <expression-string>COLOR(211,211,211)</expression-string>
+          </expression>
+        </input>
+        <input name="TextColor">
+          <expression>
+            <expression-string>COLOR("Black")</expression-string>
+          </expression>
+        </input>
+        <input name="LineHeight">
+          <expression>
+            <expression-string>1</expression-string>
+          </expression>
+        </input>
+        <input name="MultiLine">
+          <expression>
+            <expression-string>False</expression-string>
+          </expression>
+        </input>
+        <input name="Overflow">
+          <expression>
+            <expression-string>Auto</expression-string>
+          </expression>
+        </input>
+        <input name="Text">
+          <expression>
+            <expression-string need-link-container="True">{Camera.FrameRate:F1}</expression-string>
+          </expression>
+        </input>
+      </inputs>
+      <userXML />
+    </HTMLAnnotator>
+    <synchronized-publishing-groups use-publishing-optimization="False">
+      <group name="PublishingGroup" framerate="20" default="True">
+        <annotators>
+          <annotator name="Display" type="Display" />
+          <annotator name="FrameRateValue" type="Value" />
+        </annotators>
+      </group>
+    </synchronized-publishing-groups>
+  </htmlAnnotators>
+</operatorView>

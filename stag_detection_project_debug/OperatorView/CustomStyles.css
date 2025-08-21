@@ -1,0 +1,148 @@
+﻿.dath_BaseGridStyle
+{
+height:28px;
+color:#260859;
+background-color:#F0F0F0;
+padding-left:1px;
+padding-right:1px;
+padding-top:1px;
+padding-bottom:1px;
+border-Top:1px Solid #CCCCCC;
+border-Left:1px Solid #CCCCCC;
+border-Right:1px Solid #CCCCCC;
+border-Bottom:1px Solid #CCCCCC;
+font-family:Lucida Grande;
+font-size:12px;
+font-style:normal;
+font-weight:normal;
+
+text-align:Left;
+vertical-align:Middle;
+justify-content:flex-start;
+align-items: center;
+
+}
+.datb0_BaseGridStyle
+{
+color:Black;
+background-color:White;
+padding-left:5px;
+padding-right:5px;
+padding-top:6px;
+padding-bottom:1px;
+font-family:Verdana;
+font-size:15px;
+font-style:normal;
+font-weight:normal;
+
+text-align:Left;
+vertical-align:Top;
+justify-content:flex-start;
+align-items: flex-start;
+
+}
+table.BaseGridStyle
+{
+margin:0px;
+border-spacing: 0px;
+border-collapse: collapse;
+width:100%;
+}
+
+.dath_GridStyle
+{
+height:28px;
+color:Black;
+background-color:WhiteSmoke;
+padding-left:5px;
+padding-right:1px;
+padding-top:1px;
+padding-bottom:1px;
+border-Top:1px Solid #CCCCCC;
+border-Left:1px Solid #CCCCCC;
+border-Right:1px Solid #CCCCCC;
+border-Bottom:1px Solid #CCCCCC;
+font-family:Segoe UI Semibold;
+font-size:14px;
+font-style:normal;
+font-weight:normal;
+
+text-align:Left;
+vertical-align:Middle;
+justify-content:flex-start;
+align-items: center;
+
+}
+.datb0_GridStyle
+{
+color:Black;
+background-color:Transparent;
+padding-left:5px;
+padding-right:5px;
+padding-top:1px;
+padding-bottom:1px;
+border-Top:1px Solid Silver;
+border-Left:1px Solid Silver;
+border-Right:1px Solid Silver;
+border-Bottom:1px Solid Silver;
+font-family:Verdana;
+font-size:15px;
+font-style:normal;
+font-weight:normal;
+
+text-align:Left;
+vertical-align:Middle;
+justify-content:flex-start;
+align-items: center;
+
+}
+.datb1_GridStyle
+{
+color:Black;
+background-color:Transparent;
+padding-left:5px;
+padding-right:5px;
+padding-top:1px;
+padding-bottom:1px;
+border-Top:1px Solid Silver;
+border-Left:1px Solid Silver;
+border-Right:1px Solid Silver;
+border-Bottom:1px Solid Silver;
+font-family:Verdana;
+font-size:15px;
+font-style:normal;
+font-weight:normal;
+
+text-align:Center;
+vertical-align:Middle;
+justify-content:center;
+align-items: center;
+
+}
+table.GridStyle
+{
+margin:0px;
+border-spacing: 0px;
+border-collapse: collapse;
+width:100%;
+}
+
+.Style
+{
+color:Black;
+background-color:Transparent;
+padding-left:1px;
+padding-right:1px;
+padding-top:1px;
+padding-bottom:1px;
+font-family:Arial;
+font-size:28px;
+font-style:normal;
+font-weight:bold;
+
+text-align:Left;
+vertical-align:Middle;
+justify-content:flex-start;
+align-items: center;
+}
+

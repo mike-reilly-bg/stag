@@ -1,0 +1,12 @@
+sudo docker run --rm -it --us
+er root -v "$PWD":/home/builder/work -w /home/builder/work stag-builder /bin/bash
+
+# in container
+yum install dotnet-sdk-6.0
+docker restore
+dotnet publish -c Release -r linux-x64 \
+  --self-contained true \
+  -p:PublishSingleFile=true \
+  -p:EnableCompressionInSingleFile=true
+
+# copy stag\test\bin\Release\net6.0\linux-x64\publish\ to camera directory with stagdll.so

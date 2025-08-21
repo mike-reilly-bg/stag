@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<persistence modificationCount="0" modificationTime="">
+  <recipes HighestIDAssigned="1">
+    <recipe name="MainRecipe" id="1" modificationCount="0" modificationTime="" current="true" />
+  </recipes>
+</persistence>

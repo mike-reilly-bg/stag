@@ -4,7 +4,7 @@
 #include <iostream>
 
 #define HALF_PI 1.570796326794897
-#define DEBUG 0
+#define DEBUG 1
 
 using cv::Mat;
 using cv::Point2d;

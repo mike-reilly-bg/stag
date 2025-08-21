@@ -75,7 +75,7 @@ cd opencv
 mkdir build
 cd build
 cmake .. -G"Unix Makefiles" \
-        -DCMAKE_BUILD_TYPE=Release \
-        -DBUILD_SHARED_LIBS=ON \
-        -DBUILD_opencv_world=ON \
-        -DBUILD_LIST=core,imgproc,imgcodecs,highgui
+  -DCMAKE_BUILD_TYPE=Release \
+  -DBUILD_SHARED_LIBS=ON \
+  -DBUILD_opencv_world=ON \
+  -DBUILD_LIST=core,imgproc,imgcodecs,highgui,calib3d

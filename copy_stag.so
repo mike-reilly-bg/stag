@@ -1,3 +1,0 @@
-cp stagdll/libstagdll.so ~/da/Steps/STagFinderPackage.STagFinder/assets/runtimes/linux-x64/native/
-cp stagdll/libstagdll.so ~/da/Steps/STagFinderPackage.STagFinder/assets/runtimes/linux-x64/
-cp stagdll/libstagdll.so ~/da/Steps/STagFinderPackage.STagFinder/assets/pinvokelib/linux-x64/

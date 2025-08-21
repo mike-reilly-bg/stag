@@ -1,0 +1,181 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<operatorView id="e25f60d4-783d-46a9-94b2-47a575323c5e" name="OperatorView" version="10.0.454.0" auth-enabled="False" type="normal">
+  <htmlAnnotators>
+    <HTMLAnnotator name="Display" type="Matrox.DesignAssistant.Core.OperatorViews.Display, Matrox.DesignAssistant.Core, Version=10.0.454.0, Culture=neutral, PublicKeyToken=726f03a4652993c7" id="a9b2cd29-3045-4763-824c-6331f4ceeb14" Version="10.0.454.0">
+      <inputs>
+        <objectCollection name="AnnotationGroups" type="Matrox.DesignAssistant.Core.Annotations.Groups.AnnotationGroupCollection, Matrox.DesignAssistant.Core, Version=10.0.454.0, Culture=neutral, PublicKeyToken=726f03a4652993c7" id="f87dbecc-5a22-4b4b-8ab3-6a4f11053163" Version="10.0.454.0">
+          <expression>
+            <expression-string></expression-string>
+          </expression>
+          <collectionItems>
+            <subObject name="Group" type="Matrox.DesignAssistant.Core.Annotations.Groups.AnnotationGroup, Matrox.DesignAssistant.Core, Version=10.0.454.0, Culture=neutral, PublicKeyToken=726f03a4652993c7" id="2e2f8f55-c263-4d4e-b4d7-dfacda992d0c" Version="10.0.454.0">
+              <inputs>
+                <input name="Visible">
+                  <expression>
+                    <expression-string>True</expression-string>
+                  </expression>
+                </input>
+              </inputs>
+              <userXML />
+              <sharedInputProvider name="Group" type="Matrox.DesignAssistant.Core.Annotations.Groups.SharedAnnotationGroup, Matrox.DesignAssistant.Core, Version=10.0.454.0, Culture=neutral, PublicKeyToken=726f03a4652993c7" id="091ca9f2-8fc9-4f97-994e-4056af9b2a4b" Version="10.0.454.0">
+                <inputs>
+                  <objectCollection name="Annotations" type="Matrox.DesignAssistant.Core.Annotations.AnnotationCollection, Matrox.DesignAssistant.Core, Version=10.0.454.0, Culture=neutral, PublicKeyToken=726f03a4652993c7" id="b1f940c4-2697-413d-8c71-30f51e7ae11d" Version="10.0.454.0">
+                    <expression>
+                      <expression-string></expression-string>
+                    </expression>
+                    <collectionItems />
+                    <userXML />
+                  </objectCollection>
+                  <objectCollection name="ClearActions" type="Matrox.DesignAssistant.Core.Annotations.Groups.ClearGroupActionCollection, Matrox.DesignAssistant.Core, Version=10.0.454.0, Culture=neutral, PublicKeyToken=726f03a4652993c7" id="88f46f8a-3c9d-40db-8db9-8c2287c872c2" Version="10.0.454.0">
+                    <expression>
+                      <expression-string></expression-string>
+                    </expression>
+                    <collectionItems>
+                      <subObject name="ClearAction" type="Matrox.DesignAssistant.Core.Annotations.Groups.ClearGroupAction, Matrox.DesignAssistant.Core, Version=10.0.454.0, Culture=neutral, PublicKeyToken=726f03a4652993c7" id="b12411f9-9c4a-4337-bce3-651d74f47562" Version="10.0.454.0">
+                        <inputs>
+                          <input name="CanRun">
+                            <expression>
+                              <expression-string>None</expression-string>
+                            </expression>
+                          </input>
+                          <input name="Enabled">
+                            <expression available="False">
+                              <expression-string>True</expression-string>
+                            </expression>
+                          </input>
+                          <input name="TriggerEvent">
+                            <expression>
+                              <expression-string>Inspection.StartEvent</expression-string>
+                            </expression>
+                          </input>
+                          <input name="WaitInspectionEnd">
+                            <expression available="False">
+                              <expression-string>False</expression-string>
+                            </expression>
+                          </input>
+                        </inputs>
+                        <userXML />
+                      </subObject>
+                    </collectionItems>
+                    <userXML />
+                  </objectCollection>
+                </inputs>
+                <userXML />
+              </sharedInputProvider>
+            </subObject>
+          </collectionItems>
+          <userXML />
+        </objectCollection>
+        <input name="Image">
+          <expression>
+            <expression-string need-link-container="True">Remap.OutputImage</expression-string>
+          </expression>
+        </input>
+        <input name="Width">
+          <expression>
+            <expression-string>640</expression-string>
+          </expression>
+        </input>
+        <input name="Height">
+          <expression>
+            <expression-string>480</expression-string>
+          </expression>
+        </input>
+        <input name="Region">
+          <expression>
+            <expression-string>WholeImage</expression-string>
+          </expression>
+        </input>
+        <input name="SelectionRadius">
+          <expression>
+            <expression-string>5</expression-string>
+          </expression>
+        </input>
+        <input name="ColorMode">
+          <expression>
+            <expression-string>Default</expression-string>
+          </expression>
+        </input>
+        <input name="ColorMap">
+          <expression>
+            <expression-string>Default</expression-string>
+          </expression>
+        </input>
+        <input name="ScaleImage">
+          <expression>
+            <expression-string>Enabled</expression-string>
+          </expression>
+        </input>
+        <input name="ImageAlignment">
+          <expression>
+            <expression-string>Center</expression-string>
+          </expression>
+        </input>
+        <input name="Zoom">
+          <expression available="False">
+            <expression-string>1</expression-string>
+          </expression>
+        </input>
+        <input name="MouseZoomAndPan">
+          <expression>
+            <expression-string>Enabled</expression-string>
+          </expression>
+        </input>
+        <input name="KeyboardZoomAndPan">
+          <expression>
+            <expression-string>Enabled</expression-string>
+          </expression>
+        </input>
+        <input name="BackgroundColor">
+          <expression>
+            <expression-string>Default</expression-string>
+          </expression>
+        </input>
+      </inputs>
+      <userXML />
+    </HTMLAnnotator>
+    <HTMLAnnotator name="FrameRateValue" type="Matrox.DesignAssistant.Core.OperatorViews.Value, Matrox.DesignAssistant.Core, Version=10.0.454.0, Culture=neutral, PublicKeyToken=726f03a4652993c7" id="c270ed8d-3177-4955-8a74-84065df15e59" Version="10.0.454.0">
+      <inputs>
+        <input name="BackgroundColor">
+          <expression>
+            <expression-string>COLOR(211,211,211)</expression-string>
+          </expression>
+        </input>
+        <input name="TextColor">
+          <expression>
+            <expression-string>COLOR("Black")</expression-string>
+          </expression>
+        </input>
+        <input name="LineHeight">
+          <expression>
+            <expression-string>1</expression-string>
+          </expression>
+        </input>
+        <input name="MultiLine">
+          <expression>
+            <expression-string>False</expression-string>
+          </expression>
+        </input>
+        <input name="Overflow">
+          <expression>
+            <expression-string>Auto</expression-string>
+          </expression>
+        </input>
+        <input name="Text">
+          <expression>
+            <expression-string need-link-container="True">{Camera.FrameRate:F1}</expression-string>
+          </expression>
+        </input>
+      </inputs>
+      <userXML />
+    </HTMLAnnotator>
+    <synchronized-publishing-groups use-publishing-optimization="False">
+      <group name="PublishingGroup" framerate="20" default="True">
+        <annotators>
+          <annotator name="Display" type="Display" />
+          <annotator name="FrameRateValue" type="Value" />
+        </annotators>
+      </group>
+    </synchronized-publishing-groups>
+  </htmlAnnotators>
+</operatorView>

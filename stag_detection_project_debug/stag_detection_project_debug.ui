@@ -1,0 +1,26 @@
+<?xml version="1.0" standalone="yes"?>
+<UIConfiguration>
+  <QuickEvaluate version="10.0.454.0">
+    <Items>
+      <Item text="STagFinderStep.fid1_x" />
+      <Item text="STagFinderStep.fid1_y" />
+      <Item text="STagFinderStep.fid1_z" />
+      <Item text="STagFinderStep.fid2_x" />
+      <Item text="STagFinderStep.fid2_y" />
+      <Item text="STagFinderStep.fid2_z" />
+    </Items>
+  </QuickEvaluate>
+  <QuickRunMode isQuickRun="False" />
+  <Debugger version="10.0.454.0" stopAtInspectionEnd="False" />
+  <OperatorViewUIControllers version="10.0.454.0">
+    <OperatorView name="OperatorView" id="e25f60d4-783d-46a9-94b2-47a575323c5e">
+    </OperatorView>
+  </OperatorViewUIControllers>
+  <printing>
+    <margins units="Millimeters" left="10" right="10" top="10" bottom="10" />
+    <scaling mode="None" scale="1" horizontalpages="1" verticalpages="1" allowenlarge="False" />
+    <flowcharts outline="False">
+      <flowchart id="492c8fb0-3d2b-4200-ac60-c1ec7a2a8aba" />
+    </flowcharts>
+  </printing>
+</UIConfiguration>

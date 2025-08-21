@@ -13,8 +13,9 @@ namespace StagTester
             byte[] image, 
             int width, 
             int height, 
-            float[] result, 
-            int resultLen
+            double[] result, 
+            int resultLen,
+            int errorCorrection
         );
 
         static void Main(string[] args)
@@ -31,11 +32,11 @@ namespace StagTester
                 img.CopyPixelDataTo(pixels);
 
                 // result[0] = count, then up to 2 markers × 8 floats each
-                float[] result = new float[1 + 2 * 4 * 2];
+                double[] _result = new double[23];
 
-                FindStagCorners(pixels, w, h, result, result.Length);
+                FindStagCorners(pixels, w, h, _result, _result.Length, 30);
 
-                int num = (int)result[0];
+                int num = (int)_result[0];
                 Console.WriteLine($"Found {num} marker(s)");
 
                 for (int i = 0; i < num && i < 2; i++)
@@ -43,10 +44,16 @@ namespace StagTester
                     Console.Write($"Marker {i}: ");
                     for (int k = 0; k < 4; k++)
                     {
-                        float x = result[1 + i * 8 + k * 2];
-                        float y = result[1 + i * 8 + k * 2 + 1];
+                        double x = _result[1 + i * 8 + k * 2];
+                        double y = _result[1 + i * 8 + k * 2 + 1];
                         Console.Write($"({x:F1},{y:F1}) ");
                     }
+                    Console.WriteLine();
+                }
+                for (int i = 1; i < 7; i++)
+                {
+                    int ind = 16 + i;
+                    Console.Write($"({ind},{_result[16+i]:F1}");
                     Console.WriteLine();
                 }
             }
