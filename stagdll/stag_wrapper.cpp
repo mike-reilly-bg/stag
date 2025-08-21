@@ -18,7 +18,8 @@ extern "C" STAG_API void FindStagCorners(
     unsigned char* image,
     int width, int height,
     float* result,
-    int resultLen)
+    int resultLen,
+    int error_correction)
 {
     cv::Mat img(height, width, CV_8UC1, (void*)image);
     if (img.channels() > 1)
@@ -27,7 +28,7 @@ extern "C" STAG_API void FindStagCorners(
     std::vector<std::vector<cv::Point2f>> corners;
     std::vector<int> ids;
     auto rejectedImgPoints = std::vector<std::vector<cv::Point2f>>(); // optional, helpful for debugging
-    stag::detectMarkers(img, 21, corners, ids, -1, rejectedImgPoints);
+    stag::detectMarkers(img, 23, corners, ids, error_correction, rejectedImgPoints);
 
     std::fill(result, result + resultLen, 0.0f);      // safety
 

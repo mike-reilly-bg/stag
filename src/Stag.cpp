@@ -123,9 +123,9 @@ namespace {
 		}
 
 		// check errorCorrection
-		if (errorCorrection > (libraryHD -1) / 2 || errorCorrection < 0) {
-			throw std::invalid_argument("Invalid error correction value " + std::to_string(errorCorrection) + " for library HD " + std::to_string(libraryHD) + ". Error correction needs to be in range 0 <= HD <= (HD-1)/2.");
-		}
+		//if (errorCorrection > (libraryHD -1) / 2 || errorCorrection < 0) {
+		//	throw std::invalid_argument("Invalid error correction value " + std::to_string(errorCorrection) + " for library HD " + std::to_string(libraryHD) + ". Error correction needs to be in range 0 <= HD <= (HD-1)/2.");
+		//}
 
 		output_corners.clear();
 		output_ids.clear();

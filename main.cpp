@@ -11,7 +11,7 @@ int main() {
     cv::Mat image = cv::imread("../example.jpg");
 
     // set HD library
-    int libraryHD = 21;
+    int libraryHD = 23;
 
     auto corners = std::vector<std::vector<cv::Point2f>>();
     auto ids = std::vector<int>();
