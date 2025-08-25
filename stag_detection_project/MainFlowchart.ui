@@ -2,7 +2,7 @@
 <UIConfiguration version="10.0.454.0">
   <Flowchart name="MainFlowchart" id="492c8fb0-3d2b-4200-ac60-c1ec7a2a8aba" scale="1">
     <imageInfos />
-    <Step name="FlowchartStart" id="e6267804-8ce8-496e-a5d5-7b9e9e45b85d" multiDisplayViewMode="Single" quickRunEnabled="True">
+    <Step name="FlowchartStart" id="124489c3-b0f1-49ef-978b-092ab4b6d7bf" multiDisplayViewMode="Single" quickRunEnabled="True">
       <annotations-manager visible="True">
         <annotations-Display1>
           <annotations>
@@ -7837,7 +7837,7 @@
         </annotations-Display4>
       </annotations-manager>
       <imageInfos>
-        <imageInfo linkPath="Camera.Image" colorMap="None" viewMode="Default" viewBitShift="1" zoomFactor="1" panOffsetX="0" panOffsetY="0" />
+        <imageInfo linkPath="Camera.Image" colorMap="None" viewMode="Default" viewBitShift="1" zoomFactor="1" panOffsetX="1156" panOffsetY="703" />
         <imageInfo linkPath="Camera.CorrectedImage" colorMap="Default" viewMode="AutoScale" viewBitShift="0" zoomFactor="1" panOffsetX="1087.5" panOffsetY="810.375" />
         <imageInfo linkPath="Camera.DepthMap" colorMap="Default" viewMode="Default" viewBitShift="0" />
         <imageInfo linkPath="Camera.PointCloud" colorMap="Default" viewMode="Default" viewBitShift="0" />

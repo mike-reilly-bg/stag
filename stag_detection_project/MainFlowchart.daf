@@ -1497,7 +1497,7 @@
                 </input>
                 <input name="StartValue">
                   <expression available="False">
-                    <expression-string>37</expression-string>
+                    <expression-string>35</expression-string>
                   </expression>
                 </input>
                 <input name="StdDevStartValue">
