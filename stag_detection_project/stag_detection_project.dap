@@ -410,8 +410,8 @@
         <setting name="BlackOffset" persistentState="NotPersistent" is-using-default="True" is-set="True" id="7744dfb1-3b52-4eaf-b12b-9c4ac1e43492" />
         <setting name="ExposureMode" persistentState="NotPersistent" is-using-default="True" is-set="True" id="09ebd8d9-771a-4285-ba21-8e14841cabf7" />
         <setting name="ExposureTime" persistentState="NotPersistent" is-using-default="False" is-set="True" id="e03a1c14-961c-4c74-b196-340d18dc4280">
-          <value>2</value>
-          <value-string>2</value-string>
+          <value>1</value>
+          <value-string>1</value-string>
         </setting>
         <setting name="ExposureDelay" persistentState="NotPersistent" is-using-default="True" is-set="True" id="900cab91-c8a0-4b9a-bf66-4fdb25ac744a" />
         <setting name="StrobeTime" persistentState="NotPersistent" is-using-default="False" is-set="True" id="15dfe4b0-2d87-49ed-97fd-76c75e9f0356">
@@ -725,29 +725,13 @@
         </profinet-settings-fieldinfoCollection>
         <profinet-settings-fieldinfoCollection statusstep="(None)" module="DataFromPLC" slot="2" />
         <profinet-settings-fieldinfoCollection statusstep="(None)" module="DataToPLC" slot="1">
-          <fieldinfo-settings modulename="DataToPLC" name="num_found" type="8" firstindex="0" bitindex="-1" size="0" isinput="True" inquickcomm="False" isusingautomaticaction="True" triggingvalue="1" anyvalues="False" ignoreisonline="False" />
-          <fieldinfo-settings modulename="DataToPLC" name="fid1_corner1_x" type="8" firstindex="8" bitindex="-1" size="0" isinput="True" inquickcomm="False" isusingautomaticaction="True" triggingvalue="1" anyvalues="False" ignoreisonline="False" />
-          <fieldinfo-settings modulename="DataToPLC" name="fid1_corner1_y" type="8" firstindex="16" bitindex="-1" size="0" isinput="True" inquickcomm="False" isusingautomaticaction="True" triggingvalue="1" anyvalues="False" ignoreisonline="False" />
-          <fieldinfo-settings modulename="DataToPLC" name="fid1_corner2_x" type="8" firstindex="24" bitindex="-1" size="0" isinput="True" inquickcomm="False" isusingautomaticaction="True" triggingvalue="1" anyvalues="False" ignoreisonline="False" />
-          <fieldinfo-settings modulename="DataToPLC" name="fid1_corner2_y" type="8" firstindex="32" bitindex="-1" size="0" isinput="True" inquickcomm="False" isusingautomaticaction="True" triggingvalue="1" anyvalues="False" ignoreisonline="False" />
-          <fieldinfo-settings modulename="DataToPLC" name="fid1_corner3_x" type="8" firstindex="40" bitindex="-1" size="0" isinput="True" inquickcomm="False" isusingautomaticaction="True" triggingvalue="1" anyvalues="False" ignoreisonline="False" />
-          <fieldinfo-settings modulename="DataToPLC" name="fid1_corner3_y" type="8" firstindex="48" bitindex="-1" size="0" isinput="True" inquickcomm="False" isusingautomaticaction="True" triggingvalue="1" anyvalues="False" ignoreisonline="False" />
-          <fieldinfo-settings modulename="DataToPLC" name="fid1_corner4_x" type="8" firstindex="56" bitindex="-1" size="0" isinput="True" inquickcomm="False" isusingautomaticaction="True" triggingvalue="1" anyvalues="False" ignoreisonline="False" />
-          <fieldinfo-settings modulename="DataToPLC" name="fid1_corner4_y" type="8" firstindex="64" bitindex="-1" size="0" isinput="True" inquickcomm="False" isusingautomaticaction="True" triggingvalue="1" anyvalues="False" ignoreisonline="False" />
-          <fieldinfo-settings modulename="DataToPLC" name="fid2_corner1_x" type="8" firstindex="72" bitindex="-1" size="0" isinput="True" inquickcomm="False" isusingautomaticaction="True" triggingvalue="1" anyvalues="False" ignoreisonline="False" />
-          <fieldinfo-settings modulename="DataToPLC" name="fid2_corner1_y" type="8" firstindex="80" bitindex="-1" size="0" isinput="True" inquickcomm="False" isusingautomaticaction="True" triggingvalue="1" anyvalues="False" ignoreisonline="False" />
-          <fieldinfo-settings modulename="DataToPLC" name="fid2_corner2_x" type="8" firstindex="88" bitindex="-1" size="0" isinput="True" inquickcomm="False" isusingautomaticaction="True" triggingvalue="1" anyvalues="False" ignoreisonline="False" />
-          <fieldinfo-settings modulename="DataToPLC" name="fid2_corner2_y" type="8" firstindex="96" bitindex="-1" size="0" isinput="True" inquickcomm="False" isusingautomaticaction="True" triggingvalue="1" anyvalues="False" ignoreisonline="False" />
-          <fieldinfo-settings modulename="DataToPLC" name="fid2_corner3_x" type="8" firstindex="104" bitindex="-1" size="0" isinput="True" inquickcomm="False" isusingautomaticaction="True" triggingvalue="1" anyvalues="False" ignoreisonline="False" />
-          <fieldinfo-settings modulename="DataToPLC" name="fid2_corner3_y" type="8" firstindex="112" bitindex="-1" size="0" isinput="True" inquickcomm="False" isusingautomaticaction="True" triggingvalue="1" anyvalues="False" ignoreisonline="False" />
-          <fieldinfo-settings modulename="DataToPLC" name="fid2_corner4_x" type="8" firstindex="120" bitindex="-1" size="0" isinput="True" inquickcomm="False" isusingautomaticaction="True" triggingvalue="1" anyvalues="False" ignoreisonline="False" />
-          <fieldinfo-settings modulename="DataToPLC" name="fid2_corner4_y" type="8" firstindex="128" bitindex="-1" size="0" isinput="True" inquickcomm="False" isusingautomaticaction="True" triggingvalue="1" anyvalues="False" ignoreisonline="False" />
-          <fieldinfo-settings modulename="DataToPLC" name="fid1_x" type="8" firstindex="136" bitindex="-1" size="0" isinput="True" inquickcomm="False" isusingautomaticaction="True" triggingvalue="1" anyvalues="False" ignoreisonline="False" />
-          <fieldinfo-settings modulename="DataToPLC" name="fid1_y" type="8" firstindex="144" bitindex="-1" size="0" isinput="True" inquickcomm="False" isusingautomaticaction="True" triggingvalue="1" anyvalues="False" ignoreisonline="False" />
-          <fieldinfo-settings modulename="DataToPLC" name="fid1_z" type="8" firstindex="152" bitindex="-1" size="0" isinput="True" inquickcomm="False" isusingautomaticaction="True" triggingvalue="1" anyvalues="False" ignoreisonline="False" />
-          <fieldinfo-settings modulename="DataToPLC" name="fid2_x" type="8" firstindex="160" bitindex="-1" size="0" isinput="True" inquickcomm="False" isusingautomaticaction="True" triggingvalue="1" anyvalues="False" ignoreisonline="False" />
-          <fieldinfo-settings modulename="DataToPLC" name="fid2_y" type="8" firstindex="168" bitindex="-1" size="0" isinput="True" inquickcomm="False" isusingautomaticaction="True" triggingvalue="1" anyvalues="False" ignoreisonline="False" />
-          <fieldinfo-settings modulename="DataToPLC" name="fid2_z" type="8" firstindex="176" bitindex="-1" size="0" isinput="True" inquickcomm="False" isusingautomaticaction="True" triggingvalue="1" anyvalues="False" ignoreisonline="False" />
+          <fieldinfo-settings modulename="DataToPLC" name="num_found" type="6" firstindex="0" bitindex="-1" size="0" isinput="True" inquickcomm="False" isusingautomaticaction="True" triggingvalue="1" anyvalues="False" ignoreisonline="False" />
+          <fieldinfo-settings modulename="DataToPLC" name="fid1_x" type="5" firstindex="2" bitindex="-1" size="0" isinput="True" inquickcomm="False" isusingautomaticaction="True" triggingvalue="1" anyvalues="False" ignoreisonline="False" />
+          <fieldinfo-settings modulename="DataToPLC" name="fid1_y" type="5" firstindex="6" bitindex="-1" size="0" isinput="True" inquickcomm="False" isusingautomaticaction="True" triggingvalue="1" anyvalues="False" ignoreisonline="False" />
+          <fieldinfo-settings modulename="DataToPLC" name="fid1_z" type="5" firstindex="10" bitindex="-1" size="0" isinput="True" inquickcomm="False" isusingautomaticaction="True" triggingvalue="1" anyvalues="False" ignoreisonline="False" />
+          <fieldinfo-settings modulename="DataToPLC" name="fid2_x" type="5" firstindex="14" bitindex="-1" size="0" isinput="True" inquickcomm="False" isusingautomaticaction="True" triggingvalue="1" anyvalues="False" ignoreisonline="False" />
+          <fieldinfo-settings modulename="DataToPLC" name="fid2_y" type="5" firstindex="18" bitindex="-1" size="0" isinput="True" inquickcomm="False" isusingautomaticaction="True" triggingvalue="1" anyvalues="False" ignoreisonline="False" />
+          <fieldinfo-settings modulename="DataToPLC" name="fid2_z" type="5" firstindex="22" bitindex="-1" size="0" isinput="True" inquickcomm="False" isusingautomaticaction="True" triggingvalue="1" anyvalues="False" ignoreisonline="False" />
         </profinet-settings-fieldinfoCollection>
       </communication-node>
       <communication-node name="EtherNetIP" id="b23328d5-d8a8-47c9-a417-b5fccc95b5c4">
@@ -784,29 +768,13 @@
           <fieldinfo-settings modulename="Camera8" name="PLCCamera8SoftEvent2" type="0" firstindex="30" bitindex="6" size="0" isinput="False" inquickcomm="True" isusingautomaticaction="False" triggingvalue="1" anyvalues="False" ignoreisonline="False" />
         </ethernetip-settings-fieldinfoCollection>
         <ethernetip-settings-fieldinfoCollection name="Producer" statusstep="(None)">
-          <fieldinfo-settings modulename="DataToPLC" name="num_found" type="5" firstindex="32" bitindex="-1" size="0" isinput="True" inquickcomm="False" isusingautomaticaction="True" triggingvalue="1" anyvalues="False" ignoreisonline="False" />
-          <fieldinfo-settings modulename="DataToPLC" name="fid1_corner1_x" type="5" firstindex="36" bitindex="-1" size="0" isinput="True" inquickcomm="False" isusingautomaticaction="True" triggingvalue="1" anyvalues="False" ignoreisonline="False" />
-          <fieldinfo-settings modulename="DataToPLC" name="fid1_corner1_y" type="5" firstindex="40" bitindex="-1" size="0" isinput="True" inquickcomm="False" isusingautomaticaction="True" triggingvalue="1" anyvalues="False" ignoreisonline="False" />
-          <fieldinfo-settings modulename="DataToPLC" name="fid1_corner2_x" type="5" firstindex="44" bitindex="-1" size="0" isinput="True" inquickcomm="False" isusingautomaticaction="True" triggingvalue="1" anyvalues="False" ignoreisonline="False" />
-          <fieldinfo-settings modulename="DataToPLC" name="fid1_corner2_y" type="5" firstindex="48" bitindex="-1" size="0" isinput="True" inquickcomm="False" isusingautomaticaction="True" triggingvalue="1" anyvalues="False" ignoreisonline="False" />
-          <fieldinfo-settings modulename="DataToPLC" name="fid1_corner3_x" type="5" firstindex="52" bitindex="-1" size="0" isinput="True" inquickcomm="False" isusingautomaticaction="True" triggingvalue="1" anyvalues="False" ignoreisonline="False" />
-          <fieldinfo-settings modulename="DataToPLC" name="fid1_corner3_y" type="5" firstindex="56" bitindex="-1" size="0" isinput="True" inquickcomm="False" isusingautomaticaction="True" triggingvalue="1" anyvalues="False" ignoreisonline="False" />
-          <fieldinfo-settings modulename="DataToPLC" name="fid1_corner4_x" type="5" firstindex="60" bitindex="-1" size="0" isinput="True" inquickcomm="False" isusingautomaticaction="True" triggingvalue="1" anyvalues="False" ignoreisonline="False" />
-          <fieldinfo-settings modulename="DataToPLC" name="fid1_corner4_y" type="5" firstindex="64" bitindex="-1" size="0" isinput="True" inquickcomm="False" isusingautomaticaction="True" triggingvalue="1" anyvalues="False" ignoreisonline="False" />
-          <fieldinfo-settings modulename="DataToPLC" name="fid2_corner1_x" type="5" firstindex="68" bitindex="-1" size="0" isinput="True" inquickcomm="False" isusingautomaticaction="True" triggingvalue="1" anyvalues="False" ignoreisonline="False" />
-          <fieldinfo-settings modulename="DataToPLC" name="fid2_corner1_y" type="5" firstindex="72" bitindex="-1" size="0" isinput="True" inquickcomm="False" isusingautomaticaction="True" triggingvalue="1" anyvalues="False" ignoreisonline="False" />
-          <fieldinfo-settings modulename="DataToPLC" name="fid2_corner2_x" type="5" firstindex="76" bitindex="-1" size="0" isinput="True" inquickcomm="False" isusingautomaticaction="True" triggingvalue="1" anyvalues="False" ignoreisonline="False" />
-          <fieldinfo-settings modulename="DataToPLC" name="fid2_corner2_y" type="5" firstindex="80" bitindex="-1" size="0" isinput="True" inquickcomm="False" isusingautomaticaction="True" triggingvalue="1" anyvalues="False" ignoreisonline="False" />
-          <fieldinfo-settings modulename="DataToPLC" name="fid2_corner3_x" type="5" firstindex="84" bitindex="-1" size="0" isinput="True" inquickcomm="False" isusingautomaticaction="True" triggingvalue="1" anyvalues="False" ignoreisonline="False" />
-          <fieldinfo-settings modulename="DataToPLC" name="fid2_corner3_y" type="5" firstindex="88" bitindex="-1" size="0" isinput="True" inquickcomm="False" isusingautomaticaction="True" triggingvalue="1" anyvalues="False" ignoreisonline="False" />
-          <fieldinfo-settings modulename="DataToPLC" name="fid2_corner4_x" type="5" firstindex="92" bitindex="-1" size="0" isinput="True" inquickcomm="False" isusingautomaticaction="True" triggingvalue="1" anyvalues="False" ignoreisonline="False" />
-          <fieldinfo-settings modulename="DataToPLC" name="fid2_corner4_y" type="5" firstindex="96" bitindex="-1" size="0" isinput="True" inquickcomm="False" isusingautomaticaction="True" triggingvalue="1" anyvalues="False" ignoreisonline="False" />
-          <fieldinfo-settings modulename="DataToPLC" name="fid1_x" type="5" firstindex="104" bitindex="-1" size="0" isinput="True" inquickcomm="False" isusingautomaticaction="True" triggingvalue="1" anyvalues="False" ignoreisonline="False" />
-          <fieldinfo-settings modulename="DataToPLC" name="fid1_y" type="5" firstindex="112" bitindex="-1" size="0" isinput="True" inquickcomm="False" isusingautomaticaction="True" triggingvalue="1" anyvalues="False" ignoreisonline="False" />
-          <fieldinfo-settings modulename="DataToPLC" name="fid1_z" type="5" firstindex="120" bitindex="-1" size="0" isinput="True" inquickcomm="False" isusingautomaticaction="True" triggingvalue="1" anyvalues="False" ignoreisonline="False" />
-          <fieldinfo-settings modulename="DataToPLC" name="fid2_x" type="5" firstindex="128" bitindex="-1" size="0" isinput="True" inquickcomm="False" isusingautomaticaction="True" triggingvalue="1" anyvalues="False" ignoreisonline="False" />
-          <fieldinfo-settings modulename="DataToPLC" name="fid2_y" type="5" firstindex="136" bitindex="-1" size="0" isinput="True" inquickcomm="False" isusingautomaticaction="True" triggingvalue="1" anyvalues="False" ignoreisonline="False" />
-          <fieldinfo-settings modulename="DataToPLC" name="fid2_z" type="5" firstindex="144" bitindex="-1" size="0" isinput="True" inquickcomm="False" isusingautomaticaction="True" triggingvalue="1" anyvalues="False" ignoreisonline="False" />
+          <fieldinfo-settings modulename="DataToPLC" name="num_found" type="2" firstindex="32" bitindex="-1" size="0" isinput="True" inquickcomm="False" isusingautomaticaction="True" triggingvalue="1" anyvalues="False" ignoreisonline="False" />
+          <fieldinfo-settings modulename="DataToPLC" name="fid1_x" type="4" firstindex="104" bitindex="-1" size="0" isinput="True" inquickcomm="False" isusingautomaticaction="True" triggingvalue="1" anyvalues="False" ignoreisonline="False" />
+          <fieldinfo-settings modulename="DataToPLC" name="fid1_y" type="4" firstindex="112" bitindex="-1" size="0" isinput="True" inquickcomm="False" isusingautomaticaction="True" triggingvalue="1" anyvalues="False" ignoreisonline="False" />
+          <fieldinfo-settings modulename="DataToPLC" name="fid1_z" type="4" firstindex="120" bitindex="-1" size="0" isinput="True" inquickcomm="False" isusingautomaticaction="True" triggingvalue="1" anyvalues="False" ignoreisonline="False" />
+          <fieldinfo-settings modulename="DataToPLC" name="fid2_x" type="4" firstindex="128" bitindex="-1" size="0" isinput="True" inquickcomm="False" isusingautomaticaction="True" triggingvalue="1" anyvalues="False" ignoreisonline="False" />
+          <fieldinfo-settings modulename="DataToPLC" name="fid2_y" type="4" firstindex="136" bitindex="-1" size="0" isinput="True" inquickcomm="False" isusingautomaticaction="True" triggingvalue="1" anyvalues="False" ignoreisonline="False" />
+          <fieldinfo-settings modulename="DataToPLC" name="fid2_z" type="4" firstindex="144" bitindex="-1" size="0" isinput="True" inquickcomm="False" isusingautomaticaction="True" triggingvalue="1" anyvalues="False" ignoreisonline="False" />
         </ethernetip-settings-fieldinfoCollection>
       </communication-node>
       <communication-node name="Modbus" id="fab7047a-dd62-4c77-8ff5-9df7bdf74b41">
@@ -837,29 +805,13 @@
           <value-string>True</value-string>
         </setting>
         <cclink-settings-fieldinfoCollection statusstep="(None)" table-registers="RWR">
-          <fieldinfo-settings modulename="DataToPLC" name="num_found" type="6" firstindex="17" bitindex="-1" size="0" isinput="True" inquickcomm="False" isusingautomaticaction="True" triggingvalue="1" anyvalues="False" ignoreisonline="False" />
-          <fieldinfo-settings modulename="DataToPLC" name="fid1_corner1_x" type="6" firstindex="19" bitindex="-1" size="0" isinput="True" inquickcomm="False" isusingautomaticaction="True" triggingvalue="1" anyvalues="False" ignoreisonline="False" />
-          <fieldinfo-settings modulename="DataToPLC" name="fid1_corner1_y" type="6" firstindex="21" bitindex="-1" size="0" isinput="True" inquickcomm="False" isusingautomaticaction="True" triggingvalue="1" anyvalues="False" ignoreisonline="False" />
-          <fieldinfo-settings modulename="DataToPLC" name="fid1_corner2_x" type="6" firstindex="23" bitindex="-1" size="0" isinput="True" inquickcomm="False" isusingautomaticaction="True" triggingvalue="1" anyvalues="False" ignoreisonline="False" />
-          <fieldinfo-settings modulename="DataToPLC" name="fid1_corner2_y" type="6" firstindex="25" bitindex="-1" size="0" isinput="True" inquickcomm="False" isusingautomaticaction="True" triggingvalue="1" anyvalues="False" ignoreisonline="False" />
-          <fieldinfo-settings modulename="DataToPLC" name="fid1_corner3_x" type="6" firstindex="27" bitindex="-1" size="0" isinput="True" inquickcomm="False" isusingautomaticaction="True" triggingvalue="1" anyvalues="False" ignoreisonline="False" />
-          <fieldinfo-settings modulename="DataToPLC" name="fid1_corner3_y" type="6" firstindex="29" bitindex="-1" size="0" isinput="True" inquickcomm="False" isusingautomaticaction="True" triggingvalue="1" anyvalues="False" ignoreisonline="False" />
-          <fieldinfo-settings modulename="DataToPLC" name="fid1_corner4_x" type="6" firstindex="31" bitindex="-1" size="0" isinput="True" inquickcomm="False" isusingautomaticaction="True" triggingvalue="1" anyvalues="False" ignoreisonline="False" />
-          <fieldinfo-settings modulename="DataToPLC" name="fid1_corner4_y" type="6" firstindex="33" bitindex="-1" size="0" isinput="True" inquickcomm="False" isusingautomaticaction="True" triggingvalue="1" anyvalues="False" ignoreisonline="False" />
-          <fieldinfo-settings modulename="DataToPLC" name="fid2_corner1_x" type="6" firstindex="35" bitindex="-1" size="0" isinput="True" inquickcomm="False" isusingautomaticaction="True" triggingvalue="1" anyvalues="False" ignoreisonline="False" />
-          <fieldinfo-settings modulename="DataToPLC" name="fid2_corner1_y" type="6" firstindex="37" bitindex="-1" size="0" isinput="True" inquickcomm="False" isusingautomaticaction="True" triggingvalue="1" anyvalues="False" ignoreisonline="False" />
-          <fieldinfo-settings modulename="DataToPLC" name="fid2_corner2_x" type="6" firstindex="39" bitindex="-1" size="0" isinput="True" inquickcomm="False" isusingautomaticaction="True" triggingvalue="1" anyvalues="False" ignoreisonline="False" />
-          <fieldinfo-settings modulename="DataToPLC" name="fid2_corner2_y" type="6" firstindex="41" bitindex="-1" size="0" isinput="True" inquickcomm="False" isusingautomaticaction="True" triggingvalue="1" anyvalues="False" ignoreisonline="False" />
-          <fieldinfo-settings modulename="DataToPLC" name="fid2_corner3_x" type="6" firstindex="43" bitindex="-1" size="0" isinput="True" inquickcomm="False" isusingautomaticaction="True" triggingvalue="1" anyvalues="False" ignoreisonline="False" />
-          <fieldinfo-settings modulename="DataToPLC" name="fid2_corner3_y" type="6" firstindex="45" bitindex="-1" size="0" isinput="True" inquickcomm="False" isusingautomaticaction="True" triggingvalue="1" anyvalues="False" ignoreisonline="False" />
-          <fieldinfo-settings modulename="DataToPLC" name="fid2_corner4_x" type="6" firstindex="47" bitindex="-1" size="0" isinput="True" inquickcomm="False" isusingautomaticaction="True" triggingvalue="1" anyvalues="False" ignoreisonline="False" />
-          <fieldinfo-settings modulename="DataToPLC" name="fid2_corner4_y" type="6" firstindex="49" bitindex="-1" size="0" isinput="True" inquickcomm="False" isusingautomaticaction="True" triggingvalue="1" anyvalues="False" ignoreisonline="False" />
-          <fieldinfo-settings modulename="DataToPLC" name="fid1_x" type="6" firstindex="53" bitindex="-1" size="0" isinput="True" inquickcomm="False" isusingautomaticaction="True" triggingvalue="1" anyvalues="False" ignoreisonline="False" />
-          <fieldinfo-settings modulename="DataToPLC" name="fid1_y" type="6" firstindex="57" bitindex="-1" size="0" isinput="True" inquickcomm="False" isusingautomaticaction="True" triggingvalue="1" anyvalues="False" ignoreisonline="False" />
-          <fieldinfo-settings modulename="DataToPLC" name="fid1_z" type="6" firstindex="61" bitindex="-1" size="0" isinput="True" inquickcomm="False" isusingautomaticaction="True" triggingvalue="1" anyvalues="False" ignoreisonline="False" />
-          <fieldinfo-settings modulename="DataToPLC" name="fid2_x" type="6" firstindex="65" bitindex="-1" size="0" isinput="True" inquickcomm="False" isusingautomaticaction="True" triggingvalue="1" anyvalues="False" ignoreisonline="False" />
-          <fieldinfo-settings modulename="DataToPLC" name="fid2_y" type="6" firstindex="69" bitindex="-1" size="0" isinput="True" inquickcomm="False" isusingautomaticaction="True" triggingvalue="1" anyvalues="False" ignoreisonline="False" />
-          <fieldinfo-settings modulename="DataToPLC" name="fid2_z" type="6" firstindex="73" bitindex="-1" size="0" isinput="True" inquickcomm="False" isusingautomaticaction="True" triggingvalue="1" anyvalues="False" ignoreisonline="False" />
+          <fieldinfo-settings modulename="DataToPLC" name="num_found" type="1" firstindex="17" bitindex="-1" size="0" isinput="True" inquickcomm="False" isusingautomaticaction="True" triggingvalue="1" anyvalues="False" ignoreisonline="False" />
+          <fieldinfo-settings modulename="DataToPLC" name="fid1_x" type="5" firstindex="53" bitindex="-1" size="0" isinput="True" inquickcomm="False" isusingautomaticaction="True" triggingvalue="1" anyvalues="False" ignoreisonline="False" />
+          <fieldinfo-settings modulename="DataToPLC" name="fid1_y" type="5" firstindex="57" bitindex="-1" size="0" isinput="True" inquickcomm="False" isusingautomaticaction="True" triggingvalue="1" anyvalues="False" ignoreisonline="False" />
+          <fieldinfo-settings modulename="DataToPLC" name="fid1_z" type="5" firstindex="61" bitindex="-1" size="0" isinput="True" inquickcomm="False" isusingautomaticaction="True" triggingvalue="1" anyvalues="False" ignoreisonline="False" />
+          <fieldinfo-settings modulename="DataToPLC" name="fid2_x" type="5" firstindex="65" bitindex="-1" size="0" isinput="True" inquickcomm="False" isusingautomaticaction="True" triggingvalue="1" anyvalues="False" ignoreisonline="False" />
+          <fieldinfo-settings modulename="DataToPLC" name="fid2_y" type="5" firstindex="69" bitindex="-1" size="0" isinput="True" inquickcomm="False" isusingautomaticaction="True" triggingvalue="1" anyvalues="False" ignoreisonline="False" />
+          <fieldinfo-settings modulename="DataToPLC" name="fid2_z" type="5" firstindex="73" bitindex="-1" size="0" isinput="True" inquickcomm="False" isusingautomaticaction="True" triggingvalue="1" anyvalues="False" ignoreisonline="False" />
         </cclink-settings-fieldinfoCollection>
         <cclink-settings-fieldinfoCollection statusstep="(None)" table-registers="RWW">
           <fieldinfo-settings modulename="Control" name="PLCSoftEvent1" type="0" firstindex="0" bitindex="5" size="0" isinput="False" inquickcomm="True" isusingautomaticaction="False" triggingvalue="1" anyvalues="False" ignoreisonline="False" />
@@ -928,2314 +880,6 @@
     </opcua-project-collection>
   </opcua-container>
   <project-settings id="c0884c42-a6a7-4dd0-a451-c81d084f197a" name="ProjectSettings">
-    <setting name="PerformanceSettings" type="Matrox.DesignAssistant.Core.Projects.PerformanceSettings, Matrox.DesignAssistant.Core, Version=10.0.454.0, Culture=neutral, PublicKeyToken=726f03a4652993c7" id="5e58165a-d9d6-4901-8c69-afe02296b75a" Version="10.0.454.0">
-      <inputs>
-        <input name="GarbageCollectMode">
-          <expression>
-            <expression-string>EachInspection</expression-string>
-          </expression>
-        </input>
-        <input name="OverheadObjects">
-          <expression>
-            <expression-string>0</expression-string>
-          </expression>
-        </input>
-        <input name="UseLowLatency">
-          <expression>
-            <expression-string>True</expression-string>
-          </expression>
-        </input>
-        <subObject name="GarbageCollectSettings" type="Matrox.DesignAssistant.Core.Projects.GarbageCollectSettings, Matrox.DesignAssistant.Core, Version=10.0.454.0, Culture=neutral, PublicKeyToken=726f03a4652993c7" id="bc8fc7d7-864e-4132-aa16-b7a6c626a4a6" Version="10.0.454.0">
-          <expression>
-            <expression-string></expression-string>
-          </expression>
-          <inputs>
-            <input name="FullCollection">
-              <expression>
-                <expression-string>False</expression-string>
-              </expression>
-            </input>
-            <input name="Generation">
-              <expression>
-                <expression-string>0</expression-string>
-              </expression>
-            </input>
-            <input name="Mode">
-              <expression>
-                <expression-string>Optimized</expression-string>
-              </expression>
-            </input>
-          </inputs>
-          <userXML />
-        </subObject>
-        <input name="EnableFullGCNotification">
-          <expression>
-            <expression-string>False</expression-string>
-          </expression>
-        </input>
-        <input name="GarbageCollectionWatcher">
-          <expression>
-            <expression-string>Disable</expression-string>
-          </expression>
-        </input>
-        <input name="MaxCollectionTime">
-          <expression available="False">
-            <expression-string>0.006</expression-string>
-          </expression>
-        </input>
-        <input name="JITWatcher">
-          <expression>
-            <expression-string>Disable</expression-string>
-          </expression>
-        </input>
-        <input name="InspectionTimeLogs">
-          <expression>
-            <expression-string>Disable</expression-string>
-          </expression>
-        </input>
-        <input name="MaxInspectionTime">
-          <expression available="False">
-            <expression-string>0</expression-string>
-          </expression>
-        </input>
-        <input name="StopOnMaxInspection">
-          <expression available="False">
-            <expression-string>False</expression-string>
-          </expression>
-        </input>
-        <input name="MaxRunTime">
-          <expression available="False">
-            <expression-string>0</expression-string>
-          </expression>
-        </input>
-        <subObject name="LogSettings" type="Matrox.DesignAssistant.Core.Projects.LogSettings, Matrox.DesignAssistant.Core, Version=10.0.454.0, Culture=neutral, PublicKeyToken=726f03a4652993c7" id="8c3d1864-9523-4ff6-a3b4-b5a04429f3c4" Version="10.0.454.0">
-          <expression available="False">
-            <expression-string></expression-string>
-          </expression>
-          <inputs>
-            <input name="LogFilePath">
-              <expression available="False">
-                <expression-string></expression-string>
-              </expression>
-            </input>
-            <input name="Mode">
-              <expression available="False">
-                <expression-string>MaxOnly</expression-string>
-              </expression>
-            </input>
-            <input name="WriteFrequency">
-              <expression available="False">
-                <expression-string>1000</expression-string>
-              </expression>
-            </input>
-          </inputs>
-          <userXML />
-        </subObject>
-        <input name="InspectionIntervalHeapLog">
-          <expression available="False">
-            <expression-string>0</expression-string>
-          </expression>
-        </input>
-        <input name="InspectionIntervalProcLog">
-          <expression available="False">
-            <expression-string>0</expression-string>
-          </expression>
-        </input>
-        <input name="CollectPeriod">
-          <expression>
-            <expression-string>1</expression-string>
-          </expression>
-        </input>
-      </inputs>
-      <userXML />
-    </setting>
-    <setting name="OperatorViewToolbarSettings" type="Matrox.DesignAssistant.Core.Projects.OperatorViewToolbarSettings, Matrox.DesignAssistant.Core, Version=10.0.454.0, Culture=neutral, PublicKeyToken=726f03a4652993c7" id="e866be53-b8b5-4420-a93a-2c74668c5b2a" Version="10.0.454.0">
-      <inputs>
-        <input name="AutoHide">
-          <expression>
-            <expression-string>False</expression-string>
-          </expression>
-        </input>
-        <input name="AutoStartRunTool">
-          <expression>
-            <expression-string>False</expression-string>
-          </expression>
-        </input>
-        <input name="AutoStartRunToolMode">
-          <expression>
-            <expression-string>ImageSet</expression-string>
-          </expression>
-        </input>
-        <input name="RecordingTabEnabled">
-          <expression>
-            <expression-string>True</expression-string>
-          </expression>
-        </input>
-        <input name="RunTabEnabled">
-          <expression>
-            <expression-string>True</expression-string>
-          </expression>
-        </input>
-        <input name="RuntimeMessageNotification">
-          <expression>
-            <expression-string>OnError</expression-string>
-          </expression>
-        </input>
-        <input name="RuntimeWaitBannerTime">
-          <expression>
-            <expression-string>1</expression-string>
-          </expression>
-        </input>
-        <input name="ShowRuntimeWaitBanner">
-          <expression>
-            <expression-string>True</expression-string>
-          </expression>
-        </input>
-        <input name="StartMinimized">
-          <expression>
-            <expression-string>False</expression-string>
-          </expression>
-        </input>
-      </inputs>
-      <userXML />
-    </setting>
-    <setting name="RuntimeMonitoringSettings" type="Matrox.DesignAssistant.Core.Projects.RuntimeMonitoringSettings, Matrox.DesignAssistant.Core, Version=10.0.454.0, Culture=neutral, PublicKeyToken=726f03a4652993c7" id="11c2dcff-8180-4c65-b16d-4f7306631d18" Version="10.0.454.0">
-      <inputs>
-        <input name="EnableRuntimeMonitoring">
-          <expression>
-            <expression-string>True</expression-string>
-          </expression>
-        </input>
-        <input name="EnableRuntimeStatistics">
-          <expression>
-            <expression-string>True</expression-string>
-          </expression>
-        </input>
-      </inputs>
-      <userXML />
-    </setting>
-    <setting name="LabelSettings" type="Matrox.DesignAssistant.Core.Projects.LabelSettings, Matrox.DesignAssistant.Core, Version=10.0.454.0, Culture=neutral, PublicKeyToken=726f03a4652993c7" id="e00ca659-5a2d-4fc6-8a47-6c2b55cd6273" Version="10.0.454.0">
-      <inputs>
-        <objectCollection name="UserLabels" type="Matrox.DesignAssistant.Core.Projects.LabelCollection, Matrox.DesignAssistant.Core, Version=10.0.454.0, Culture=neutral, PublicKeyToken=726f03a4652993c7" id="2bdb6162-4db9-4cb3-b2c6-f1a495566d10" Version="10.0.454.0">
-          <expression>
-            <expression-string></expression-string>
-          </expression>
-          <collectionItems>
-            <subObject name="T" type="Matrox.DesignAssistant.Core.Projects.BaseLabel, Matrox.DesignAssistant.Core, Version=10.0.454.0, Culture=neutral, PublicKeyToken=726f03a4652993c7" id="26cdd476-4986-487a-bb54-6ab9504a75b3" Version="10.0.454.0">
-              <inputs>
-                <input name="Background">
-                  <expression>
-                    <expression-string>-5658199</expression-string>
-                  </expression>
-                </input>
-                <input name="Condition">
-                  <expression>
-                    <expression-string>None</expression-string>
-                  </expression>
-                </input>
-                <input name="DesignTimeVisible">
-                  <expression>
-                    <expression-string>False</expression-string>
-                  </expression>
-                </input>
-                <input name="Foreground">
-                  <expression>
-                    <expression-string>-1</expression-string>
-                  </expression>
-                </input>
-                <input name="RuntimeVisible">
-                  <expression>
-                    <expression-string>True</expression-string>
-                  </expression>
-                </input>
-                <input name="Type">
-                  <expression available="False">
-                    <expression-string>Timestamp</expression-string>
-                  </expression>
-                </input>
-                <input name="Value">
-                  <expression>
-                    <expression-string need-link-container="True">DATETIME(Camera.Time, "H:mm:ss.ff")</expression-string>
-                  </expression>
-                </input>
-              </inputs>
-              <userXML>
-                <AutomaticName />
-              </userXML>
-            </subObject>
-          </collectionItems>
-          <userXML />
-        </objectCollection>
-      </inputs>
-      <userXML>
-        <AutomaticLabelProviders>
-          <AutomaticLabelProvider>
-            <StepID>e7653257-eb20-42ff-856f-4e6487fbb649</StepID>
-            <StepName>CodeReaderCopy</StepName>
-            <FlowchartID>492c8fb0-3d2b-4200-ac60-c1ec7a2a8aba</FlowchartID>
-            <FlowchartName>MainFlowchart</FlowchartName>
-          </AutomaticLabelProvider>
-          <AutomaticLabelProvider>
-            <StepID>14c1d7bd-8de3-49f4-98c6-96f4f934cae0</StepID>
-            <StepName>DataMatrixAVLCopy</StepName>
-            <FlowchartID>492c8fb0-3d2b-4200-ac60-c1ec7a2a8aba</FlowchartID>
-            <FlowchartName>MainFlowchart</FlowchartName>
-          </AutomaticLabelProvider>
-          <AutomaticLabelProvider>
-            <StepID>8ec723c1-4aed-4650-b75b-4021bb3ca184</StepID>
-            <StepName>Calibration</StepName>
-            <FlowchartID>492c8fb0-3d2b-4200-ac60-c1ec7a2a8aba</FlowchartID>
-            <FlowchartName>MainFlowchart</FlowchartName>
-          </AutomaticLabelProvider>
-        </AutomaticLabelProviders>
-      </userXML>
-    </setting>
-    <setting name="InspectionSettings" type="Matrox.DesignAssistant.Core.Events.InspectionEventsSettings, Matrox.DesignAssistant.Core, Version=10.0.454.0, Culture=neutral, PublicKeyToken=726f03a4652993c7" id="8e45c1cb-b340-4a52-96df-c409d2c11a72" Version="10.0.454.0">
-      <inputs>
-        <input name="EndEvent">
-          <expression>
-            <expression-string>Flowcharts("MainFlowchart").Loop.EndEvent</expression-string>
-          </expression>
-        </input>
-        <input name="StartEvent">
-          <expression>
-            <expression-string>Flowcharts("MainFlowchart").Camera.EndEvent</expression-string>
-          </expression>
-        </input>
-      </inputs>
-      <userXML />
-    </setting>
-    <setting name="ActionsContainer" type="Matrox.DesignAssistant.Core.Events.ActionsContainer, Matrox.DesignAssistant.Core, Version=10.0.454.0, Culture=neutral, PublicKeyToken=726f03a4652993c7" id="41b0b8e9-1c64-486d-9fce-a7bb3f3f39d8" Version="10.0.454.0">
-      <inputs>
-        <objectCollection name="Actions" type="Matrox.DesignAssistant.Core.Events.ActionCollection, Matrox.DesignAssistant.Core, Version=10.0.454.0, Culture=neutral, PublicKeyToken=726f03a4652993c7" id="046c3cac-79c0-4692-a1a7-5769d0852846" Version="10.0.454.0">
-          <expression>
-            <expression-string></expression-string>
-          </expression>
-          <collectionItems>
-            <subObject name="PublishGroupAction" type="Matrox.DesignAssistant.Core.Events.PublishGroupAction, Matrox.DesignAssistant.Core, Version=10.0.454.0, Culture=neutral, PublicKeyToken=726f03a4652993c7" id="7053a26f-47c6-47d5-865d-ba7d12f89847" Version="10.0.454.0">
-              <inputs>
-                <input name="CanRun">
-                  <expression>
-                    <expression-string>None</expression-string>
-                  </expression>
-                </input>
-                <input name="Enabled">
-                  <expression>
-                    <expression-string>True</expression-string>
-                  </expression>
-                </input>
-                <input name="TriggerEvent">
-                  <expression>
-                    <expression-string>Inspection.EndEvent</expression-string>
-                  </expression>
-                </input>
-                <input name="WaitInspectionEnd">
-                  <expression>
-                    <expression-string>False</expression-string>
-                  </expression>
-                </input>
-              </inputs>
-              <userXML OWNNm="OperatorView" OWNType="OperatorView" Group="PublishingGroup" OperatorView="OperatorView" />
-            </subObject>
-            <subObject name="ResetFlowchartAction" type="Matrox.DesignAssistant.Core.Events.ResetFlowchartAction, Matrox.DesignAssistant.Core, Version=10.0.454.0, Culture=neutral, PublicKeyToken=726f03a4652993c7" id="c1ccdf79-85db-47bd-bf18-9e360bdb683b" Version="10.0.454.0">
-              <inputs>
-                <input name="CanRun">
-                  <expression>
-                    <expression-string>None</expression-string>
-                  </expression>
-                </input>
-                <input name="Enabled">
-                  <expression>
-                    <expression-string>True</expression-string>
-                  </expression>
-                </input>
-                <input name="TriggerEvent">
-                  <expression>
-                    <expression-string>Platform.IndustrialProtocols.Fields("PLCReset").FieldChangedEvent</expression-string>
-                  </expression>
-                </input>
-                <input name="WaitInspectionEnd">
-                  <expression>
-                    <expression-string>False</expression-string>
-                  </expression>
-                </input>
-              </inputs>
-              <userXML OWNType="IPComm" />
-            </subObject>
-          </collectionItems>
-          <userXML />
-        </objectCollection>
-        <objectCollection name="IPCommActions" type="Matrox.DesignAssistant.Core.Events.IPCommActionCollection, Matrox.DesignAssistant.Core, Version=10.0.454.0, Culture=neutral, PublicKeyToken=726f03a4652993c7" id="55ad1d89-8b3c-4ee8-9ae0-964bb6a06fe1" Version="10.0.454.0">
-          <expression>
-            <expression-string></expression-string>
-          </expression>
-          <collectionItems>
-            <subObject name="Clear2" type="Matrox.DesignAssistant.Core.Events.ClearIPCommFieldAction, Matrox.DesignAssistant.Core, Version=10.0.454.0, Culture=neutral, PublicKeyToken=726f03a4652993c7" id="d96aecdc-0c0f-4eed-b466-7d6b9fb969a2" Version="10.0.454.0">
-              <inputs>
-                <input name="CanRun">
-                  <expression>
-                    <expression-string>True</expression-string>
-                  </expression>
-                </input>
-                <input name="Enabled">
-                  <expression>
-                    <expression-string>True</expression-string>
-                  </expression>
-                </input>
-                <input name="FieldName">
-                  <expression>
-                    <expression-string>num_found</expression-string>
-                  </expression>
-                </input>
-                <input name="ModuleName">
-                  <expression>
-                    <expression-string>DataToPLC</expression-string>
-                  </expression>
-                </input>
-                <input name="TriggerEvent">
-                  <expression>
-                    <expression-string>Inspection.EndEvent</expression-string>
-                  </expression>
-                </input>
-                <input name="Value">
-                  <expression expression-type="System.Double, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
-                    <expression-string>0</expression-string>
-                  </expression>
-                </input>
-                <input name="WaitInspectionEnd">
-                  <expression>
-                    <expression-string>False</expression-string>
-                  </expression>
-                </input>
-              </inputs>
-              <userXML OWNType="IPComm" ActionType="Clear" IsAutomatic="True" InQuickComm="False" Guid="98a29b71-5e0f-4564-915a-63af8d3e7e59" />
-            </subObject>
-            <subObject name="Set" type="Matrox.DesignAssistant.Core.Events.SetIPCommFieldAction, Matrox.DesignAssistant.Core, Version=10.0.454.0, Culture=neutral, PublicKeyToken=726f03a4652993c7" id="d3df6631-aa1e-404d-a7b5-f22bcb32d4bf" Version="10.0.454.0">
-              <inputs>
-                <input name="CanRun">
-                  <expression>
-                    <expression-string>True</expression-string>
-                  </expression>
-                </input>
-                <input name="Enabled">
-                  <expression>
-                    <expression-string>True</expression-string>
-                  </expression>
-                </input>
-                <input name="FieldName">
-                  <expression>
-                    <expression-string>ProjectReady</expression-string>
-                  </expression>
-                </input>
-                <input name="ModuleName">
-                  <expression>
-                    <expression-string>Status</expression-string>
-                  </expression>
-                </input>
-                <input name="TriggerEvent">
-                  <expression>
-                    <expression-string>Flowcharts("MainFlowchart").StartEvent</expression-string>
-                  </expression>
-                </input>
-                <input name="Value">
-                  <expression expression-type="System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
-                    <expression-string>True</expression-string>
-                  </expression>
-                </input>
-                <input name="WaitInspectionEnd">
-                  <expression>
-                    <expression-string>False</expression-string>
-                  </expression>
-                </input>
-              </inputs>
-              <userXML OWNType="IPComm" ActionType="Set" IsAutomatic="True" InQuickComm="True" Guid="6e7a80f0-5d79-481e-8808-18fea97fb85d" />
-            </subObject>
-            <subObject name="Clear24" type="Matrox.DesignAssistant.Core.Events.ClearIPCommFieldAction, Matrox.DesignAssistant.Core, Version=10.0.454.0, Culture=neutral, PublicKeyToken=726f03a4652993c7" id="d54d32fa-0343-46c0-a5dd-660949eafd0d" Version="10.0.454.0">
-              <inputs>
-                <input name="CanRun">
-                  <expression>
-                    <expression-string>True</expression-string>
-                  </expression>
-                </input>
-                <input name="Enabled">
-                  <expression>
-                    <expression-string>True</expression-string>
-                  </expression>
-                </input>
-                <input name="FieldName">
-                  <expression>
-                    <expression-string>fid2_z</expression-string>
-                  </expression>
-                </input>
-                <input name="ModuleName">
-                  <expression>
-                    <expression-string>DataToPLC</expression-string>
-                  </expression>
-                </input>
-                <input name="TriggerEvent">
-                  <expression>
-                    <expression-string>Inspection.EndEvent</expression-string>
-                  </expression>
-                </input>
-                <input name="Value">
-                  <expression expression-type="System.Double, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
-                    <expression-string>0</expression-string>
-                  </expression>
-                </input>
-                <input name="WaitInspectionEnd">
-                  <expression>
-                    <expression-string>False</expression-string>
-                  </expression>
-                </input>
-              </inputs>
-              <userXML OWNType="IPComm" ActionType="Clear" IsAutomatic="True" InQuickComm="False" Guid="a4f8586c-6c86-4f76-9018-b73581abf63e" />
-            </subObject>
-            <subObject name="Set25" type="Matrox.DesignAssistant.Core.Events.SetIPCommFieldAction, Matrox.DesignAssistant.Core, Version=10.0.454.0, Culture=neutral, PublicKeyToken=726f03a4652993c7" id="a55155db-f52a-4ae2-ac83-b346a636d165" Version="10.0.454.0">
-              <inputs>
-                <input name="CanRun">
-                  <expression>
-                    <expression-string>True</expression-string>
-                  </expression>
-                </input>
-                <input name="Enabled">
-                  <expression>
-                    <expression-string>True</expression-string>
-                  </expression>
-                </input>
-                <input name="FieldName">
-                  <expression>
-                    <expression-string>fid2_z</expression-string>
-                  </expression>
-                </input>
-                <input name="ModuleName">
-                  <expression>
-                    <expression-string>DataToPLC</expression-string>
-                  </expression>
-                </input>
-                <input name="TriggerEvent">
-                  <expression>
-                    <expression-string>Inspection.EndEvent</expression-string>
-                  </expression>
-                </input>
-                <input name="Value">
-                  <expression expression-type="System.Double, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
-                    <expression-string need-link-container="True">STagFinderStep.fid2_z</expression-string>
-                  </expression>
-                </input>
-                <input name="WaitInspectionEnd">
-                  <expression>
-                    <expression-string>False</expression-string>
-                  </expression>
-                </input>
-              </inputs>
-              <userXML OWNType="IPComm" ActionType="Set" IsAutomatic="True" InQuickComm="False" Guid="19b4db18-cb88-4199-aa18-18b6f4a73252" />
-            </subObject>
-            <subObject name="Clear23" type="Matrox.DesignAssistant.Core.Events.ClearIPCommFieldAction, Matrox.DesignAssistant.Core, Version=10.0.454.0, Culture=neutral, PublicKeyToken=726f03a4652993c7" id="115aab9e-9e6e-4bb0-b142-4ecfd83c73b3" Version="10.0.454.0">
-              <inputs>
-                <input name="CanRun">
-                  <expression>
-                    <expression-string>True</expression-string>
-                  </expression>
-                </input>
-                <input name="Enabled">
-                  <expression>
-                    <expression-string>True</expression-string>
-                  </expression>
-                </input>
-                <input name="FieldName">
-                  <expression>
-                    <expression-string>fid2_y</expression-string>
-                  </expression>
-                </input>
-                <input name="ModuleName">
-                  <expression>
-                    <expression-string>DataToPLC</expression-string>
-                  </expression>
-                </input>
-                <input name="TriggerEvent">
-                  <expression>
-                    <expression-string>Inspection.EndEvent</expression-string>
-                  </expression>
-                </input>
-                <input name="Value">
-                  <expression expression-type="System.Double, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
-                    <expression-string>0</expression-string>
-                  </expression>
-                </input>
-                <input name="WaitInspectionEnd">
-                  <expression>
-                    <expression-string>False</expression-string>
-                  </expression>
-                </input>
-              </inputs>
-              <userXML OWNType="IPComm" ActionType="Clear" IsAutomatic="True" InQuickComm="False" Guid="d82eab91-a7d1-4d5a-a6d7-d27ff8a373e3" />
-            </subObject>
-            <subObject name="Set24" type="Matrox.DesignAssistant.Core.Events.SetIPCommFieldAction, Matrox.DesignAssistant.Core, Version=10.0.454.0, Culture=neutral, PublicKeyToken=726f03a4652993c7" id="eebe71a8-c8fa-4ace-8559-7bb13860bb5e" Version="10.0.454.0">
-              <inputs>
-                <input name="CanRun">
-                  <expression>
-                    <expression-string>True</expression-string>
-                  </expression>
-                </input>
-                <input name="Enabled">
-                  <expression>
-                    <expression-string>True</expression-string>
-                  </expression>
-                </input>
-                <input name="FieldName">
-                  <expression>
-                    <expression-string>fid2_y</expression-string>
-                  </expression>
-                </input>
-                <input name="ModuleName">
-                  <expression>
-                    <expression-string>DataToPLC</expression-string>
-                  </expression>
-                </input>
-                <input name="TriggerEvent">
-                  <expression>
-                    <expression-string>Inspection.EndEvent</expression-string>
-                  </expression>
-                </input>
-                <input name="Value">
-                  <expression expression-type="System.Double, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
-                    <expression-string need-link-container="True">STagFinderStep.fid2_y</expression-string>
-                  </expression>
-                </input>
-                <input name="WaitInspectionEnd">
-                  <expression>
-                    <expression-string>False</expression-string>
-                  </expression>
-                </input>
-              </inputs>
-              <userXML OWNType="IPComm" ActionType="Set" IsAutomatic="True" InQuickComm="False" Guid="3a9bed0b-156e-41a0-a485-6b300f1ac544" />
-            </subObject>
-            <subObject name="Clear22" type="Matrox.DesignAssistant.Core.Events.ClearIPCommFieldAction, Matrox.DesignAssistant.Core, Version=10.0.454.0, Culture=neutral, PublicKeyToken=726f03a4652993c7" id="2bb6978c-b9d8-4b4a-8881-f0e008f1c202" Version="10.0.454.0">
-              <inputs>
-                <input name="CanRun">
-                  <expression>
-                    <expression-string>True</expression-string>
-                  </expression>
-                </input>
-                <input name="Enabled">
-                  <expression>
-                    <expression-string>True</expression-string>
-                  </expression>
-                </input>
-                <input name="FieldName">
-                  <expression>
-                    <expression-string>fid2_x</expression-string>
-                  </expression>
-                </input>
-                <input name="ModuleName">
-                  <expression>
-                    <expression-string>DataToPLC</expression-string>
-                  </expression>
-                </input>
-                <input name="TriggerEvent">
-                  <expression>
-                    <expression-string>Inspection.EndEvent</expression-string>
-                  </expression>
-                </input>
-                <input name="Value">
-                  <expression expression-type="System.Double, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
-                    <expression-string>0</expression-string>
-                  </expression>
-                </input>
-                <input name="WaitInspectionEnd">
-                  <expression>
-                    <expression-string>False</expression-string>
-                  </expression>
-                </input>
-              </inputs>
-              <userXML OWNType="IPComm" ActionType="Clear" IsAutomatic="True" InQuickComm="False" Guid="98a38bb6-cfd1-461e-a710-69bec762b5b1" />
-            </subObject>
-            <subObject name="Set23" type="Matrox.DesignAssistant.Core.Events.SetIPCommFieldAction, Matrox.DesignAssistant.Core, Version=10.0.454.0, Culture=neutral, PublicKeyToken=726f03a4652993c7" id="235c7628-61e2-4e0e-8a5b-e98ba6005ad5" Version="10.0.454.0">
-              <inputs>
-                <input name="CanRun">
-                  <expression>
-                    <expression-string>True</expression-string>
-                  </expression>
-                </input>
-                <input name="Enabled">
-                  <expression>
-                    <expression-string>True</expression-string>
-                  </expression>
-                </input>
-                <input name="FieldName">
-                  <expression>
-                    <expression-string>fid2_x</expression-string>
-                  </expression>
-                </input>
-                <input name="ModuleName">
-                  <expression>
-                    <expression-string>DataToPLC</expression-string>
-                  </expression>
-                </input>
-                <input name="TriggerEvent">
-                  <expression>
-                    <expression-string>Inspection.EndEvent</expression-string>
-                  </expression>
-                </input>
-                <input name="Value">
-                  <expression expression-type="System.Double, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
-                    <expression-string need-link-container="True">STagFinderStep.fid2_x</expression-string>
-                  </expression>
-                </input>
-                <input name="WaitInspectionEnd">
-                  <expression>
-                    <expression-string>False</expression-string>
-                  </expression>
-                </input>
-              </inputs>
-              <userXML OWNType="IPComm" ActionType="Set" IsAutomatic="True" InQuickComm="False" Guid="b3df806b-f8e5-4ff6-8ee7-f9d8997ce84d" />
-            </subObject>
-            <subObject name="Clear21" type="Matrox.DesignAssistant.Core.Events.ClearIPCommFieldAction, Matrox.DesignAssistant.Core, Version=10.0.454.0, Culture=neutral, PublicKeyToken=726f03a4652993c7" id="26272ff2-fb42-46bd-82fc-8d96730134ad" Version="10.0.454.0">
-              <inputs>
-                <input name="CanRun">
-                  <expression>
-                    <expression-string>True</expression-string>
-                  </expression>
-                </input>
-                <input name="Enabled">
-                  <expression>
-                    <expression-string>True</expression-string>
-                  </expression>
-                </input>
-                <input name="FieldName">
-                  <expression>
-                    <expression-string>fid1_z</expression-string>
-                  </expression>
-                </input>
-                <input name="ModuleName">
-                  <expression>
-                    <expression-string>DataToPLC</expression-string>
-                  </expression>
-                </input>
-                <input name="TriggerEvent">
-                  <expression>
-                    <expression-string>Inspection.EndEvent</expression-string>
-                  </expression>
-                </input>
-                <input name="Value">
-                  <expression expression-type="System.Double, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
-                    <expression-string>0</expression-string>
-                  </expression>
-                </input>
-                <input name="WaitInspectionEnd">
-                  <expression>
-                    <expression-string>False</expression-string>
-                  </expression>
-                </input>
-              </inputs>
-              <userXML OWNType="IPComm" ActionType="Clear" IsAutomatic="True" InQuickComm="False" Guid="49c6cfe1-ff86-4bdf-81f5-1fa1ddac48f4" />
-            </subObject>
-            <subObject name="Set22" type="Matrox.DesignAssistant.Core.Events.SetIPCommFieldAction, Matrox.DesignAssistant.Core, Version=10.0.454.0, Culture=neutral, PublicKeyToken=726f03a4652993c7" id="6c1ebb02-ee16-493b-b61a-e558da746fae" Version="10.0.454.0">
-              <inputs>
-                <input name="CanRun">
-                  <expression>
-                    <expression-string>True</expression-string>
-                  </expression>
-                </input>
-                <input name="Enabled">
-                  <expression>
-                    <expression-string>True</expression-string>
-                  </expression>
-                </input>
-                <input name="FieldName">
-                  <expression>
-                    <expression-string>fid1_z</expression-string>
-                  </expression>
-                </input>
-                <input name="ModuleName">
-                  <expression>
-                    <expression-string>DataToPLC</expression-string>
-                  </expression>
-                </input>
-                <input name="TriggerEvent">
-                  <expression>
-                    <expression-string>Inspection.EndEvent</expression-string>
-                  </expression>
-                </input>
-                <input name="Value">
-                  <expression expression-type="System.Double, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
-                    <expression-string need-link-container="True">STagFinderStep.fid1_z</expression-string>
-                  </expression>
-                </input>
-                <input name="WaitInspectionEnd">
-                  <expression>
-                    <expression-string>False</expression-string>
-                  </expression>
-                </input>
-              </inputs>
-              <userXML OWNType="IPComm" ActionType="Set" IsAutomatic="True" InQuickComm="False" Guid="699732b6-48d5-42b7-9795-dfb0aadc82b5" />
-            </subObject>
-            <subObject name="Clear20" type="Matrox.DesignAssistant.Core.Events.ClearIPCommFieldAction, Matrox.DesignAssistant.Core, Version=10.0.454.0, Culture=neutral, PublicKeyToken=726f03a4652993c7" id="7b623e71-b2f9-41be-a212-099cded45c07" Version="10.0.454.0">
-              <inputs>
-                <input name="CanRun">
-                  <expression>
-                    <expression-string>True</expression-string>
-                  </expression>
-                </input>
-                <input name="Enabled">
-                  <expression>
-                    <expression-string>True</expression-string>
-                  </expression>
-                </input>
-                <input name="FieldName">
-                  <expression>
-                    <expression-string>fid1_y</expression-string>
-                  </expression>
-                </input>
-                <input name="ModuleName">
-                  <expression>
-                    <expression-string>DataToPLC</expression-string>
-                  </expression>
-                </input>
-                <input name="TriggerEvent">
-                  <expression>
-                    <expression-string>Inspection.EndEvent</expression-string>
-                  </expression>
-                </input>
-                <input name="Value">
-                  <expression expression-type="System.Double, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
-                    <expression-string>0</expression-string>
-                  </expression>
-                </input>
-                <input name="WaitInspectionEnd">
-                  <expression>
-                    <expression-string>False</expression-string>
-                  </expression>
-                </input>
-              </inputs>
-              <userXML OWNType="IPComm" ActionType="Clear" IsAutomatic="True" InQuickComm="False" Guid="fa3ede8e-ef38-48e2-b151-a585cf2db7c8" />
-            </subObject>
-            <subObject name="Set21" type="Matrox.DesignAssistant.Core.Events.SetIPCommFieldAction, Matrox.DesignAssistant.Core, Version=10.0.454.0, Culture=neutral, PublicKeyToken=726f03a4652993c7" id="e8062f8d-edcd-4ce9-a444-821f5be331bf" Version="10.0.454.0">
-              <inputs>
-                <input name="CanRun">
-                  <expression>
-                    <expression-string>True</expression-string>
-                  </expression>
-                </input>
-                <input name="Enabled">
-                  <expression>
-                    <expression-string>True</expression-string>
-                  </expression>
-                </input>
-                <input name="FieldName">
-                  <expression>
-                    <expression-string>fid1_y</expression-string>
-                  </expression>
-                </input>
-                <input name="ModuleName">
-                  <expression>
-                    <expression-string>DataToPLC</expression-string>
-                  </expression>
-                </input>
-                <input name="TriggerEvent">
-                  <expression>
-                    <expression-string>Inspection.EndEvent</expression-string>
-                  </expression>
-                </input>
-                <input name="Value">
-                  <expression expression-type="System.Double, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
-                    <expression-string need-link-container="True">STagFinderStep.fid1_y</expression-string>
-                  </expression>
-                </input>
-                <input name="WaitInspectionEnd">
-                  <expression>
-                    <expression-string>False</expression-string>
-                  </expression>
-                </input>
-              </inputs>
-              <userXML OWNType="IPComm" ActionType="Set" IsAutomatic="True" InQuickComm="False" Guid="9fe7752f-2471-424c-9bf7-7a1761974b9f" />
-            </subObject>
-            <subObject name="Clear19" type="Matrox.DesignAssistant.Core.Events.ClearIPCommFieldAction, Matrox.DesignAssistant.Core, Version=10.0.454.0, Culture=neutral, PublicKeyToken=726f03a4652993c7" id="6c0503f2-c371-44e6-96c4-599b8920f811" Version="10.0.454.0">
-              <inputs>
-                <input name="CanRun">
-                  <expression>
-                    <expression-string>True</expression-string>
-                  </expression>
-                </input>
-                <input name="Enabled">
-                  <expression>
-                    <expression-string>True</expression-string>
-                  </expression>
-                </input>
-                <input name="FieldName">
-                  <expression>
-                    <expression-string>fid1_x</expression-string>
-                  </expression>
-                </input>
-                <input name="ModuleName">
-                  <expression>
-                    <expression-string>DataToPLC</expression-string>
-                  </expression>
-                </input>
-                <input name="TriggerEvent">
-                  <expression>
-                    <expression-string>Inspection.EndEvent</expression-string>
-                  </expression>
-                </input>
-                <input name="Value">
-                  <expression expression-type="System.Double, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
-                    <expression-string>0</expression-string>
-                  </expression>
-                </input>
-                <input name="WaitInspectionEnd">
-                  <expression>
-                    <expression-string>False</expression-string>
-                  </expression>
-                </input>
-              </inputs>
-              <userXML OWNType="IPComm" ActionType="Clear" IsAutomatic="True" InQuickComm="False" Guid="79527a39-8992-469b-83ab-221598926ef5" />
-            </subObject>
-            <subObject name="Set20" type="Matrox.DesignAssistant.Core.Events.SetIPCommFieldAction, Matrox.DesignAssistant.Core, Version=10.0.454.0, Culture=neutral, PublicKeyToken=726f03a4652993c7" id="e92c8edf-5342-484a-a0f1-f8059b32e91c" Version="10.0.454.0">
-              <inputs>
-                <input name="CanRun">
-                  <expression>
-                    <expression-string>True</expression-string>
-                  </expression>
-                </input>
-                <input name="Enabled">
-                  <expression>
-                    <expression-string>True</expression-string>
-                  </expression>
-                </input>
-                <input name="FieldName">
-                  <expression>
-                    <expression-string>fid1_x</expression-string>
-                  </expression>
-                </input>
-                <input name="ModuleName">
-                  <expression>
-                    <expression-string>DataToPLC</expression-string>
-                  </expression>
-                </input>
-                <input name="TriggerEvent">
-                  <expression>
-                    <expression-string>Inspection.EndEvent</expression-string>
-                  </expression>
-                </input>
-                <input name="Value">
-                  <expression expression-type="System.Double, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
-                    <expression-string need-link-container="True">STagFinderStep.fid1_x</expression-string>
-                  </expression>
-                </input>
-                <input name="WaitInspectionEnd">
-                  <expression>
-                    <expression-string>False</expression-string>
-                  </expression>
-                </input>
-              </inputs>
-              <userXML OWNType="IPComm" ActionType="Set" IsAutomatic="True" InQuickComm="False" Guid="32fc02c0-e570-422a-8555-217815216deb" />
-            </subObject>
-            <subObject name="Clear18" type="Matrox.DesignAssistant.Core.Events.ClearIPCommFieldAction, Matrox.DesignAssistant.Core, Version=10.0.454.0, Culture=neutral, PublicKeyToken=726f03a4652993c7" id="30f7c41f-2ca5-4210-aa05-97c744d5f36d" Version="10.0.454.0">
-              <inputs>
-                <input name="CanRun">
-                  <expression>
-                    <expression-string>True</expression-string>
-                  </expression>
-                </input>
-                <input name="Enabled">
-                  <expression>
-                    <expression-string>True</expression-string>
-                  </expression>
-                </input>
-                <input name="FieldName">
-                  <expression>
-                    <expression-string>fid2_corner4_y</expression-string>
-                  </expression>
-                </input>
-                <input name="ModuleName">
-                  <expression>
-                    <expression-string>DataToPLC</expression-string>
-                  </expression>
-                </input>
-                <input name="TriggerEvent">
-                  <expression>
-                    <expression-string>Inspection.EndEvent</expression-string>
-                  </expression>
-                </input>
-                <input name="Value">
-                  <expression expression-type="System.Double, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
-                    <expression-string>0</expression-string>
-                  </expression>
-                </input>
-                <input name="WaitInspectionEnd">
-                  <expression>
-                    <expression-string>False</expression-string>
-                  </expression>
-                </input>
-              </inputs>
-              <userXML OWNType="IPComm" ActionType="Clear" IsAutomatic="True" InQuickComm="False" Guid="dc34304e-46ee-48e0-acc1-e62fe19696cc" />
-            </subObject>
-            <subObject name="Set19" type="Matrox.DesignAssistant.Core.Events.SetIPCommFieldAction, Matrox.DesignAssistant.Core, Version=10.0.454.0, Culture=neutral, PublicKeyToken=726f03a4652993c7" id="269eb869-deeb-4260-9a8b-2b8e5cdbd7d8" Version="10.0.454.0">
-              <inputs>
-                <input name="CanRun">
-                  <expression>
-                    <expression-string>True</expression-string>
-                  </expression>
-                </input>
-                <input name="Enabled">
-                  <expression>
-                    <expression-string>True</expression-string>
-                  </expression>
-                </input>
-                <input name="FieldName">
-                  <expression>
-                    <expression-string>fid2_corner4_y</expression-string>
-                  </expression>
-                </input>
-                <input name="ModuleName">
-                  <expression>
-                    <expression-string>DataToPLC</expression-string>
-                  </expression>
-                </input>
-                <input name="TriggerEvent">
-                  <expression>
-                    <expression-string>Inspection.EndEvent</expression-string>
-                  </expression>
-                </input>
-                <input name="Value">
-                  <expression expression-type="System.Double, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
-                    <expression-string need-link-container="True">STagFinderStep.fid2_corner4_y</expression-string>
-                  </expression>
-                </input>
-                <input name="WaitInspectionEnd">
-                  <expression>
-                    <expression-string>False</expression-string>
-                  </expression>
-                </input>
-              </inputs>
-              <userXML OWNType="IPComm" ActionType="Set" IsAutomatic="True" InQuickComm="False" Guid="7bf85be3-1563-42c4-817d-650f62ed740c" />
-            </subObject>
-            <subObject name="Clear17" type="Matrox.DesignAssistant.Core.Events.ClearIPCommFieldAction, Matrox.DesignAssistant.Core, Version=10.0.454.0, Culture=neutral, PublicKeyToken=726f03a4652993c7" id="77523aa5-7918-4a4c-9b46-ef127add160f" Version="10.0.454.0">
-              <inputs>
-                <input name="CanRun">
-                  <expression>
-                    <expression-string>True</expression-string>
-                  </expression>
-                </input>
-                <input name="Enabled">
-                  <expression>
-                    <expression-string>True</expression-string>
-                  </expression>
-                </input>
-                <input name="FieldName">
-                  <expression>
-                    <expression-string>fid2_corner4_x</expression-string>
-                  </expression>
-                </input>
-                <input name="ModuleName">
-                  <expression>
-                    <expression-string>DataToPLC</expression-string>
-                  </expression>
-                </input>
-                <input name="TriggerEvent">
-                  <expression>
-                    <expression-string>Inspection.EndEvent</expression-string>
-                  </expression>
-                </input>
-                <input name="Value">
-                  <expression expression-type="System.Double, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
-                    <expression-string>0</expression-string>
-                  </expression>
-                </input>
-                <input name="WaitInspectionEnd">
-                  <expression>
-                    <expression-string>False</expression-string>
-                  </expression>
-                </input>
-              </inputs>
-              <userXML OWNType="IPComm" ActionType="Clear" IsAutomatic="True" InQuickComm="False" Guid="c759e77e-20de-4872-be5f-9c2e83e5a620" />
-            </subObject>
-            <subObject name="Set18" type="Matrox.DesignAssistant.Core.Events.SetIPCommFieldAction, Matrox.DesignAssistant.Core, Version=10.0.454.0, Culture=neutral, PublicKeyToken=726f03a4652993c7" id="fd474007-ab3f-4996-8c54-c0d8aa51031f" Version="10.0.454.0">
-              <inputs>
-                <input name="CanRun">
-                  <expression>
-                    <expression-string>True</expression-string>
-                  </expression>
-                </input>
-                <input name="Enabled">
-                  <expression>
-                    <expression-string>True</expression-string>
-                  </expression>
-                </input>
-                <input name="FieldName">
-                  <expression>
-                    <expression-string>fid2_corner4_x</expression-string>
-                  </expression>
-                </input>
-                <input name="ModuleName">
-                  <expression>
-                    <expression-string>DataToPLC</expression-string>
-                  </expression>
-                </input>
-                <input name="TriggerEvent">
-                  <expression>
-                    <expression-string>Inspection.EndEvent</expression-string>
-                  </expression>
-                </input>
-                <input name="Value">
-                  <expression expression-type="System.Double, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
-                    <expression-string need-link-container="True">STagFinderStep.fid2_corner4_x</expression-string>
-                  </expression>
-                </input>
-                <input name="WaitInspectionEnd">
-                  <expression>
-                    <expression-string>False</expression-string>
-                  </expression>
-                </input>
-              </inputs>
-              <userXML OWNType="IPComm" ActionType="Set" IsAutomatic="True" InQuickComm="False" Guid="4372a911-cdb0-4a0b-b7b8-3711dfc8a191" />
-            </subObject>
-            <subObject name="Clear16" type="Matrox.DesignAssistant.Core.Events.ClearIPCommFieldAction, Matrox.DesignAssistant.Core, Version=10.0.454.0, Culture=neutral, PublicKeyToken=726f03a4652993c7" id="865c9bd1-1b0a-497e-8505-7346c55c40c1" Version="10.0.454.0">
-              <inputs>
-                <input name="CanRun">
-                  <expression>
-                    <expression-string>True</expression-string>
-                  </expression>
-                </input>
-                <input name="Enabled">
-                  <expression>
-                    <expression-string>True</expression-string>
-                  </expression>
-                </input>
-                <input name="FieldName">
-                  <expression>
-                    <expression-string>fid2_corner3_y</expression-string>
-                  </expression>
-                </input>
-                <input name="ModuleName">
-                  <expression>
-                    <expression-string>DataToPLC</expression-string>
-                  </expression>
-                </input>
-                <input name="TriggerEvent">
-                  <expression>
-                    <expression-string>Inspection.EndEvent</expression-string>
-                  </expression>
-                </input>
-                <input name="Value">
-                  <expression expression-type="System.Double, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
-                    <expression-string>0</expression-string>
-                  </expression>
-                </input>
-                <input name="WaitInspectionEnd">
-                  <expression>
-                    <expression-string>False</expression-string>
-                  </expression>
-                </input>
-              </inputs>
-              <userXML OWNType="IPComm" ActionType="Clear" IsAutomatic="True" InQuickComm="False" Guid="0037ad0a-f638-4e1e-af5d-e06c22745bf6" />
-            </subObject>
-            <subObject name="Set17" type="Matrox.DesignAssistant.Core.Events.SetIPCommFieldAction, Matrox.DesignAssistant.Core, Version=10.0.454.0, Culture=neutral, PublicKeyToken=726f03a4652993c7" id="1f01c74c-6af2-4903-9713-fb9152c4e53f" Version="10.0.454.0">
-              <inputs>
-                <input name="CanRun">
-                  <expression>
-                    <expression-string>True</expression-string>
-                  </expression>
-                </input>
-                <input name="Enabled">
-                  <expression>
-                    <expression-string>True</expression-string>
-                  </expression>
-                </input>
-                <input name="FieldName">
-                  <expression>
-                    <expression-string>fid2_corner3_y</expression-string>
-                  </expression>
-                </input>
-                <input name="ModuleName">
-                  <expression>
-                    <expression-string>DataToPLC</expression-string>
-                  </expression>
-                </input>
-                <input name="TriggerEvent">
-                  <expression>
-                    <expression-string>Inspection.EndEvent</expression-string>
-                  </expression>
-                </input>
-                <input name="Value">
-                  <expression expression-type="System.Double, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
-                    <expression-string need-link-container="True">STagFinderStep.fid2_corner3_y</expression-string>
-                  </expression>
-                </input>
-                <input name="WaitInspectionEnd">
-                  <expression>
-                    <expression-string>False</expression-string>
-                  </expression>
-                </input>
-              </inputs>
-              <userXML OWNType="IPComm" ActionType="Set" IsAutomatic="True" InQuickComm="False" Guid="e15d9289-55c0-42dc-80ed-c8f261eb312c" />
-            </subObject>
-            <subObject name="Clear15" type="Matrox.DesignAssistant.Core.Events.ClearIPCommFieldAction, Matrox.DesignAssistant.Core, Version=10.0.454.0, Culture=neutral, PublicKeyToken=726f03a4652993c7" id="da6aa004-75a9-4241-a1ac-c73580d06592" Version="10.0.454.0">
-              <inputs>
-                <input name="CanRun">
-                  <expression>
-                    <expression-string>True</expression-string>
-                  </expression>
-                </input>
-                <input name="Enabled">
-                  <expression>
-                    <expression-string>True</expression-string>
-                  </expression>
-                </input>
-                <input name="FieldName">
-                  <expression>
-                    <expression-string>fid2_corner3_x</expression-string>
-                  </expression>
-                </input>
-                <input name="ModuleName">
-                  <expression>
-                    <expression-string>DataToPLC</expression-string>
-                  </expression>
-                </input>
-                <input name="TriggerEvent">
-                  <expression>
-                    <expression-string>Inspection.EndEvent</expression-string>
-                  </expression>
-                </input>
-                <input name="Value">
-                  <expression expression-type="System.Double, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
-                    <expression-string>0</expression-string>
-                  </expression>
-                </input>
-                <input name="WaitInspectionEnd">
-                  <expression>
-                    <expression-string>False</expression-string>
-                  </expression>
-                </input>
-              </inputs>
-              <userXML OWNType="IPComm" ActionType="Clear" IsAutomatic="True" InQuickComm="False" Guid="9c1eb213-d8d9-480a-a7b0-1e7e087de1fc" />
-            </subObject>
-            <subObject name="Set16" type="Matrox.DesignAssistant.Core.Events.SetIPCommFieldAction, Matrox.DesignAssistant.Core, Version=10.0.454.0, Culture=neutral, PublicKeyToken=726f03a4652993c7" id="ba22c38f-29d8-4306-9028-539b50b5079d" Version="10.0.454.0">
-              <inputs>
-                <input name="CanRun">
-                  <expression>
-                    <expression-string>True</expression-string>
-                  </expression>
-                </input>
-                <input name="Enabled">
-                  <expression>
-                    <expression-string>True</expression-string>
-                  </expression>
-                </input>
-                <input name="FieldName">
-                  <expression>
-                    <expression-string>fid2_corner3_x</expression-string>
-                  </expression>
-                </input>
-                <input name="ModuleName">
-                  <expression>
-                    <expression-string>DataToPLC</expression-string>
-                  </expression>
-                </input>
-                <input name="TriggerEvent">
-                  <expression>
-                    <expression-string>Inspection.EndEvent</expression-string>
-                  </expression>
-                </input>
-                <input name="Value">
-                  <expression expression-type="System.Double, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
-                    <expression-string need-link-container="True">STagFinderStep.fid2_corner3_x</expression-string>
-                  </expression>
-                </input>
-                <input name="WaitInspectionEnd">
-                  <expression>
-                    <expression-string>False</expression-string>
-                  </expression>
-                </input>
-              </inputs>
-              <userXML OWNType="IPComm" ActionType="Set" IsAutomatic="True" InQuickComm="False" Guid="cdd9b1cb-799d-4f59-95f0-afb8d4fd36bb" />
-            </subObject>
-            <subObject name="Clear14" type="Matrox.DesignAssistant.Core.Events.ClearIPCommFieldAction, Matrox.DesignAssistant.Core, Version=10.0.454.0, Culture=neutral, PublicKeyToken=726f03a4652993c7" id="4791ceea-4f21-413c-b21f-e0eccfa7b2fe" Version="10.0.454.0">
-              <inputs>
-                <input name="CanRun">
-                  <expression>
-                    <expression-string>True</expression-string>
-                  </expression>
-                </input>
-                <input name="Enabled">
-                  <expression>
-                    <expression-string>True</expression-string>
-                  </expression>
-                </input>
-                <input name="FieldName">
-                  <expression>
-                    <expression-string>fid2_corner2_y</expression-string>
-                  </expression>
-                </input>
-                <input name="ModuleName">
-                  <expression>
-                    <expression-string>DataToPLC</expression-string>
-                  </expression>
-                </input>
-                <input name="TriggerEvent">
-                  <expression>
-                    <expression-string>Inspection.EndEvent</expression-string>
-                  </expression>
-                </input>
-                <input name="Value">
-                  <expression expression-type="System.Double, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
-                    <expression-string>0</expression-string>
-                  </expression>
-                </input>
-                <input name="WaitInspectionEnd">
-                  <expression>
-                    <expression-string>False</expression-string>
-                  </expression>
-                </input>
-              </inputs>
-              <userXML OWNType="IPComm" ActionType="Clear" IsAutomatic="True" InQuickComm="False" Guid="207e43fb-1882-4e57-8223-30fe17a4a9b6" />
-            </subObject>
-            <subObject name="Set15" type="Matrox.DesignAssistant.Core.Events.SetIPCommFieldAction, Matrox.DesignAssistant.Core, Version=10.0.454.0, Culture=neutral, PublicKeyToken=726f03a4652993c7" id="c5c99984-763e-40c7-9daf-e1dcb61c4403" Version="10.0.454.0">
-              <inputs>
-                <input name="CanRun">
-                  <expression>
-                    <expression-string>True</expression-string>
-                  </expression>
-                </input>
-                <input name="Enabled">
-                  <expression>
-                    <expression-string>True</expression-string>
-                  </expression>
-                </input>
-                <input name="FieldName">
-                  <expression>
-                    <expression-string>fid2_corner2_y</expression-string>
-                  </expression>
-                </input>
-                <input name="ModuleName">
-                  <expression>
-                    <expression-string>DataToPLC</expression-string>
-                  </expression>
-                </input>
-                <input name="TriggerEvent">
-                  <expression>
-                    <expression-string>Inspection.EndEvent</expression-string>
-                  </expression>
-                </input>
-                <input name="Value">
-                  <expression expression-type="System.Double, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
-                    <expression-string need-link-container="True">STagFinderStep.fid2_corner2_y</expression-string>
-                  </expression>
-                </input>
-                <input name="WaitInspectionEnd">
-                  <expression>
-                    <expression-string>False</expression-string>
-                  </expression>
-                </input>
-              </inputs>
-              <userXML OWNType="IPComm" ActionType="Set" IsAutomatic="True" InQuickComm="False" Guid="e82de29e-bc61-4fb7-94fa-14263fa3940d" />
-            </subObject>
-            <subObject name="Clear13" type="Matrox.DesignAssistant.Core.Events.ClearIPCommFieldAction, Matrox.DesignAssistant.Core, Version=10.0.454.0, Culture=neutral, PublicKeyToken=726f03a4652993c7" id="29636f9a-7137-46fd-be06-d0f6aaa87624" Version="10.0.454.0">
-              <inputs>
-                <input name="CanRun">
-                  <expression>
-                    <expression-string>True</expression-string>
-                  </expression>
-                </input>
-                <input name="Enabled">
-                  <expression>
-                    <expression-string>True</expression-string>
-                  </expression>
-                </input>
-                <input name="FieldName">
-                  <expression>
-                    <expression-string>fid2_corner2_x</expression-string>
-                  </expression>
-                </input>
-                <input name="ModuleName">
-                  <expression>
-                    <expression-string>DataToPLC</expression-string>
-                  </expression>
-                </input>
-                <input name="TriggerEvent">
-                  <expression>
-                    <expression-string>Inspection.EndEvent</expression-string>
-                  </expression>
-                </input>
-                <input name="Value">
-                  <expression expression-type="System.Double, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
-                    <expression-string>0</expression-string>
-                  </expression>
-                </input>
-                <input name="WaitInspectionEnd">
-                  <expression>
-                    <expression-string>False</expression-string>
-                  </expression>
-                </input>
-              </inputs>
-              <userXML OWNType="IPComm" ActionType="Clear" IsAutomatic="True" InQuickComm="False" Guid="00836cfa-1e96-4419-b23b-0b0d4ae12c38" />
-            </subObject>
-            <subObject name="Set14" type="Matrox.DesignAssistant.Core.Events.SetIPCommFieldAction, Matrox.DesignAssistant.Core, Version=10.0.454.0, Culture=neutral, PublicKeyToken=726f03a4652993c7" id="04ba0546-8a0b-49dd-87b2-3cda2e4b421a" Version="10.0.454.0">
-              <inputs>
-                <input name="CanRun">
-                  <expression>
-                    <expression-string>True</expression-string>
-                  </expression>
-                </input>
-                <input name="Enabled">
-                  <expression>
-                    <expression-string>True</expression-string>
-                  </expression>
-                </input>
-                <input name="FieldName">
-                  <expression>
-                    <expression-string>fid2_corner2_x</expression-string>
-                  </expression>
-                </input>
-                <input name="ModuleName">
-                  <expression>
-                    <expression-string>DataToPLC</expression-string>
-                  </expression>
-                </input>
-                <input name="TriggerEvent">
-                  <expression>
-                    <expression-string>Inspection.EndEvent</expression-string>
-                  </expression>
-                </input>
-                <input name="Value">
-                  <expression expression-type="System.Double, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
-                    <expression-string need-link-container="True">STagFinderStep.fid2_corner2_x</expression-string>
-                  </expression>
-                </input>
-                <input name="WaitInspectionEnd">
-                  <expression>
-                    <expression-string>False</expression-string>
-                  </expression>
-                </input>
-              </inputs>
-              <userXML OWNType="IPComm" ActionType="Set" IsAutomatic="True" InQuickComm="False" Guid="0fedfaa2-7299-4727-8995-d0e7346929e9" />
-            </subObject>
-            <subObject name="Clear12" type="Matrox.DesignAssistant.Core.Events.ClearIPCommFieldAction, Matrox.DesignAssistant.Core, Version=10.0.454.0, Culture=neutral, PublicKeyToken=726f03a4652993c7" id="f4710a51-6996-4783-be36-40d49dbdc8fe" Version="10.0.454.0">
-              <inputs>
-                <input name="CanRun">
-                  <expression>
-                    <expression-string>True</expression-string>
-                  </expression>
-                </input>
-                <input name="Enabled">
-                  <expression>
-                    <expression-string>True</expression-string>
-                  </expression>
-                </input>
-                <input name="FieldName">
-                  <expression>
-                    <expression-string>fid2_corner1_y</expression-string>
-                  </expression>
-                </input>
-                <input name="ModuleName">
-                  <expression>
-                    <expression-string>DataToPLC</expression-string>
-                  </expression>
-                </input>
-                <input name="TriggerEvent">
-                  <expression>
-                    <expression-string>Inspection.EndEvent</expression-string>
-                  </expression>
-                </input>
-                <input name="Value">
-                  <expression expression-type="System.Double, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
-                    <expression-string>0</expression-string>
-                  </expression>
-                </input>
-                <input name="WaitInspectionEnd">
-                  <expression>
-                    <expression-string>False</expression-string>
-                  </expression>
-                </input>
-              </inputs>
-              <userXML OWNType="IPComm" ActionType="Clear" IsAutomatic="True" InQuickComm="False" Guid="3250021f-254b-4c53-9883-9785cc5c9693" />
-            </subObject>
-            <subObject name="Set13" type="Matrox.DesignAssistant.Core.Events.SetIPCommFieldAction, Matrox.DesignAssistant.Core, Version=10.0.454.0, Culture=neutral, PublicKeyToken=726f03a4652993c7" id="b7b5e618-aa29-4817-8c4a-92fe8050dcde" Version="10.0.454.0">
-              <inputs>
-                <input name="CanRun">
-                  <expression>
-                    <expression-string>True</expression-string>
-                  </expression>
-                </input>
-                <input name="Enabled">
-                  <expression>
-                    <expression-string>True</expression-string>
-                  </expression>
-                </input>
-                <input name="FieldName">
-                  <expression>
-                    <expression-string>fid2_corner1_y</expression-string>
-                  </expression>
-                </input>
-                <input name="ModuleName">
-                  <expression>
-                    <expression-string>DataToPLC</expression-string>
-                  </expression>
-                </input>
-                <input name="TriggerEvent">
-                  <expression>
-                    <expression-string>Inspection.EndEvent</expression-string>
-                  </expression>
-                </input>
-                <input name="Value">
-                  <expression expression-type="System.Double, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
-                    <expression-string need-link-container="True">STagFinderStep.fid2_corner1_y</expression-string>
-                  </expression>
-                </input>
-                <input name="WaitInspectionEnd">
-                  <expression>
-                    <expression-string>False</expression-string>
-                  </expression>
-                </input>
-              </inputs>
-              <userXML OWNType="IPComm" ActionType="Set" IsAutomatic="True" InQuickComm="False" Guid="84d02ae1-1956-4b32-8a8c-586256fcd2f8" />
-            </subObject>
-            <subObject name="Clear11" type="Matrox.DesignAssistant.Core.Events.ClearIPCommFieldAction, Matrox.DesignAssistant.Core, Version=10.0.454.0, Culture=neutral, PublicKeyToken=726f03a4652993c7" id="d2a00db2-4ea5-4fcf-aba2-ab71f4942489" Version="10.0.454.0">
-              <inputs>
-                <input name="CanRun">
-                  <expression>
-                    <expression-string>True</expression-string>
-                  </expression>
-                </input>
-                <input name="Enabled">
-                  <expression>
-                    <expression-string>True</expression-string>
-                  </expression>
-                </input>
-                <input name="FieldName">
-                  <expression>
-                    <expression-string>fid2_corner1_x</expression-string>
-                  </expression>
-                </input>
-                <input name="ModuleName">
-                  <expression>
-                    <expression-string>DataToPLC</expression-string>
-                  </expression>
-                </input>
-                <input name="TriggerEvent">
-                  <expression>
-                    <expression-string>Inspection.EndEvent</expression-string>
-                  </expression>
-                </input>
-                <input name="Value">
-                  <expression expression-type="System.Double, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
-                    <expression-string>0</expression-string>
-                  </expression>
-                </input>
-                <input name="WaitInspectionEnd">
-                  <expression>
-                    <expression-string>False</expression-string>
-                  </expression>
-                </input>
-              </inputs>
-              <userXML OWNType="IPComm" ActionType="Clear" IsAutomatic="True" InQuickComm="False" Guid="d411e6fe-7649-4dab-9021-ab30fda79542" />
-            </subObject>
-            <subObject name="Set12" type="Matrox.DesignAssistant.Core.Events.SetIPCommFieldAction, Matrox.DesignAssistant.Core, Version=10.0.454.0, Culture=neutral, PublicKeyToken=726f03a4652993c7" id="438537c4-32b1-4ffa-a7c0-4023271d7cc0" Version="10.0.454.0">
-              <inputs>
-                <input name="CanRun">
-                  <expression>
-                    <expression-string>True</expression-string>
-                  </expression>
-                </input>
-                <input name="Enabled">
-                  <expression>
-                    <expression-string>True</expression-string>
-                  </expression>
-                </input>
-                <input name="FieldName">
-                  <expression>
-                    <expression-string>fid2_corner1_x</expression-string>
-                  </expression>
-                </input>
-                <input name="ModuleName">
-                  <expression>
-                    <expression-string>DataToPLC</expression-string>
-                  </expression>
-                </input>
-                <input name="TriggerEvent">
-                  <expression>
-                    <expression-string>Inspection.EndEvent</expression-string>
-                  </expression>
-                </input>
-                <input name="Value">
-                  <expression expression-type="System.Double, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
-                    <expression-string need-link-container="True">STagFinderStep.fid2_corner1_x</expression-string>
-                  </expression>
-                </input>
-                <input name="WaitInspectionEnd">
-                  <expression>
-                    <expression-string>False</expression-string>
-                  </expression>
-                </input>
-              </inputs>
-              <userXML OWNType="IPComm" ActionType="Set" IsAutomatic="True" InQuickComm="False" Guid="501b7e81-724e-43fc-89ef-a6f95bf767c9" />
-            </subObject>
-            <subObject name="Clear10" type="Matrox.DesignAssistant.Core.Events.ClearIPCommFieldAction, Matrox.DesignAssistant.Core, Version=10.0.454.0, Culture=neutral, PublicKeyToken=726f03a4652993c7" id="a5c7647d-6eb7-439c-b234-e3ac015d4ea1" Version="10.0.454.0">
-              <inputs>
-                <input name="CanRun">
-                  <expression>
-                    <expression-string>True</expression-string>
-                  </expression>
-                </input>
-                <input name="Enabled">
-                  <expression>
-                    <expression-string>True</expression-string>
-                  </expression>
-                </input>
-                <input name="FieldName">
-                  <expression>
-                    <expression-string>fid1_corner4_y</expression-string>
-                  </expression>
-                </input>
-                <input name="ModuleName">
-                  <expression>
-                    <expression-string>DataToPLC</expression-string>
-                  </expression>
-                </input>
-                <input name="TriggerEvent">
-                  <expression>
-                    <expression-string>Inspection.EndEvent</expression-string>
-                  </expression>
-                </input>
-                <input name="Value">
-                  <expression expression-type="System.Double, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
-                    <expression-string>0</expression-string>
-                  </expression>
-                </input>
-                <input name="WaitInspectionEnd">
-                  <expression>
-                    <expression-string>False</expression-string>
-                  </expression>
-                </input>
-              </inputs>
-              <userXML OWNType="IPComm" ActionType="Clear" IsAutomatic="True" InQuickComm="False" Guid="5c41e829-638c-4c51-8381-aa7fde63f6b3" />
-            </subObject>
-            <subObject name="Set11" type="Matrox.DesignAssistant.Core.Events.SetIPCommFieldAction, Matrox.DesignAssistant.Core, Version=10.0.454.0, Culture=neutral, PublicKeyToken=726f03a4652993c7" id="75460845-4091-4a67-98c3-dcdaa248d314" Version="10.0.454.0">
-              <inputs>
-                <input name="CanRun">
-                  <expression>
-                    <expression-string>True</expression-string>
-                  </expression>
-                </input>
-                <input name="Enabled">
-                  <expression>
-                    <expression-string>True</expression-string>
-                  </expression>
-                </input>
-                <input name="FieldName">
-                  <expression>
-                    <expression-string>fid1_corner4_y</expression-string>
-                  </expression>
-                </input>
-                <input name="ModuleName">
-                  <expression>
-                    <expression-string>DataToPLC</expression-string>
-                  </expression>
-                </input>
-                <input name="TriggerEvent">
-                  <expression>
-                    <expression-string>Inspection.EndEvent</expression-string>
-                  </expression>
-                </input>
-                <input name="Value">
-                  <expression expression-type="System.Double, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
-                    <expression-string need-link-container="True">STagFinderStep.fid1_corner4_y</expression-string>
-                  </expression>
-                </input>
-                <input name="WaitInspectionEnd">
-                  <expression>
-                    <expression-string>False</expression-string>
-                  </expression>
-                </input>
-              </inputs>
-              <userXML OWNType="IPComm" ActionType="Set" IsAutomatic="True" InQuickComm="False" Guid="445c045a-7b4b-41ac-9bf1-d113534a1adf" />
-            </subObject>
-            <subObject name="Clear9" type="Matrox.DesignAssistant.Core.Events.ClearIPCommFieldAction, Matrox.DesignAssistant.Core, Version=10.0.454.0, Culture=neutral, PublicKeyToken=726f03a4652993c7" id="5bd688b7-7623-411f-940b-cb99a75a26d7" Version="10.0.454.0">
-              <inputs>
-                <input name="CanRun">
-                  <expression>
-                    <expression-string>True</expression-string>
-                  </expression>
-                </input>
-                <input name="Enabled">
-                  <expression>
-                    <expression-string>True</expression-string>
-                  </expression>
-                </input>
-                <input name="FieldName">
-                  <expression>
-                    <expression-string>fid1_corner4_x</expression-string>
-                  </expression>
-                </input>
-                <input name="ModuleName">
-                  <expression>
-                    <expression-string>DataToPLC</expression-string>
-                  </expression>
-                </input>
-                <input name="TriggerEvent">
-                  <expression>
-                    <expression-string>Inspection.EndEvent</expression-string>
-                  </expression>
-                </input>
-                <input name="Value">
-                  <expression expression-type="System.Double, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
-                    <expression-string>0</expression-string>
-                  </expression>
-                </input>
-                <input name="WaitInspectionEnd">
-                  <expression>
-                    <expression-string>False</expression-string>
-                  </expression>
-                </input>
-              </inputs>
-              <userXML OWNType="IPComm" ActionType="Clear" IsAutomatic="True" InQuickComm="False" Guid="8d677fde-ecd1-45f1-911d-9f5cf729b4c2" />
-            </subObject>
-            <subObject name="Set10" type="Matrox.DesignAssistant.Core.Events.SetIPCommFieldAction, Matrox.DesignAssistant.Core, Version=10.0.454.0, Culture=neutral, PublicKeyToken=726f03a4652993c7" id="8ba1ea2f-51aa-4a97-bc2c-296cb32fc385" Version="10.0.454.0">
-              <inputs>
-                <input name="CanRun">
-                  <expression>
-                    <expression-string>True</expression-string>
-                  </expression>
-                </input>
-                <input name="Enabled">
-                  <expression>
-                    <expression-string>True</expression-string>
-                  </expression>
-                </input>
-                <input name="FieldName">
-                  <expression>
-                    <expression-string>fid1_corner4_x</expression-string>
-                  </expression>
-                </input>
-                <input name="ModuleName">
-                  <expression>
-                    <expression-string>DataToPLC</expression-string>
-                  </expression>
-                </input>
-                <input name="TriggerEvent">
-                  <expression>
-                    <expression-string>Inspection.EndEvent</expression-string>
-                  </expression>
-                </input>
-                <input name="Value">
-                  <expression expression-type="System.Double, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
-                    <expression-string need-link-container="True">STagFinderStep.fid1_corner4_x</expression-string>
-                  </expression>
-                </input>
-                <input name="WaitInspectionEnd">
-                  <expression>
-                    <expression-string>False</expression-string>
-                  </expression>
-                </input>
-              </inputs>
-              <userXML OWNType="IPComm" ActionType="Set" IsAutomatic="True" InQuickComm="False" Guid="7b97294f-80f7-4d86-926b-0746ef727850" />
-            </subObject>
-            <subObject name="Clear8" type="Matrox.DesignAssistant.Core.Events.ClearIPCommFieldAction, Matrox.DesignAssistant.Core, Version=10.0.454.0, Culture=neutral, PublicKeyToken=726f03a4652993c7" id="c4387551-c36d-45e7-8126-4b6d47a906c7" Version="10.0.454.0">
-              <inputs>
-                <input name="CanRun">
-                  <expression>
-                    <expression-string>True</expression-string>
-                  </expression>
-                </input>
-                <input name="Enabled">
-                  <expression>
-                    <expression-string>True</expression-string>
-                  </expression>
-                </input>
-                <input name="FieldName">
-                  <expression>
-                    <expression-string>fid1_corner3_y</expression-string>
-                  </expression>
-                </input>
-                <input name="ModuleName">
-                  <expression>
-                    <expression-string>DataToPLC</expression-string>
-                  </expression>
-                </input>
-                <input name="TriggerEvent">
-                  <expression>
-                    <expression-string>Inspection.EndEvent</expression-string>
-                  </expression>
-                </input>
-                <input name="Value">
-                  <expression expression-type="System.Double, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
-                    <expression-string>0</expression-string>
-                  </expression>
-                </input>
-                <input name="WaitInspectionEnd">
-                  <expression>
-                    <expression-string>False</expression-string>
-                  </expression>
-                </input>
-              </inputs>
-              <userXML OWNType="IPComm" ActionType="Clear" IsAutomatic="True" InQuickComm="False" Guid="69b0e0ba-76f7-4a4b-b468-eac098676e89" />
-            </subObject>
-            <subObject name="Set9" type="Matrox.DesignAssistant.Core.Events.SetIPCommFieldAction, Matrox.DesignAssistant.Core, Version=10.0.454.0, Culture=neutral, PublicKeyToken=726f03a4652993c7" id="f1678997-7ad3-4fed-8a92-c751246629d2" Version="10.0.454.0">
-              <inputs>
-                <input name="CanRun">
-                  <expression>
-                    <expression-string>True</expression-string>
-                  </expression>
-                </input>
-                <input name="Enabled">
-                  <expression>
-                    <expression-string>True</expression-string>
-                  </expression>
-                </input>
-                <input name="FieldName">
-                  <expression>
-                    <expression-string>fid1_corner3_y</expression-string>
-                  </expression>
-                </input>
-                <input name="ModuleName">
-                  <expression>
-                    <expression-string>DataToPLC</expression-string>
-                  </expression>
-                </input>
-                <input name="TriggerEvent">
-                  <expression>
-                    <expression-string>Inspection.EndEvent</expression-string>
-                  </expression>
-                </input>
-                <input name="Value">
-                  <expression expression-type="System.Double, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
-                    <expression-string need-link-container="True">STagFinderStep.fid1_corner3_y</expression-string>
-                  </expression>
-                </input>
-                <input name="WaitInspectionEnd">
-                  <expression>
-                    <expression-string>False</expression-string>
-                  </expression>
-                </input>
-              </inputs>
-              <userXML OWNType="IPComm" ActionType="Set" IsAutomatic="True" InQuickComm="False" Guid="8a959323-2ae5-496c-ab70-bc6584143efb" />
-            </subObject>
-            <subObject name="Clear7" type="Matrox.DesignAssistant.Core.Events.ClearIPCommFieldAction, Matrox.DesignAssistant.Core, Version=10.0.454.0, Culture=neutral, PublicKeyToken=726f03a4652993c7" id="ed769693-ed76-4328-b5bb-61d1f5b113f2" Version="10.0.454.0">
-              <inputs>
-                <input name="CanRun">
-                  <expression>
-                    <expression-string>True</expression-string>
-                  </expression>
-                </input>
-                <input name="Enabled">
-                  <expression>
-                    <expression-string>True</expression-string>
-                  </expression>
-                </input>
-                <input name="FieldName">
-                  <expression>
-                    <expression-string>fid1_corner3_x</expression-string>
-                  </expression>
-                </input>
-                <input name="ModuleName">
-                  <expression>
-                    <expression-string>DataToPLC</expression-string>
-                  </expression>
-                </input>
-                <input name="TriggerEvent">
-                  <expression>
-                    <expression-string>Inspection.EndEvent</expression-string>
-                  </expression>
-                </input>
-                <input name="Value">
-                  <expression expression-type="System.Double, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
-                    <expression-string>0</expression-string>
-                  </expression>
-                </input>
-                <input name="WaitInspectionEnd">
-                  <expression>
-                    <expression-string>False</expression-string>
-                  </expression>
-                </input>
-              </inputs>
-              <userXML OWNType="IPComm" ActionType="Clear" IsAutomatic="True" InQuickComm="False" Guid="82151ff3-57a8-4e2e-abb0-9f2f51a83121" />
-            </subObject>
-            <subObject name="Set8" type="Matrox.DesignAssistant.Core.Events.SetIPCommFieldAction, Matrox.DesignAssistant.Core, Version=10.0.454.0, Culture=neutral, PublicKeyToken=726f03a4652993c7" id="992632ec-df5a-428e-8525-9289171a8924" Version="10.0.454.0">
-              <inputs>
-                <input name="CanRun">
-                  <expression>
-                    <expression-string>True</expression-string>
-                  </expression>
-                </input>
-                <input name="Enabled">
-                  <expression>
-                    <expression-string>True</expression-string>
-                  </expression>
-                </input>
-                <input name="FieldName">
-                  <expression>
-                    <expression-string>fid1_corner3_x</expression-string>
-                  </expression>
-                </input>
-                <input name="ModuleName">
-                  <expression>
-                    <expression-string>DataToPLC</expression-string>
-                  </expression>
-                </input>
-                <input name="TriggerEvent">
-                  <expression>
-                    <expression-string>Inspection.EndEvent</expression-string>
-                  </expression>
-                </input>
-                <input name="Value">
-                  <expression expression-type="System.Double, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
-                    <expression-string need-link-container="True">STagFinderStep.fid1_corner3_x</expression-string>
-                  </expression>
-                </input>
-                <input name="WaitInspectionEnd">
-                  <expression>
-                    <expression-string>False</expression-string>
-                  </expression>
-                </input>
-              </inputs>
-              <userXML OWNType="IPComm" ActionType="Set" IsAutomatic="True" InQuickComm="False" Guid="f06c99bd-7b3c-4d33-9feb-a935794b8f4f" />
-            </subObject>
-            <subObject name="Clear6" type="Matrox.DesignAssistant.Core.Events.ClearIPCommFieldAction, Matrox.DesignAssistant.Core, Version=10.0.454.0, Culture=neutral, PublicKeyToken=726f03a4652993c7" id="95b90ddc-35d9-4a76-ba4f-d8f4328ebdec" Version="10.0.454.0">
-              <inputs>
-                <input name="CanRun">
-                  <expression>
-                    <expression-string>True</expression-string>
-                  </expression>
-                </input>
-                <input name="Enabled">
-                  <expression>
-                    <expression-string>True</expression-string>
-                  </expression>
-                </input>
-                <input name="FieldName">
-                  <expression>
-                    <expression-string>fid1_corner2_y</expression-string>
-                  </expression>
-                </input>
-                <input name="ModuleName">
-                  <expression>
-                    <expression-string>DataToPLC</expression-string>
-                  </expression>
-                </input>
-                <input name="TriggerEvent">
-                  <expression>
-                    <expression-string>Inspection.EndEvent</expression-string>
-                  </expression>
-                </input>
-                <input name="Value">
-                  <expression expression-type="System.Double, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
-                    <expression-string>0</expression-string>
-                  </expression>
-                </input>
-                <input name="WaitInspectionEnd">
-                  <expression>
-                    <expression-string>False</expression-string>
-                  </expression>
-                </input>
-              </inputs>
-              <userXML OWNType="IPComm" ActionType="Clear" IsAutomatic="True" InQuickComm="False" Guid="eb8f5184-e896-471e-bc79-8f584e56638f" />
-            </subObject>
-            <subObject name="Set7" type="Matrox.DesignAssistant.Core.Events.SetIPCommFieldAction, Matrox.DesignAssistant.Core, Version=10.0.454.0, Culture=neutral, PublicKeyToken=726f03a4652993c7" id="aa7842dd-a72c-4322-b5e9-af27b21b1a20" Version="10.0.454.0">
-              <inputs>
-                <input name="CanRun">
-                  <expression>
-                    <expression-string>True</expression-string>
-                  </expression>
-                </input>
-                <input name="Enabled">
-                  <expression>
-                    <expression-string>True</expression-string>
-                  </expression>
-                </input>
-                <input name="FieldName">
-                  <expression>
-                    <expression-string>fid1_corner2_y</expression-string>
-                  </expression>
-                </input>
-                <input name="ModuleName">
-                  <expression>
-                    <expression-string>DataToPLC</expression-string>
-                  </expression>
-                </input>
-                <input name="TriggerEvent">
-                  <expression>
-                    <expression-string>Inspection.EndEvent</expression-string>
-                  </expression>
-                </input>
-                <input name="Value">
-                  <expression expression-type="System.Double, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
-                    <expression-string need-link-container="True">STagFinderStep.fid1_corner2_y</expression-string>
-                  </expression>
-                </input>
-                <input name="WaitInspectionEnd">
-                  <expression>
-                    <expression-string>False</expression-string>
-                  </expression>
-                </input>
-              </inputs>
-              <userXML OWNType="IPComm" ActionType="Set" IsAutomatic="True" InQuickComm="False" Guid="717117bf-7c5d-47bd-b6a7-780f81f2f571" />
-            </subObject>
-            <subObject name="Clear5" type="Matrox.DesignAssistant.Core.Events.ClearIPCommFieldAction, Matrox.DesignAssistant.Core, Version=10.0.454.0, Culture=neutral, PublicKeyToken=726f03a4652993c7" id="00cd97be-9a7c-4dcd-977c-f5420380f113" Version="10.0.454.0">
-              <inputs>
-                <input name="CanRun">
-                  <expression>
-                    <expression-string>True</expression-string>
-                  </expression>
-                </input>
-                <input name="Enabled">
-                  <expression>
-                    <expression-string>True</expression-string>
-                  </expression>
-                </input>
-                <input name="FieldName">
-                  <expression>
-                    <expression-string>fid1_corner2_x</expression-string>
-                  </expression>
-                </input>
-                <input name="ModuleName">
-                  <expression>
-                    <expression-string>DataToPLC</expression-string>
-                  </expression>
-                </input>
-                <input name="TriggerEvent">
-                  <expression>
-                    <expression-string>Inspection.EndEvent</expression-string>
-                  </expression>
-                </input>
-                <input name="Value">
-                  <expression expression-type="System.Double, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
-                    <expression-string>0</expression-string>
-                  </expression>
-                </input>
-                <input name="WaitInspectionEnd">
-                  <expression>
-                    <expression-string>False</expression-string>
-                  </expression>
-                </input>
-              </inputs>
-              <userXML OWNType="IPComm" ActionType="Clear" IsAutomatic="True" InQuickComm="False" Guid="43b548c1-0b6e-41d3-b122-2facfcacd75c" />
-            </subObject>
-            <subObject name="Set6" type="Matrox.DesignAssistant.Core.Events.SetIPCommFieldAction, Matrox.DesignAssistant.Core, Version=10.0.454.0, Culture=neutral, PublicKeyToken=726f03a4652993c7" id="f9830b72-3d31-407d-b08c-78a2d2f0da1f" Version="10.0.454.0">
-              <inputs>
-                <input name="CanRun">
-                  <expression>
-                    <expression-string>True</expression-string>
-                  </expression>
-                </input>
-                <input name="Enabled">
-                  <expression>
-                    <expression-string>True</expression-string>
-                  </expression>
-                </input>
-                <input name="FieldName">
-                  <expression>
-                    <expression-string>fid1_corner2_x</expression-string>
-                  </expression>
-                </input>
-                <input name="ModuleName">
-                  <expression>
-                    <expression-string>DataToPLC</expression-string>
-                  </expression>
-                </input>
-                <input name="TriggerEvent">
-                  <expression>
-                    <expression-string>Inspection.EndEvent</expression-string>
-                  </expression>
-                </input>
-                <input name="Value">
-                  <expression expression-type="System.Double, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
-                    <expression-string need-link-container="True">STagFinderStep.fid1_corner2_x</expression-string>
-                  </expression>
-                </input>
-                <input name="WaitInspectionEnd">
-                  <expression>
-                    <expression-string>False</expression-string>
-                  </expression>
-                </input>
-              </inputs>
-              <userXML OWNType="IPComm" ActionType="Set" IsAutomatic="True" InQuickComm="False" Guid="9db3fbc6-8ca4-498e-b856-9c4e35867851" />
-            </subObject>
-            <subObject name="Clear4" type="Matrox.DesignAssistant.Core.Events.ClearIPCommFieldAction, Matrox.DesignAssistant.Core, Version=10.0.454.0, Culture=neutral, PublicKeyToken=726f03a4652993c7" id="fd2b0b6b-50fa-4c95-bca4-c5915cc84fa0" Version="10.0.454.0">
-              <inputs>
-                <input name="CanRun">
-                  <expression>
-                    <expression-string>True</expression-string>
-                  </expression>
-                </input>
-                <input name="Enabled">
-                  <expression>
-                    <expression-string>True</expression-string>
-                  </expression>
-                </input>
-                <input name="FieldName">
-                  <expression>
-                    <expression-string>fid1_corner1_y</expression-string>
-                  </expression>
-                </input>
-                <input name="ModuleName">
-                  <expression>
-                    <expression-string>DataToPLC</expression-string>
-                  </expression>
-                </input>
-                <input name="TriggerEvent">
-                  <expression>
-                    <expression-string>Inspection.EndEvent</expression-string>
-                  </expression>
-                </input>
-                <input name="Value">
-                  <expression expression-type="System.Double, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
-                    <expression-string>0</expression-string>
-                  </expression>
-                </input>
-                <input name="WaitInspectionEnd">
-                  <expression>
-                    <expression-string>False</expression-string>
-                  </expression>
-                </input>
-              </inputs>
-              <userXML OWNType="IPComm" ActionType="Clear" IsAutomatic="True" InQuickComm="False" Guid="40d10ee2-6ec7-4ea9-8832-0a0b51cb7e0a" />
-            </subObject>
-            <subObject name="Set5" type="Matrox.DesignAssistant.Core.Events.SetIPCommFieldAction, Matrox.DesignAssistant.Core, Version=10.0.454.0, Culture=neutral, PublicKeyToken=726f03a4652993c7" id="241cefd1-ee30-4650-b7ce-156dfcee8375" Version="10.0.454.0">
-              <inputs>
-                <input name="CanRun">
-                  <expression>
-                    <expression-string>True</expression-string>
-                  </expression>
-                </input>
-                <input name="Enabled">
-                  <expression>
-                    <expression-string>True</expression-string>
-                  </expression>
-                </input>
-                <input name="FieldName">
-                  <expression>
-                    <expression-string>fid1_corner1_y</expression-string>
-                  </expression>
-                </input>
-                <input name="ModuleName">
-                  <expression>
-                    <expression-string>DataToPLC</expression-string>
-                  </expression>
-                </input>
-                <input name="TriggerEvent">
-                  <expression>
-                    <expression-string>Inspection.EndEvent</expression-string>
-                  </expression>
-                </input>
-                <input name="Value">
-                  <expression expression-type="System.Double, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
-                    <expression-string need-link-container="True">STagFinderStep.fid1_corner1_y</expression-string>
-                  </expression>
-                </input>
-                <input name="WaitInspectionEnd">
-                  <expression>
-                    <expression-string>False</expression-string>
-                  </expression>
-                </input>
-              </inputs>
-              <userXML OWNType="IPComm" ActionType="Set" IsAutomatic="True" InQuickComm="False" Guid="3d1d9bc9-b63e-4a11-9916-bde779913e6f" />
-            </subObject>
-            <subObject name="Clear3" type="Matrox.DesignAssistant.Core.Events.ClearIPCommFieldAction, Matrox.DesignAssistant.Core, Version=10.0.454.0, Culture=neutral, PublicKeyToken=726f03a4652993c7" id="136d7260-9c9d-430d-a8a9-3872190e13fb" Version="10.0.454.0">
-              <inputs>
-                <input name="CanRun">
-                  <expression>
-                    <expression-string>True</expression-string>
-                  </expression>
-                </input>
-                <input name="Enabled">
-                  <expression>
-                    <expression-string>True</expression-string>
-                  </expression>
-                </input>
-                <input name="FieldName">
-                  <expression>
-                    <expression-string>fid1_corner1_x</expression-string>
-                  </expression>
-                </input>
-                <input name="ModuleName">
-                  <expression>
-                    <expression-string>DataToPLC</expression-string>
-                  </expression>
-                </input>
-                <input name="TriggerEvent">
-                  <expression>
-                    <expression-string>Inspection.EndEvent</expression-string>
-                  </expression>
-                </input>
-                <input name="Value">
-                  <expression expression-type="System.Double, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
-                    <expression-string>0</expression-string>
-                  </expression>
-                </input>
-                <input name="WaitInspectionEnd">
-                  <expression>
-                    <expression-string>False</expression-string>
-                  </expression>
-                </input>
-              </inputs>
-              <userXML OWNType="IPComm" ActionType="Clear" IsAutomatic="True" InQuickComm="False" Guid="1d61f6a3-22e7-4d19-a085-b2c80b4ac797" />
-            </subObject>
-            <subObject name="Set4" type="Matrox.DesignAssistant.Core.Events.SetIPCommFieldAction, Matrox.DesignAssistant.Core, Version=10.0.454.0, Culture=neutral, PublicKeyToken=726f03a4652993c7" id="ff7050d8-f47b-42e1-ad38-3600c4cb1f11" Version="10.0.454.0">
-              <inputs>
-                <input name="CanRun">
-                  <expression>
-                    <expression-string>True</expression-string>
-                  </expression>
-                </input>
-                <input name="Enabled">
-                  <expression>
-                    <expression-string>True</expression-string>
-                  </expression>
-                </input>
-                <input name="FieldName">
-                  <expression>
-                    <expression-string>fid1_corner1_x</expression-string>
-                  </expression>
-                </input>
-                <input name="ModuleName">
-                  <expression>
-                    <expression-string>DataToPLC</expression-string>
-                  </expression>
-                </input>
-                <input name="TriggerEvent">
-                  <expression>
-                    <expression-string>Inspection.EndEvent</expression-string>
-                  </expression>
-                </input>
-                <input name="Value">
-                  <expression expression-type="System.Double, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
-                    <expression-string need-link-container="True">STagFinderStep.fid1_corner1_x</expression-string>
-                  </expression>
-                </input>
-                <input name="WaitInspectionEnd">
-                  <expression>
-                    <expression-string>False</expression-string>
-                  </expression>
-                </input>
-              </inputs>
-              <userXML OWNType="IPComm" ActionType="Set" IsAutomatic="True" InQuickComm="False" Guid="3503e7ed-3517-40f6-81cd-b106c6199b5f" />
-            </subObject>
-            <subObject name="Set3" type="Matrox.DesignAssistant.Core.Events.SetIPCommFieldAction, Matrox.DesignAssistant.Core, Version=10.0.454.0, Culture=neutral, PublicKeyToken=726f03a4652993c7" id="fd6ea7c7-372e-43c1-b588-f34c58a2f4ab" Version="10.0.454.0">
-              <inputs>
-                <input name="CanRun">
-                  <expression>
-                    <expression-string>True</expression-string>
-                  </expression>
-                </input>
-                <input name="Enabled">
-                  <expression>
-                    <expression-string>True</expression-string>
-                  </expression>
-                </input>
-                <input name="FieldName">
-                  <expression>
-                    <expression-string>num_found</expression-string>
-                  </expression>
-                </input>
-                <input name="ModuleName">
-                  <expression>
-                    <expression-string>DataToPLC</expression-string>
-                  </expression>
-                </input>
-                <input name="TriggerEvent">
-                  <expression>
-                    <expression-string>Inspection.EndEvent</expression-string>
-                  </expression>
-                </input>
-                <input name="Value">
-                  <expression expression-type="System.Double, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
-                    <expression-string need-link-container="True">STagFinderStep.MarkerCount</expression-string>
-                  </expression>
-                </input>
-                <input name="WaitInspectionEnd">
-                  <expression>
-                    <expression-string>False</expression-string>
-                  </expression>
-                </input>
-              </inputs>
-              <userXML OWNType="IPComm" ActionType="Set" IsAutomatic="True" InQuickComm="False" Guid="6ca7e17e-6466-4b6b-afe0-12b00c6c1b28" />
-            </subObject>
-            <subObject name="Set2" type="Matrox.DesignAssistant.Core.Events.SetIPCommFieldAction, Matrox.DesignAssistant.Core, Version=10.0.454.0, Culture=neutral, PublicKeyToken=726f03a4652993c7" id="12165a7c-ed73-41a7-bc45-5e13d527b496" Version="10.0.454.0">
-              <inputs>
-                <input name="CanRun">
-                  <expression>
-                    <expression-string>True</expression-string>
-                  </expression>
-                </input>
-                <input name="Enabled">
-                  <expression>
-                    <expression-string>True</expression-string>
-                  </expression>
-                </input>
-                <input name="FieldName">
-                  <expression>
-                    <expression-string>Busy</expression-string>
-                  </expression>
-                </input>
-                <input name="ModuleName">
-                  <expression>
-                    <expression-string>Status</expression-string>
-                  </expression>
-                </input>
-                <input name="TriggerEvent">
-                  <expression>
-                    <expression-string>Inspection.StartEvent</expression-string>
-                  </expression>
-                </input>
-                <input name="Value">
-                  <expression expression-type="System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
-                    <expression-string>True</expression-string>
-                  </expression>
-                </input>
-                <input name="WaitInspectionEnd">
-                  <expression>
-                    <expression-string>False</expression-string>
-                  </expression>
-                </input>
-              </inputs>
-              <userXML OWNType="IPComm" ActionType="Set" IsAutomatic="True" InQuickComm="True" Guid="5a1f5b9c-b66c-4d3e-9e27-f704d2044cca" />
-            </subObject>
-            <subObject name="Clear" type="Matrox.DesignAssistant.Core.Events.ClearIPCommFieldAction, Matrox.DesignAssistant.Core, Version=10.0.454.0, Culture=neutral, PublicKeyToken=726f03a4652993c7" id="6cf651bf-1fef-44cd-a5cc-bf64a7de78aa" Version="10.0.454.0">
-              <inputs>
-                <input name="CanRun">
-                  <expression>
-                    <expression-string>True</expression-string>
-                  </expression>
-                </input>
-                <input name="Enabled">
-                  <expression>
-                    <expression-string>True</expression-string>
-                  </expression>
-                </input>
-                <input name="FieldName">
-                  <expression>
-                    <expression-string>Busy</expression-string>
-                  </expression>
-                </input>
-                <input name="ModuleName">
-                  <expression>
-                    <expression-string>Status</expression-string>
-                  </expression>
-                </input>
-                <input name="TriggerEvent">
-                  <expression>
-                    <expression-string>Inspection.EndEvent</expression-string>
-                  </expression>
-                </input>
-                <input name="Value">
-                  <expression expression-type="System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
-                    <expression-string>False</expression-string>
-                  </expression>
-                </input>
-                <input name="WaitInspectionEnd">
-                  <expression>
-                    <expression-string>False</expression-string>
-                  </expression>
-                </input>
-              </inputs>
-              <userXML OWNType="IPComm" ActionType="Clear" IsAutomatic="True" InQuickComm="True" Guid="9a09e990-4c9b-45b1-bc5b-92c635a87c8e" />
-            </subObject>
-          </collectionItems>
-          <userXML />
-        </objectCollection>
-      </inputs>
-      <userXML />
-    </setting>
     <setting name="AnnotationGroupContainer" type="Matrox.DesignAssistant.Core.Annotations.Groups.AnnotationGroupContainer, Matrox.DesignAssistant.Core, Version=10.0.454.0, Culture=neutral, PublicKeyToken=726f03a4652993c7" id="a526a99a-fc22-49a5-ae6e-9156e42923dd" Version="10.0.454.0">
       <inputs>
         <objectCollection name="AnnotationGroups" type="Matrox.DesignAssistant.Core.Annotations.Groups.SharedAnnotationGroupCollection, Matrox.DesignAssistant.Core, Version=10.0.454.0, Culture=neutral, PublicKeyToken=726f03a4652993c7" id="54e669b0-b708-4a36-aa4d-c6954d335da7" Version="10.0.454.0">
@@ -3481,6 +1125,1028 @@
         <input name="Thickness3D">
           <expression>
             <expression-string>3</expression-string>
+          </expression>
+        </input>
+      </inputs>
+      <userXML />
+    </setting>
+    <setting name="ActionsContainer" type="Matrox.DesignAssistant.Core.Events.ActionsContainer, Matrox.DesignAssistant.Core, Version=10.0.454.0, Culture=neutral, PublicKeyToken=726f03a4652993c7" id="41b0b8e9-1c64-486d-9fce-a7bb3f3f39d8" Version="10.0.454.0">
+      <inputs>
+        <objectCollection name="Actions" type="Matrox.DesignAssistant.Core.Events.ActionCollection, Matrox.DesignAssistant.Core, Version=10.0.454.0, Culture=neutral, PublicKeyToken=726f03a4652993c7" id="046c3cac-79c0-4692-a1a7-5769d0852846" Version="10.0.454.0">
+          <expression>
+            <expression-string></expression-string>
+          </expression>
+          <collectionItems>
+            <subObject name="PublishGroupAction" type="Matrox.DesignAssistant.Core.Events.PublishGroupAction, Matrox.DesignAssistant.Core, Version=10.0.454.0, Culture=neutral, PublicKeyToken=726f03a4652993c7" id="7053a26f-47c6-47d5-865d-ba7d12f89847" Version="10.0.454.0">
+              <inputs>
+                <input name="CanRun">
+                  <expression>
+                    <expression-string>None</expression-string>
+                  </expression>
+                </input>
+                <input name="Enabled">
+                  <expression>
+                    <expression-string>True</expression-string>
+                  </expression>
+                </input>
+                <input name="TriggerEvent">
+                  <expression>
+                    <expression-string>Inspection.EndEvent</expression-string>
+                  </expression>
+                </input>
+                <input name="WaitInspectionEnd">
+                  <expression>
+                    <expression-string>False</expression-string>
+                  </expression>
+                </input>
+              </inputs>
+              <userXML OWNNm="OperatorView" OWNType="OperatorView" Group="PublishingGroup" OperatorView="OperatorView" />
+            </subObject>
+            <subObject name="ResetFlowchartAction" type="Matrox.DesignAssistant.Core.Events.ResetFlowchartAction, Matrox.DesignAssistant.Core, Version=10.0.454.0, Culture=neutral, PublicKeyToken=726f03a4652993c7" id="0076632a-2d8f-4725-8ba0-411dd13f2001" Version="10.0.454.0">
+              <inputs>
+                <input name="CanRun">
+                  <expression>
+                    <expression-string>None</expression-string>
+                  </expression>
+                </input>
+                <input name="Enabled">
+                  <expression>
+                    <expression-string>True</expression-string>
+                  </expression>
+                </input>
+                <input name="TriggerEvent">
+                  <expression>
+                    <expression-string>Platform.IndustrialProtocols.Fields("PLCReset").FieldChangedEvent</expression-string>
+                  </expression>
+                </input>
+                <input name="WaitInspectionEnd">
+                  <expression>
+                    <expression-string>False</expression-string>
+                  </expression>
+                </input>
+              </inputs>
+              <userXML OWNType="IPComm" />
+            </subObject>
+          </collectionItems>
+          <userXML />
+        </objectCollection>
+        <objectCollection name="IPCommActions" type="Matrox.DesignAssistant.Core.Events.IPCommActionCollection, Matrox.DesignAssistant.Core, Version=10.0.454.0, Culture=neutral, PublicKeyToken=726f03a4652993c7" id="55ad1d89-8b3c-4ee8-9ae0-964bb6a06fe1" Version="10.0.454.0">
+          <expression>
+            <expression-string></expression-string>
+          </expression>
+          <collectionItems>
+            <subObject name="Clear2" type="Matrox.DesignAssistant.Core.Events.ClearIPCommFieldAction, Matrox.DesignAssistant.Core, Version=10.0.454.0, Culture=neutral, PublicKeyToken=726f03a4652993c7" id="f37cc0ad-d9da-49e9-a376-2ea8298b581a" Version="10.0.454.0">
+              <inputs>
+                <input name="CanRun">
+                  <expression>
+                    <expression-string>True</expression-string>
+                  </expression>
+                </input>
+                <input name="Enabled">
+                  <expression>
+                    <expression-string>True</expression-string>
+                  </expression>
+                </input>
+                <input name="FieldName">
+                  <expression>
+                    <expression-string>num_found</expression-string>
+                  </expression>
+                </input>
+                <input name="ModuleName">
+                  <expression>
+                    <expression-string>DataToPLC</expression-string>
+                  </expression>
+                </input>
+                <input name="TriggerEvent">
+                  <expression>
+                    <expression-string>Inspection.EndEvent</expression-string>
+                  </expression>
+                </input>
+                <input name="Value">
+                  <expression expression-type="System.Int32, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
+                    <expression-string>0</expression-string>
+                  </expression>
+                </input>
+                <input name="WaitInspectionEnd">
+                  <expression>
+                    <expression-string>False</expression-string>
+                  </expression>
+                </input>
+              </inputs>
+              <userXML OWNType="IPComm" ActionType="Clear" IsAutomatic="True" InQuickComm="False" Guid="c52532c8-710c-40eb-9116-f920c8c87440" />
+            </subObject>
+            <subObject name="Set" type="Matrox.DesignAssistant.Core.Events.SetIPCommFieldAction, Matrox.DesignAssistant.Core, Version=10.0.454.0, Culture=neutral, PublicKeyToken=726f03a4652993c7" id="63512c83-ef19-4bda-9a14-6f552256c4cb" Version="10.0.454.0">
+              <inputs>
+                <input name="CanRun">
+                  <expression>
+                    <expression-string>True</expression-string>
+                  </expression>
+                </input>
+                <input name="Enabled">
+                  <expression>
+                    <expression-string>True</expression-string>
+                  </expression>
+                </input>
+                <input name="FieldName">
+                  <expression>
+                    <expression-string>ProjectReady</expression-string>
+                  </expression>
+                </input>
+                <input name="ModuleName">
+                  <expression>
+                    <expression-string>Status</expression-string>
+                  </expression>
+                </input>
+                <input name="TriggerEvent">
+                  <expression>
+                    <expression-string>Flowcharts("MainFlowchart").StartEvent</expression-string>
+                  </expression>
+                </input>
+                <input name="Value">
+                  <expression expression-type="System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
+                    <expression-string>True</expression-string>
+                  </expression>
+                </input>
+                <input name="WaitInspectionEnd">
+                  <expression>
+                    <expression-string>False</expression-string>
+                  </expression>
+                </input>
+              </inputs>
+              <userXML OWNType="IPComm" ActionType="Set" IsAutomatic="True" InQuickComm="True" Guid="3103c92e-3531-4b8a-b2d9-1f8d4783ed89" />
+            </subObject>
+            <subObject name="Clear8" type="Matrox.DesignAssistant.Core.Events.ClearIPCommFieldAction, Matrox.DesignAssistant.Core, Version=10.0.454.0, Culture=neutral, PublicKeyToken=726f03a4652993c7" id="95a8e878-da6a-43ee-8a5f-2d115120beb6" Version="10.0.454.0">
+              <inputs>
+                <input name="CanRun">
+                  <expression>
+                    <expression-string>True</expression-string>
+                  </expression>
+                </input>
+                <input name="Enabled">
+                  <expression>
+                    <expression-string>True</expression-string>
+                  </expression>
+                </input>
+                <input name="FieldName">
+                  <expression>
+                    <expression-string>fid2_z</expression-string>
+                  </expression>
+                </input>
+                <input name="ModuleName">
+                  <expression>
+                    <expression-string>DataToPLC</expression-string>
+                  </expression>
+                </input>
+                <input name="TriggerEvent">
+                  <expression>
+                    <expression-string>Inspection.EndEvent</expression-string>
+                  </expression>
+                </input>
+                <input name="Value">
+                  <expression expression-type="System.Double, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
+                    <expression-string>0</expression-string>
+                  </expression>
+                </input>
+                <input name="WaitInspectionEnd">
+                  <expression>
+                    <expression-string>False</expression-string>
+                  </expression>
+                </input>
+              </inputs>
+              <userXML OWNType="IPComm" ActionType="Clear" IsAutomatic="True" InQuickComm="False" Guid="3e03255c-fa76-464d-9725-bf967a1ccd89" />
+            </subObject>
+            <subObject name="Set9" type="Matrox.DesignAssistant.Core.Events.SetIPCommFieldAction, Matrox.DesignAssistant.Core, Version=10.0.454.0, Culture=neutral, PublicKeyToken=726f03a4652993c7" id="d2dde5b7-3375-4fc7-8055-da756519f8d1" Version="10.0.454.0">
+              <inputs>
+                <input name="CanRun">
+                  <expression>
+                    <expression-string>True</expression-string>
+                  </expression>
+                </input>
+                <input name="Enabled">
+                  <expression>
+                    <expression-string>True</expression-string>
+                  </expression>
+                </input>
+                <input name="FieldName">
+                  <expression>
+                    <expression-string>fid2_z</expression-string>
+                  </expression>
+                </input>
+                <input name="ModuleName">
+                  <expression>
+                    <expression-string>DataToPLC</expression-string>
+                  </expression>
+                </input>
+                <input name="TriggerEvent">
+                  <expression>
+                    <expression-string>Inspection.EndEvent</expression-string>
+                  </expression>
+                </input>
+                <input name="Value">
+                  <expression expression-type="System.Double, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
+                    <expression-string need-link-container="True">STagFinderStep.fid2_z</expression-string>
+                  </expression>
+                </input>
+                <input name="WaitInspectionEnd">
+                  <expression>
+                    <expression-string>False</expression-string>
+                  </expression>
+                </input>
+              </inputs>
+              <userXML OWNType="IPComm" ActionType="Set" IsAutomatic="True" InQuickComm="False" Guid="d28618ed-55d5-4dcb-a75a-e20355274dbb" />
+            </subObject>
+            <subObject name="Clear7" type="Matrox.DesignAssistant.Core.Events.ClearIPCommFieldAction, Matrox.DesignAssistant.Core, Version=10.0.454.0, Culture=neutral, PublicKeyToken=726f03a4652993c7" id="f2e08a9f-1881-4dd2-aeae-bd711e2afac3" Version="10.0.454.0">
+              <inputs>
+                <input name="CanRun">
+                  <expression>
+                    <expression-string>True</expression-string>
+                  </expression>
+                </input>
+                <input name="Enabled">
+                  <expression>
+                    <expression-string>True</expression-string>
+                  </expression>
+                </input>
+                <input name="FieldName">
+                  <expression>
+                    <expression-string>fid2_y</expression-string>
+                  </expression>
+                </input>
+                <input name="ModuleName">
+                  <expression>
+                    <expression-string>DataToPLC</expression-string>
+                  </expression>
+                </input>
+                <input name="TriggerEvent">
+                  <expression>
+                    <expression-string>Inspection.EndEvent</expression-string>
+                  </expression>
+                </input>
+                <input name="Value">
+                  <expression expression-type="System.Double, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
+                    <expression-string>0</expression-string>
+                  </expression>
+                </input>
+                <input name="WaitInspectionEnd">
+                  <expression>
+                    <expression-string>False</expression-string>
+                  </expression>
+                </input>
+              </inputs>
+              <userXML OWNType="IPComm" ActionType="Clear" IsAutomatic="True" InQuickComm="False" Guid="0abffe66-19b6-442d-afa6-3bc8047c24be" />
+            </subObject>
+            <subObject name="Set8" type="Matrox.DesignAssistant.Core.Events.SetIPCommFieldAction, Matrox.DesignAssistant.Core, Version=10.0.454.0, Culture=neutral, PublicKeyToken=726f03a4652993c7" id="bff72033-4f5f-4be2-a617-33f5ed7bcfe7" Version="10.0.454.0">
+              <inputs>
+                <input name="CanRun">
+                  <expression>
+                    <expression-string>True</expression-string>
+                  </expression>
+                </input>
+                <input name="Enabled">
+                  <expression>
+                    <expression-string>True</expression-string>
+                  </expression>
+                </input>
+                <input name="FieldName">
+                  <expression>
+                    <expression-string>fid2_y</expression-string>
+                  </expression>
+                </input>
+                <input name="ModuleName">
+                  <expression>
+                    <expression-string>DataToPLC</expression-string>
+                  </expression>
+                </input>
+                <input name="TriggerEvent">
+                  <expression>
+                    <expression-string>Inspection.EndEvent</expression-string>
+                  </expression>
+                </input>
+                <input name="Value">
+                  <expression expression-type="System.Double, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
+                    <expression-string need-link-container="True">STagFinderStep.fid2_y</expression-string>
+                  </expression>
+                </input>
+                <input name="WaitInspectionEnd">
+                  <expression>
+                    <expression-string>False</expression-string>
+                  </expression>
+                </input>
+              </inputs>
+              <userXML OWNType="IPComm" ActionType="Set" IsAutomatic="True" InQuickComm="False" Guid="064c7bb5-3405-496d-a6db-67b4585abd8f" />
+            </subObject>
+            <subObject name="Clear6" type="Matrox.DesignAssistant.Core.Events.ClearIPCommFieldAction, Matrox.DesignAssistant.Core, Version=10.0.454.0, Culture=neutral, PublicKeyToken=726f03a4652993c7" id="7c7f62a9-578c-4dff-aafb-10ec272b3ce9" Version="10.0.454.0">
+              <inputs>
+                <input name="CanRun">
+                  <expression>
+                    <expression-string>True</expression-string>
+                  </expression>
+                </input>
+                <input name="Enabled">
+                  <expression>
+                    <expression-string>True</expression-string>
+                  </expression>
+                </input>
+                <input name="FieldName">
+                  <expression>
+                    <expression-string>fid2_x</expression-string>
+                  </expression>
+                </input>
+                <input name="ModuleName">
+                  <expression>
+                    <expression-string>DataToPLC</expression-string>
+                  </expression>
+                </input>
+                <input name="TriggerEvent">
+                  <expression>
+                    <expression-string>Inspection.EndEvent</expression-string>
+                  </expression>
+                </input>
+                <input name="Value">
+                  <expression expression-type="System.Double, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
+                    <expression-string>0</expression-string>
+                  </expression>
+                </input>
+                <input name="WaitInspectionEnd">
+                  <expression>
+                    <expression-string>False</expression-string>
+                  </expression>
+                </input>
+              </inputs>
+              <userXML OWNType="IPComm" ActionType="Clear" IsAutomatic="True" InQuickComm="False" Guid="1ef14b94-44c5-4ecd-a6ef-c89d67dceef6" />
+            </subObject>
+            <subObject name="Set7" type="Matrox.DesignAssistant.Core.Events.SetIPCommFieldAction, Matrox.DesignAssistant.Core, Version=10.0.454.0, Culture=neutral, PublicKeyToken=726f03a4652993c7" id="ec9d0a1d-8c93-4d1b-b300-472bdf498bf6" Version="10.0.454.0">
+              <inputs>
+                <input name="CanRun">
+                  <expression>
+                    <expression-string>True</expression-string>
+                  </expression>
+                </input>
+                <input name="Enabled">
+                  <expression>
+                    <expression-string>True</expression-string>
+                  </expression>
+                </input>
+                <input name="FieldName">
+                  <expression>
+                    <expression-string>fid2_x</expression-string>
+                  </expression>
+                </input>
+                <input name="ModuleName">
+                  <expression>
+                    <expression-string>DataToPLC</expression-string>
+                  </expression>
+                </input>
+                <input name="TriggerEvent">
+                  <expression>
+                    <expression-string>Inspection.EndEvent</expression-string>
+                  </expression>
+                </input>
+                <input name="Value">
+                  <expression expression-type="System.Double, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
+                    <expression-string need-link-container="True">STagFinderStep.fid2_x</expression-string>
+                  </expression>
+                </input>
+                <input name="WaitInspectionEnd">
+                  <expression>
+                    <expression-string>False</expression-string>
+                  </expression>
+                </input>
+              </inputs>
+              <userXML OWNType="IPComm" ActionType="Set" IsAutomatic="True" InQuickComm="False" Guid="7e8f99fe-4069-48f7-b731-2224c756bd96" />
+            </subObject>
+            <subObject name="Clear5" type="Matrox.DesignAssistant.Core.Events.ClearIPCommFieldAction, Matrox.DesignAssistant.Core, Version=10.0.454.0, Culture=neutral, PublicKeyToken=726f03a4652993c7" id="5166e677-7e66-432f-a23c-b31e1312534d" Version="10.0.454.0">
+              <inputs>
+                <input name="CanRun">
+                  <expression>
+                    <expression-string>True</expression-string>
+                  </expression>
+                </input>
+                <input name="Enabled">
+                  <expression>
+                    <expression-string>True</expression-string>
+                  </expression>
+                </input>
+                <input name="FieldName">
+                  <expression>
+                    <expression-string>fid1_z</expression-string>
+                  </expression>
+                </input>
+                <input name="ModuleName">
+                  <expression>
+                    <expression-string>DataToPLC</expression-string>
+                  </expression>
+                </input>
+                <input name="TriggerEvent">
+                  <expression>
+                    <expression-string>Inspection.EndEvent</expression-string>
+                  </expression>
+                </input>
+                <input name="Value">
+                  <expression expression-type="System.Double, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
+                    <expression-string>0</expression-string>
+                  </expression>
+                </input>
+                <input name="WaitInspectionEnd">
+                  <expression>
+                    <expression-string>False</expression-string>
+                  </expression>
+                </input>
+              </inputs>
+              <userXML OWNType="IPComm" ActionType="Clear" IsAutomatic="True" InQuickComm="False" Guid="0e023632-6b2f-466c-bc54-513dc5dc1af3" />
+            </subObject>
+            <subObject name="Set6" type="Matrox.DesignAssistant.Core.Events.SetIPCommFieldAction, Matrox.DesignAssistant.Core, Version=10.0.454.0, Culture=neutral, PublicKeyToken=726f03a4652993c7" id="e8231f01-6036-48ab-8278-de86f18863b4" Version="10.0.454.0">
+              <inputs>
+                <input name="CanRun">
+                  <expression>
+                    <expression-string>True</expression-string>
+                  </expression>
+                </input>
+                <input name="Enabled">
+                  <expression>
+                    <expression-string>True</expression-string>
+                  </expression>
+                </input>
+                <input name="FieldName">
+                  <expression>
+                    <expression-string>fid1_z</expression-string>
+                  </expression>
+                </input>
+                <input name="ModuleName">
+                  <expression>
+                    <expression-string>DataToPLC</expression-string>
+                  </expression>
+                </input>
+                <input name="TriggerEvent">
+                  <expression>
+                    <expression-string>Inspection.EndEvent</expression-string>
+                  </expression>
+                </input>
+                <input name="Value">
+                  <expression expression-type="System.Double, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
+                    <expression-string need-link-container="True">STagFinderStep.fid1_z</expression-string>
+                  </expression>
+                </input>
+                <input name="WaitInspectionEnd">
+                  <expression>
+                    <expression-string>False</expression-string>
+                  </expression>
+                </input>
+              </inputs>
+              <userXML OWNType="IPComm" ActionType="Set" IsAutomatic="True" InQuickComm="False" Guid="bc33b92f-87a0-4d14-8b11-92a64555db29" />
+            </subObject>
+            <subObject name="Clear4" type="Matrox.DesignAssistant.Core.Events.ClearIPCommFieldAction, Matrox.DesignAssistant.Core, Version=10.0.454.0, Culture=neutral, PublicKeyToken=726f03a4652993c7" id="c4e39b7b-3c8a-4abf-b67c-3ea5c3d16cf7" Version="10.0.454.0">
+              <inputs>
+                <input name="CanRun">
+                  <expression>
+                    <expression-string>True</expression-string>
+                  </expression>
+                </input>
+                <input name="Enabled">
+                  <expression>
+                    <expression-string>True</expression-string>
+                  </expression>
+                </input>
+                <input name="FieldName">
+                  <expression>
+                    <expression-string>fid1_y</expression-string>
+                  </expression>
+                </input>
+                <input name="ModuleName">
+                  <expression>
+                    <expression-string>DataToPLC</expression-string>
+                  </expression>
+                </input>
+                <input name="TriggerEvent">
+                  <expression>
+                    <expression-string>Inspection.EndEvent</expression-string>
+                  </expression>
+                </input>
+                <input name="Value">
+                  <expression expression-type="System.Double, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
+                    <expression-string>0</expression-string>
+                  </expression>
+                </input>
+                <input name="WaitInspectionEnd">
+                  <expression>
+                    <expression-string>False</expression-string>
+                  </expression>
+                </input>
+              </inputs>
+              <userXML OWNType="IPComm" ActionType="Clear" IsAutomatic="True" InQuickComm="False" Guid="33a903e6-47b8-4bd3-b50d-e3a4846bc250" />
+            </subObject>
+            <subObject name="Set5" type="Matrox.DesignAssistant.Core.Events.SetIPCommFieldAction, Matrox.DesignAssistant.Core, Version=10.0.454.0, Culture=neutral, PublicKeyToken=726f03a4652993c7" id="8a4181eb-23b0-4119-af85-1963a55e0285" Version="10.0.454.0">
+              <inputs>
+                <input name="CanRun">
+                  <expression>
+                    <expression-string>True</expression-string>
+                  </expression>
+                </input>
+                <input name="Enabled">
+                  <expression>
+                    <expression-string>True</expression-string>
+                  </expression>
+                </input>
+                <input name="FieldName">
+                  <expression>
+                    <expression-string>fid1_y</expression-string>
+                  </expression>
+                </input>
+                <input name="ModuleName">
+                  <expression>
+                    <expression-string>DataToPLC</expression-string>
+                  </expression>
+                </input>
+                <input name="TriggerEvent">
+                  <expression>
+                    <expression-string>Inspection.EndEvent</expression-string>
+                  </expression>
+                </input>
+                <input name="Value">
+                  <expression expression-type="System.Double, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
+                    <expression-string need-link-container="True">STagFinderStep.fid1_y</expression-string>
+                  </expression>
+                </input>
+                <input name="WaitInspectionEnd">
+                  <expression>
+                    <expression-string>False</expression-string>
+                  </expression>
+                </input>
+              </inputs>
+              <userXML OWNType="IPComm" ActionType="Set" IsAutomatic="True" InQuickComm="False" Guid="ebab0de5-4cb7-4292-8a30-e5ea203b58fb" />
+            </subObject>
+            <subObject name="Clear3" type="Matrox.DesignAssistant.Core.Events.ClearIPCommFieldAction, Matrox.DesignAssistant.Core, Version=10.0.454.0, Culture=neutral, PublicKeyToken=726f03a4652993c7" id="6bfca70b-f03b-4a91-8b5b-de8b6c88107f" Version="10.0.454.0">
+              <inputs>
+                <input name="CanRun">
+                  <expression>
+                    <expression-string>True</expression-string>
+                  </expression>
+                </input>
+                <input name="Enabled">
+                  <expression>
+                    <expression-string>True</expression-string>
+                  </expression>
+                </input>
+                <input name="FieldName">
+                  <expression>
+                    <expression-string>fid1_x</expression-string>
+                  </expression>
+                </input>
+                <input name="ModuleName">
+                  <expression>
+                    <expression-string>DataToPLC</expression-string>
+                  </expression>
+                </input>
+                <input name="TriggerEvent">
+                  <expression>
+                    <expression-string>Inspection.EndEvent</expression-string>
+                  </expression>
+                </input>
+                <input name="Value">
+                  <expression expression-type="System.Double, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
+                    <expression-string>0</expression-string>
+                  </expression>
+                </input>
+                <input name="WaitInspectionEnd">
+                  <expression>
+                    <expression-string>False</expression-string>
+                  </expression>
+                </input>
+              </inputs>
+              <userXML OWNType="IPComm" ActionType="Clear" IsAutomatic="True" InQuickComm="False" Guid="79f0d14d-23cd-4871-a3e2-358337820432" />
+            </subObject>
+            <subObject name="Set4" type="Matrox.DesignAssistant.Core.Events.SetIPCommFieldAction, Matrox.DesignAssistant.Core, Version=10.0.454.0, Culture=neutral, PublicKeyToken=726f03a4652993c7" id="b6c5a706-7ddc-4750-b322-8c80fd48e522" Version="10.0.454.0">
+              <inputs>
+                <input name="CanRun">
+                  <expression>
+                    <expression-string>True</expression-string>
+                  </expression>
+                </input>
+                <input name="Enabled">
+                  <expression>
+                    <expression-string>True</expression-string>
+                  </expression>
+                </input>
+                <input name="FieldName">
+                  <expression>
+                    <expression-string>fid1_x</expression-string>
+                  </expression>
+                </input>
+                <input name="ModuleName">
+                  <expression>
+                    <expression-string>DataToPLC</expression-string>
+                  </expression>
+                </input>
+                <input name="TriggerEvent">
+                  <expression>
+                    <expression-string>Inspection.EndEvent</expression-string>
+                  </expression>
+                </input>
+                <input name="Value">
+                  <expression expression-type="System.Double, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
+                    <expression-string need-link-container="True">STagFinderStep.fid1_x</expression-string>
+                  </expression>
+                </input>
+                <input name="WaitInspectionEnd">
+                  <expression>
+                    <expression-string>False</expression-string>
+                  </expression>
+                </input>
+              </inputs>
+              <userXML OWNType="IPComm" ActionType="Set" IsAutomatic="True" InQuickComm="False" Guid="f283331a-f059-4591-badb-9838dd2bc0db" />
+            </subObject>
+            <subObject name="Set3" type="Matrox.DesignAssistant.Core.Events.SetIPCommFieldAction, Matrox.DesignAssistant.Core, Version=10.0.454.0, Culture=neutral, PublicKeyToken=726f03a4652993c7" id="c968eb69-0baf-4b10-8935-8ddb8674c207" Version="10.0.454.0">
+              <inputs>
+                <input name="CanRun">
+                  <expression>
+                    <expression-string>True</expression-string>
+                  </expression>
+                </input>
+                <input name="Enabled">
+                  <expression>
+                    <expression-string>True</expression-string>
+                  </expression>
+                </input>
+                <input name="FieldName">
+                  <expression>
+                    <expression-string>num_found</expression-string>
+                  </expression>
+                </input>
+                <input name="ModuleName">
+                  <expression>
+                    <expression-string>DataToPLC</expression-string>
+                  </expression>
+                </input>
+                <input name="TriggerEvent">
+                  <expression>
+                    <expression-string>Inspection.EndEvent</expression-string>
+                  </expression>
+                </input>
+                <input name="Value">
+                  <expression expression-type="System.Int32, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
+                    <expression-string need-link-container="True">STagFinderStep.MarkerCount</expression-string>
+                  </expression>
+                </input>
+                <input name="WaitInspectionEnd">
+                  <expression>
+                    <expression-string>False</expression-string>
+                  </expression>
+                </input>
+              </inputs>
+              <userXML OWNType="IPComm" ActionType="Set" IsAutomatic="True" InQuickComm="False" Guid="4abaa108-0390-4672-b27a-c1a828ef46c8" />
+            </subObject>
+            <subObject name="Set2" type="Matrox.DesignAssistant.Core.Events.SetIPCommFieldAction, Matrox.DesignAssistant.Core, Version=10.0.454.0, Culture=neutral, PublicKeyToken=726f03a4652993c7" id="deb14020-961a-4625-a16a-2a5f8b477a5f" Version="10.0.454.0">
+              <inputs>
+                <input name="CanRun">
+                  <expression>
+                    <expression-string>True</expression-string>
+                  </expression>
+                </input>
+                <input name="Enabled">
+                  <expression>
+                    <expression-string>True</expression-string>
+                  </expression>
+                </input>
+                <input name="FieldName">
+                  <expression>
+                    <expression-string>Busy</expression-string>
+                  </expression>
+                </input>
+                <input name="ModuleName">
+                  <expression>
+                    <expression-string>Status</expression-string>
+                  </expression>
+                </input>
+                <input name="TriggerEvent">
+                  <expression>
+                    <expression-string>Inspection.StartEvent</expression-string>
+                  </expression>
+                </input>
+                <input name="Value">
+                  <expression expression-type="System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
+                    <expression-string>True</expression-string>
+                  </expression>
+                </input>
+                <input name="WaitInspectionEnd">
+                  <expression>
+                    <expression-string>False</expression-string>
+                  </expression>
+                </input>
+              </inputs>
+              <userXML OWNType="IPComm" ActionType="Set" IsAutomatic="True" InQuickComm="True" Guid="95654ff4-de92-4cc9-a852-f419f354aed7" />
+            </subObject>
+            <subObject name="Clear" type="Matrox.DesignAssistant.Core.Events.ClearIPCommFieldAction, Matrox.DesignAssistant.Core, Version=10.0.454.0, Culture=neutral, PublicKeyToken=726f03a4652993c7" id="31a57852-e7d5-492a-afb9-3a9fd8ff2b5f" Version="10.0.454.0">
+              <inputs>
+                <input name="CanRun">
+                  <expression>
+                    <expression-string>True</expression-string>
+                  </expression>
+                </input>
+                <input name="Enabled">
+                  <expression>
+                    <expression-string>True</expression-string>
+                  </expression>
+                </input>
+                <input name="FieldName">
+                  <expression>
+                    <expression-string>Busy</expression-string>
+                  </expression>
+                </input>
+                <input name="ModuleName">
+                  <expression>
+                    <expression-string>Status</expression-string>
+                  </expression>
+                </input>
+                <input name="TriggerEvent">
+                  <expression>
+                    <expression-string>Inspection.EndEvent</expression-string>
+                  </expression>
+                </input>
+                <input name="Value">
+                  <expression expression-type="System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
+                    <expression-string>False</expression-string>
+                  </expression>
+                </input>
+                <input name="WaitInspectionEnd">
+                  <expression>
+                    <expression-string>False</expression-string>
+                  </expression>
+                </input>
+              </inputs>
+              <userXML OWNType="IPComm" ActionType="Clear" IsAutomatic="True" InQuickComm="True" Guid="ccaf9686-35a8-4807-ba47-2082616dce26" />
+            </subObject>
+          </collectionItems>
+          <userXML />
+        </objectCollection>
+      </inputs>
+      <userXML />
+    </setting>
+    <setting name="InspectionSettings" type="Matrox.DesignAssistant.Core.Events.InspectionEventsSettings, Matrox.DesignAssistant.Core, Version=10.0.454.0, Culture=neutral, PublicKeyToken=726f03a4652993c7" id="8e45c1cb-b340-4a52-96df-c409d2c11a72" Version="10.0.454.0">
+      <inputs>
+        <input name="EndEvent">
+          <expression>
+            <expression-string>Flowcharts("MainFlowchart").Loop.EndEvent</expression-string>
+          </expression>
+        </input>
+        <input name="StartEvent">
+          <expression>
+            <expression-string>Flowcharts("MainFlowchart").Camera.EndEvent</expression-string>
+          </expression>
+        </input>
+      </inputs>
+      <userXML />
+    </setting>
+    <setting name="RuntimeMonitoringSettings" type="Matrox.DesignAssistant.Core.Projects.RuntimeMonitoringSettings, Matrox.DesignAssistant.Core, Version=10.0.454.0, Culture=neutral, PublicKeyToken=726f03a4652993c7" id="11c2dcff-8180-4c65-b16d-4f7306631d18" Version="10.0.454.0">
+      <inputs>
+        <input name="EnableRuntimeMonitoring">
+          <expression>
+            <expression-string>True</expression-string>
+          </expression>
+        </input>
+        <input name="EnableRuntimeStatistics">
+          <expression>
+            <expression-string>True</expression-string>
+          </expression>
+        </input>
+      </inputs>
+      <userXML />
+    </setting>
+    <setting name="OperatorViewToolbarSettings" type="Matrox.DesignAssistant.Core.Projects.OperatorViewToolbarSettings, Matrox.DesignAssistant.Core, Version=10.0.454.0, Culture=neutral, PublicKeyToken=726f03a4652993c7" id="e866be53-b8b5-4420-a93a-2c74668c5b2a" Version="10.0.454.0">
+      <inputs>
+        <input name="AutoHide">
+          <expression>
+            <expression-string>False</expression-string>
+          </expression>
+        </input>
+        <input name="AutoStartRunTool">
+          <expression>
+            <expression-string>False</expression-string>
+          </expression>
+        </input>
+        <input name="AutoStartRunToolMode">
+          <expression>
+            <expression-string>ImageSet</expression-string>
+          </expression>
+        </input>
+        <input name="RecordingTabEnabled">
+          <expression>
+            <expression-string>True</expression-string>
+          </expression>
+        </input>
+        <input name="RunTabEnabled">
+          <expression>
+            <expression-string>True</expression-string>
+          </expression>
+        </input>
+        <input name="RuntimeMessageNotification">
+          <expression>
+            <expression-string>OnError</expression-string>
+          </expression>
+        </input>
+        <input name="RuntimeWaitBannerTime">
+          <expression>
+            <expression-string>1</expression-string>
+          </expression>
+        </input>
+        <input name="ShowRuntimeWaitBanner">
+          <expression>
+            <expression-string>True</expression-string>
+          </expression>
+        </input>
+        <input name="StartMinimized">
+          <expression>
+            <expression-string>False</expression-string>
+          </expression>
+        </input>
+      </inputs>
+      <userXML />
+    </setting>
+    <setting name="LabelSettings" type="Matrox.DesignAssistant.Core.Projects.LabelSettings, Matrox.DesignAssistant.Core, Version=10.0.454.0, Culture=neutral, PublicKeyToken=726f03a4652993c7" id="e00ca659-5a2d-4fc6-8a47-6c2b55cd6273" Version="10.0.454.0">
+      <inputs>
+        <objectCollection name="UserLabels" type="Matrox.DesignAssistant.Core.Projects.LabelCollection, Matrox.DesignAssistant.Core, Version=10.0.454.0, Culture=neutral, PublicKeyToken=726f03a4652993c7" id="2bdb6162-4db9-4cb3-b2c6-f1a495566d10" Version="10.0.454.0">
+          <expression>
+            <expression-string></expression-string>
+          </expression>
+          <collectionItems>
+            <subObject name="T" type="Matrox.DesignAssistant.Core.Projects.BaseLabel, Matrox.DesignAssistant.Core, Version=10.0.454.0, Culture=neutral, PublicKeyToken=726f03a4652993c7" id="26cdd476-4986-487a-bb54-6ab9504a75b3" Version="10.0.454.0">
+              <inputs>
+                <input name="Background">
+                  <expression>
+                    <expression-string>-5658199</expression-string>
+                  </expression>
+                </input>
+                <input name="Condition">
+                  <expression>
+                    <expression-string>None</expression-string>
+                  </expression>
+                </input>
+                <input name="DesignTimeVisible">
+                  <expression>
+                    <expression-string>False</expression-string>
+                  </expression>
+                </input>
+                <input name="Foreground">
+                  <expression>
+                    <expression-string>-1</expression-string>
+                  </expression>
+                </input>
+                <input name="RuntimeVisible">
+                  <expression>
+                    <expression-string>True</expression-string>
+                  </expression>
+                </input>
+                <input name="Type">
+                  <expression available="False">
+                    <expression-string>Timestamp</expression-string>
+                  </expression>
+                </input>
+                <input name="Value">
+                  <expression>
+                    <expression-string need-link-container="True">DATETIME(Camera.Time, "H:mm:ss.ff")</expression-string>
+                  </expression>
+                </input>
+              </inputs>
+              <userXML>
+                <AutomaticName />
+              </userXML>
+            </subObject>
+          </collectionItems>
+          <userXML />
+        </objectCollection>
+      </inputs>
+      <userXML>
+        <AutomaticLabelProviders>
+          <AutomaticLabelProvider>
+            <StepID>e7653257-eb20-42ff-856f-4e6487fbb649</StepID>
+            <StepName>CodeReaderCopy</StepName>
+            <FlowchartID>492c8fb0-3d2b-4200-ac60-c1ec7a2a8aba</FlowchartID>
+            <FlowchartName>MainFlowchart</FlowchartName>
+          </AutomaticLabelProvider>
+          <AutomaticLabelProvider>
+            <StepID>14c1d7bd-8de3-49f4-98c6-96f4f934cae0</StepID>
+            <StepName>DataMatrixAVLCopy</StepName>
+            <FlowchartID>492c8fb0-3d2b-4200-ac60-c1ec7a2a8aba</FlowchartID>
+            <FlowchartName>MainFlowchart</FlowchartName>
+          </AutomaticLabelProvider>
+        </AutomaticLabelProviders>
+      </userXML>
+    </setting>
+    <setting name="PerformanceSettings" type="Matrox.DesignAssistant.Core.Projects.PerformanceSettings, Matrox.DesignAssistant.Core, Version=10.0.454.0, Culture=neutral, PublicKeyToken=726f03a4652993c7" id="5e58165a-d9d6-4901-8c69-afe02296b75a" Version="10.0.454.0">
+      <inputs>
+        <input name="GarbageCollectMode">
+          <expression>
+            <expression-string>EachInspection</expression-string>
+          </expression>
+        </input>
+        <input name="OverheadObjects">
+          <expression>
+            <expression-string>0</expression-string>
+          </expression>
+        </input>
+        <input name="UseLowLatency">
+          <expression>
+            <expression-string>True</expression-string>
+          </expression>
+        </input>
+        <subObject name="GarbageCollectSettings" type="Matrox.DesignAssistant.Core.Projects.GarbageCollectSettings, Matrox.DesignAssistant.Core, Version=10.0.454.0, Culture=neutral, PublicKeyToken=726f03a4652993c7" id="bc8fc7d7-864e-4132-aa16-b7a6c626a4a6" Version="10.0.454.0">
+          <expression>
+            <expression-string></expression-string>
+          </expression>
+          <inputs>
+            <input name="FullCollection">
+              <expression>
+                <expression-string>False</expression-string>
+              </expression>
+            </input>
+            <input name="Generation">
+              <expression>
+                <expression-string>0</expression-string>
+              </expression>
+            </input>
+            <input name="Mode">
+              <expression>
+                <expression-string>Optimized</expression-string>
+              </expression>
+            </input>
+          </inputs>
+          <userXML />
+        </subObject>
+        <input name="EnableFullGCNotification">
+          <expression>
+            <expression-string>False</expression-string>
+          </expression>
+        </input>
+        <input name="GarbageCollectionWatcher">
+          <expression>
+            <expression-string>Disable</expression-string>
+          </expression>
+        </input>
+        <input name="MaxCollectionTime">
+          <expression available="False">
+            <expression-string>0.006</expression-string>
+          </expression>
+        </input>
+        <input name="JITWatcher">
+          <expression>
+            <expression-string>Disable</expression-string>
+          </expression>
+        </input>
+        <input name="InspectionTimeLogs">
+          <expression>
+            <expression-string>Disable</expression-string>
+          </expression>
+        </input>
+        <input name="MaxInspectionTime">
+          <expression available="False">
+            <expression-string>0</expression-string>
+          </expression>
+        </input>
+        <input name="StopOnMaxInspection">
+          <expression available="False">
+            <expression-string>False</expression-string>
+          </expression>
+        </input>
+        <input name="MaxRunTime">
+          <expression available="False">
+            <expression-string>0</expression-string>
+          </expression>
+        </input>
+        <subObject name="LogSettings" type="Matrox.DesignAssistant.Core.Projects.LogSettings, Matrox.DesignAssistant.Core, Version=10.0.454.0, Culture=neutral, PublicKeyToken=726f03a4652993c7" id="8c3d1864-9523-4ff6-a3b4-b5a04429f3c4" Version="10.0.454.0">
+          <expression available="False">
+            <expression-string></expression-string>
+          </expression>
+          <inputs>
+            <input name="LogFilePath">
+              <expression available="False">
+                <expression-string></expression-string>
+              </expression>
+            </input>
+            <input name="Mode">
+              <expression available="False">
+                <expression-string>MaxOnly</expression-string>
+              </expression>
+            </input>
+            <input name="WriteFrequency">
+              <expression available="False">
+                <expression-string>1000</expression-string>
+              </expression>
+            </input>
+          </inputs>
+          <userXML />
+        </subObject>
+        <input name="InspectionIntervalHeapLog">
+          <expression available="False">
+            <expression-string>0</expression-string>
+          </expression>
+        </input>
+        <input name="InspectionIntervalProcLog">
+          <expression available="False">
+            <expression-string>0</expression-string>
+          </expression>
+        </input>
+        <input name="CollectPeriod">
+          <expression>
+            <expression-string>1</expression-string>
           </expression>
         </input>
       </inputs>

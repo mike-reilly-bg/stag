@@ -311,46 +311,10 @@
       </inputs>
       <userXML />
     </HTMLAnnotator>
-    <HTMLAnnotator name="FrameRateValue" type="Matrox.DesignAssistant.Core.OperatorViews.Value, Matrox.DesignAssistant.Core, Version=10.0.454.0, Culture=neutral, PublicKeyToken=726f03a4652993c7" id="c270ed8d-3177-4955-8a74-84065df15e59" Version="10.0.454.0">
-      <inputs>
-        <input name="BackgroundColor">
-          <expression>
-            <expression-string>COLOR(211,211,211)</expression-string>
-          </expression>
-        </input>
-        <input name="TextColor">
-          <expression>
-            <expression-string>COLOR("Black")</expression-string>
-          </expression>
-        </input>
-        <input name="LineHeight">
-          <expression>
-            <expression-string>1</expression-string>
-          </expression>
-        </input>
-        <input name="MultiLine">
-          <expression>
-            <expression-string>False</expression-string>
-          </expression>
-        </input>
-        <input name="Overflow">
-          <expression>
-            <expression-string>Auto</expression-string>
-          </expression>
-        </input>
-        <input name="Text">
-          <expression>
-            <expression-string need-link-container="True">{Camera.FrameRate:F1}</expression-string>
-          </expression>
-        </input>
-      </inputs>
-      <userXML />
-    </HTMLAnnotator>
     <synchronized-publishing-groups use-publishing-optimization="False">
       <group name="PublishingGroup" framerate="20" default="True">
         <annotators>
           <annotator name="Display" type="Display" />
-          <annotator name="FrameRateValue" type="Value" />
         </annotators>
       </group>
     </synchronized-publishing-groups>

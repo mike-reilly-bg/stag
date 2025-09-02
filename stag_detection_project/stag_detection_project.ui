@@ -3,17 +3,6 @@
   <QuickEvaluate version="10.0.454.0">
     <Items>
       <Item text="STagFinderStep.fid1_x" />
-      <Item text="STagFinderStep.fid1_y" />
-      <Item text="STagFinderStep.fid1_z" />
-      <Item text="STagFinderStep.fid2_x" />
-      <Item text="STagFinderStep.fid2_y" />
-      <Item text="STagFinderStep.fid2_z" />
-      <Item text="STagFinderStep.MarkerCount" />
-      <Item text="STagFinderStep.img_width" />
-      <Item text="STagFinderStep.img_height" />
-      <Item text="Remap.Image.SizeX" />
-      <Item text="Remap.Image.SizeY" />
-      <Item text="STagFinderStep.fid1_x" />
     </Items>
   </QuickEvaluate>
   <QuickRunMode isQuickRun="False" />
