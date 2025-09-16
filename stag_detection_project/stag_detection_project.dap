@@ -410,8 +410,8 @@
         <setting name="BlackOffset" persistentState="NotPersistent" is-using-default="True" is-set="True" id="7744dfb1-3b52-4eaf-b12b-9c4ac1e43492" />
         <setting name="ExposureMode" persistentState="NotPersistent" is-using-default="True" is-set="True" id="09ebd8d9-771a-4285-ba21-8e14841cabf7" />
         <setting name="ExposureTime" persistentState="NotPersistent" is-using-default="False" is-set="True" id="e03a1c14-961c-4c74-b196-340d18dc4280">
-          <value>1</value>
-          <value-string>1</value-string>
+          <value>2</value>
+          <value-string>2</value-string>
         </setting>
         <setting name="ExposureDelay" persistentState="NotPersistent" is-using-default="True" is-set="True" id="900cab91-c8a0-4b9a-bf66-4fdb25ac744a" />
         <setting name="StrobeTime" persistentState="NotPersistent" is-using-default="False" is-set="True" id="15dfe4b0-2d87-49ed-97fd-76c75e9f0356">
@@ -453,8 +453,8 @@
         </setting>
         <setting name="ColorMode" persistentState="NotPersistent" is-using-default="True" is-set="True" id="11cf25d8-68ce-4159-8fca-e839ef761f52" />
         <setting name="InputGain" persistentState="NotPersistent" is-using-default="False" is-set="True" id="710aa80e-c428-4efd-9db0-c076c1ec17be">
-          <value>100</value>
-          <value-string>100</value-string>
+          <value>50</value>
+          <value-string>50</value-string>
         </setting>
         <setting name="WhiteBalanceName" persistentState="NotPersistent" is-using-default="True" is-set="True" id="5c0e33b0-d545-4ea6-bcd2-25def4053b71" />
         <setting name="LutFileName" persistentState="NotPersistent" is-using-default="True" is-set="True" id="706decc2-7a9c-4f48-ba49-8a3182d2793d" />
@@ -498,7 +498,7 @@
         </setting>
         <setting name="RuntimeNumberedFilesFolder" persistentState="NotPersistent" is-using-default="False" is-set="True" id="4ec659b3-085c-443e-ab3d-1b80fc26c983">
           <value>/home/mtxuser/Documents/Matrox Design Assistant\Images</value>
-          <value-string format-error="True" compiler-error="False">{PATH("DA Documents")}\\Images</value-string>
+          <value-string compiler-error="False">{PATH("DA Documents")}\\Images</value-string>
         </setting>
         <setting name="DesignTimeNumberedFilesFolder" persistentState="NotPersistent" is-using-default="False" is-set="True" id="67c29fbc-92b2-4f7e-86ab-858baadd0c23">
           <value>C:\Program Files\Matrox Imaging\DA 10.0\Images</value>
@@ -522,7 +522,7 @@
         </setting>
         <setting name="RuntimeFolder" persistentState="NotPersistent" is-using-default="False" is-set="True" id="8d2d20f9-5a4e-4793-b256-36fe1c4d3978">
           <value>/home/mtxuser/Documents/Matrox Design Assistant\Images</value>
-          <value-string format-error="True" compiler-error="False">{PATH("DA Documents")}\\Images</value-string>
+          <value-string compiler-error="False">{PATH("DA Documents")}\\Images</value-string>
         </setting>
         <setting name="DesignTimeFolder" persistentState="NotPersistent" is-using-default="False" is-set="True" id="46e22adc-7207-461d-864f-f74cc266bdee">
           <value>C:\Users\MichaelReilly\source\repos\STagFinderStep\STagFinderStep</value>
@@ -598,7 +598,7 @@
         </setting>
         <setting name="RuntimeNumberedFilesFolder" persistentState="NotPersistent" is-using-default="False" is-set="True" id="800f63ac-bb36-4773-8c58-d61d7e07dad7">
           <value>/home/mtxuser/Documents/Matrox Design Assistant\Images</value>
-          <value-string format-error="True" compiler-error="False">{PATH("DA Documents")}\\Images</value-string>
+          <value-string compiler-error="False">{PATH("DA Documents")}\\Images</value-string>
         </setting>
         <setting name="DesignTimeNumberedFilesFolder" persistentState="NotPersistent" is-using-default="False" is-set="True" id="b915b104-f208-4aa2-a167-08c6d614c397">
           <value>C:\Program Files\Matrox Imaging\DA 10.0\Images</value>
@@ -622,7 +622,7 @@
         </setting>
         <setting name="RuntimeFolder" persistentState="NotPersistent" is-using-default="False" is-set="True" id="0c356fbc-7a44-47bd-a1e8-f4e5fd1e242e">
           <value>/home/mtxuser/Documents/Matrox Design Assistant\Images</value>
-          <value-string format-error="True" compiler-error="False">{PATH("DA Documents")}\\Images</value-string>
+          <value-string compiler-error="False">{PATH("DA Documents")}\\Images</value-string>
         </setting>
         <setting name="DesignTimeFolder" persistentState="NotPersistent" is-using-default="False" is-set="True" id="81b247dd-8ff1-431d-85c9-c424e1276ad9">
           <value>C:\Users\MichaelReilly\Desktop\stag\failed images</value>
@@ -723,7 +723,10 @@
           <fieldinfo-settings modulename="Camera8" name="PLCCamera8SoftEvent1" type="4" firstindex="0" bitindex="5" size="0" isinput="False" inquickcomm="True" isusingautomaticaction="False" triggingvalue="1" anyvalues="False" ignoreisonline="False" />
           <fieldinfo-settings modulename="Camera8" name="PLCCamera8SoftEvent2" type="4" firstindex="0" bitindex="6" size="0" isinput="False" inquickcomm="True" isusingautomaticaction="False" triggingvalue="1" anyvalues="False" ignoreisonline="False" />
         </profinet-settings-fieldinfoCollection>
-        <profinet-settings-fieldinfoCollection statusstep="(None)" module="DataFromPLC" slot="2" />
+        <profinet-settings-fieldinfoCollection statusstep="(None)" module="DataFromPLC" slot="2">
+          <fieldinfo-settings modulename="DataFromPLC" name="Fiducial_Size_MM" type="8" firstindex="0" bitindex="-1" size="0" isinput="False" inquickcomm="False" isusingautomaticaction="False" triggingvalue="1" anyvalues="False" ignoreisonline="False" />
+          <fieldinfo-settings modulename="DataFromPLC" name="Max_Error_Correction" type="6" firstindex="8" bitindex="-1" size="0" isinput="False" inquickcomm="False" isusingautomaticaction="False" triggingvalue="1" anyvalues="False" ignoreisonline="False" />
+        </profinet-settings-fieldinfoCollection>
         <profinet-settings-fieldinfoCollection statusstep="(None)" module="DataToPLC" slot="1">
           <fieldinfo-settings modulename="DataToPLC" name="num_found" type="6" firstindex="0" bitindex="-1" size="0" isinput="True" inquickcomm="False" isusingautomaticaction="True" triggingvalue="1" anyvalues="False" ignoreisonline="False" />
           <fieldinfo-settings modulename="DataToPLC" name="fid1_x" type="5" firstindex="2" bitindex="-1" size="0" isinput="True" inquickcomm="False" isusingautomaticaction="True" triggingvalue="1" anyvalues="False" ignoreisonline="False" />
@@ -766,6 +769,8 @@
           <fieldinfo-settings modulename="Camera7" name="PLCCamera7SoftEvent2" type="0" firstindex="28" bitindex="6" size="0" isinput="False" inquickcomm="True" isusingautomaticaction="False" triggingvalue="1" anyvalues="False" ignoreisonline="False" />
           <fieldinfo-settings modulename="Camera8" name="PLCCamera8SoftEvent1" type="0" firstindex="30" bitindex="5" size="0" isinput="False" inquickcomm="True" isusingautomaticaction="False" triggingvalue="1" anyvalues="False" ignoreisonline="False" />
           <fieldinfo-settings modulename="Camera8" name="PLCCamera8SoftEvent2" type="0" firstindex="30" bitindex="6" size="0" isinput="False" inquickcomm="True" isusingautomaticaction="False" triggingvalue="1" anyvalues="False" ignoreisonline="False" />
+          <fieldinfo-settings modulename="DataFromPLC" name="Fiducial_Size_MM" type="5" firstindex="32" bitindex="-1" size="0" isinput="False" inquickcomm="False" isusingautomaticaction="False" triggingvalue="1" anyvalues="False" ignoreisonline="False" />
+          <fieldinfo-settings modulename="DataFromPLC" name="Max_Error_Correction" type="2" firstindex="40" bitindex="-1" size="0" isinput="False" inquickcomm="False" isusingautomaticaction="False" triggingvalue="1" anyvalues="False" ignoreisonline="False" />
         </ethernetip-settings-fieldinfoCollection>
         <ethernetip-settings-fieldinfoCollection name="Producer" statusstep="(None)">
           <fieldinfo-settings modulename="DataToPLC" name="num_found" type="2" firstindex="32" bitindex="-1" size="0" isinput="True" inquickcomm="False" isusingautomaticaction="True" triggingvalue="1" anyvalues="False" ignoreisonline="False" />
@@ -832,6 +837,8 @@
           <fieldinfo-settings modulename="Camera7" name="PLCCamera7SoftEvent2" type="0" firstindex="15" bitindex="6" size="0" isinput="False" inquickcomm="True" isusingautomaticaction="False" triggingvalue="1" anyvalues="False" ignoreisonline="False" />
           <fieldinfo-settings modulename="Camera8" name="PLCCamera8SoftEvent1" type="0" firstindex="16" bitindex="5" size="0" isinput="False" inquickcomm="True" isusingautomaticaction="False" triggingvalue="1" anyvalues="False" ignoreisonline="False" />
           <fieldinfo-settings modulename="Camera8" name="PLCCamera8SoftEvent2" type="0" firstindex="16" bitindex="6" size="0" isinput="False" inquickcomm="True" isusingautomaticaction="False" triggingvalue="1" anyvalues="False" ignoreisonline="False" />
+          <fieldinfo-settings modulename="DataFromPLC" name="Fiducial_Size_MM" type="6" firstindex="17" bitindex="-1" size="0" isinput="False" inquickcomm="False" isusingautomaticaction="False" triggingvalue="1" anyvalues="False" ignoreisonline="False" />
+          <fieldinfo-settings modulename="DataFromPLC" name="Max_Error_Correction" type="1" firstindex="21" bitindex="-1" size="0" isinput="False" inquickcomm="False" isusingautomaticaction="False" triggingvalue="1" anyvalues="False" ignoreisonline="False" />
         </cclink-settings-fieldinfoCollection>
         <cclink-settings-fieldinfoCollection statusstep="(None)" table-registers="RX" />
         <cclink-settings-fieldinfoCollection statusstep="(None)" table-registers="RY" />
@@ -880,256 +887,6 @@
     </opcua-project-collection>
   </opcua-container>
   <project-settings id="c0884c42-a6a7-4dd0-a451-c81d084f197a" name="ProjectSettings">
-    <setting name="AnnotationGroupContainer" type="Matrox.DesignAssistant.Core.Annotations.Groups.AnnotationGroupContainer, Matrox.DesignAssistant.Core, Version=10.0.454.0, Culture=neutral, PublicKeyToken=726f03a4652993c7" id="a526a99a-fc22-49a5-ae6e-9156e42923dd" Version="10.0.454.0">
-      <inputs>
-        <objectCollection name="AnnotationGroups" type="Matrox.DesignAssistant.Core.Annotations.Groups.SharedAnnotationGroupCollection, Matrox.DesignAssistant.Core, Version=10.0.454.0, Culture=neutral, PublicKeyToken=726f03a4652993c7" id="54e669b0-b708-4a36-aa4d-c6954d335da7" Version="10.0.454.0">
-          <expression>
-            <expression-string></expression-string>
-          </expression>
-          <collectionItems>
-            <subObject name="Group2" type="Matrox.DesignAssistant.Core.Annotations.Groups.SharedAnnotationGroup, Matrox.DesignAssistant.Core, Version=10.0.454.0, Culture=neutral, PublicKeyToken=726f03a4652993c7" id="2251f875-0816-4e9d-8f3c-dd8f6568b3b2" Version="10.0.454.0">
-              <inputs>
-                <objectCollection name="Annotations" type="Matrox.DesignAssistant.Core.Annotations.AnnotationCollection, Matrox.DesignAssistant.Core, Version=10.0.454.0, Culture=neutral, PublicKeyToken=726f03a4652993c7" id="c006500b-118d-4617-ad9a-3ec849788e07" Version="10.0.454.0">
-                  <expression>
-                    <expression-string></expression-string>
-                  </expression>
-                  <collectionItems>
-                    <subObject name="STagMarkers" type="STagFinderPackage.STagAnnotation, STagFinderPackage, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" id="8a7d2e09-1b9d-4630-a99d-4073f313db88" Version="10.0.454.0">
-                      <inputs>
-                        <input name="Visible">
-                          <expression>
-                            <expression-string>True</expression-string>
-                          </expression>
-                        </input>
-                        <input name="Editable">
-                          <expression available="False">
-                            <expression-string>False</expression-string>
-                          </expression>
-                        </input>
-                        <objectCollection name="Options" type="Matrox.DesignAssistant.Core.Steps.Annotations.AnnotationOptionCollection, Matrox.DesignAssistant.Core, Version=10.0.454.0, Culture=neutral, PublicKeyToken=726f03a4652993c7" id="974aa64e-4560-470a-b32c-e64d0765aadd" Version="10.0.454.0">
-                          <expression>
-                            <expression-string></expression-string>
-                          </expression>
-                          <collectionItems>
-                            <subObject name="ShowSTags" type="STagFinderPackage.STagDrawOption, STagFinderPackage, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" id="59216ce7-6e5e-41e6-97d2-89270f40bcb1" Version="10.0.454.0">
-                              <inputs>
-                                <input name="Visible">
-                                  <expression>
-                                    <expression-string>True</expression-string>
-                                  </expression>
-                                </input>
-                                <input name="Color">
-                                  <expression>
-                                    <expression-string>COLOR("Red")</expression-string>
-                                  </expression>
-                                </input>
-                              </inputs>
-                              <userXML />
-                              <option name="ShowSTags" />
-                            </subObject>
-                          </collectionItems>
-                          <userXML />
-                        </objectCollection>
-                        <input name="Step">
-                          <expression>
-                            <expression-string>Flowcharts("MainFlowchart").STagFinderStep</expression-string>
-                          </expression>
-                        </input>
-                        <subObject name="Label" type="Matrox.DesignAssistant.Core.Steps.Annotations.AnnotationLabel, Matrox.DesignAssistant.Core, Version=10.0.454.0, Culture=neutral, PublicKeyToken=726f03a4652993c7" id="63379f47-2294-49ae-9a63-8c98d204237e" Version="10.0.454.0">
-                          <expression available="False">
-                            <expression-string></expression-string>
-                          </expression>
-                          <inputs>
-                            <input name="Visible">
-                              <expression available="False">
-                                <expression-string>False</expression-string>
-                              </expression>
-                            </input>
-                            <input name="Text">
-                              <expression available="False">
-                                <expression-string></expression-string>
-                              </expression>
-                            </input>
-                            <input name="TextColor">
-                              <expression available="False">
-                                <expression-string>Default</expression-string>
-                              </expression>
-                            </input>
-                            <input name="BackgroundColor">
-                              <expression available="False">
-                                <expression-string>COLOR("LightGray")</expression-string>
-                              </expression>
-                            </input>
-                            <input name="BackgroundMode">
-                              <expression available="False">
-                                <expression-string>Transparent</expression-string>
-                              </expression>
-                            </input>
-                            <input name="AutoselectFont">
-                              <expression available="False">
-                                <expression-string>True</expression-string>
-                              </expression>
-                            </input>
-                            <input name="Font">
-                              <expression available="False">
-                                <expression-string>Default</expression-string>
-                              </expression>
-                            </input>
-                            <input name="FontType">
-                              <expression available="False">
-                                <expression-string>TrueType</expression-string>
-                              </expression>
-                            </input>
-                            <input name="BitmapFontSize">
-                              <expression available="False">
-                                <expression-string>Small</expression-string>
-                              </expression>
-                            </input>
-                            <input name="TrueTypeFontSize">
-                              <expression available="False">
-                                <expression-string>12</expression-string>
-                              </expression>
-                            </input>
-                            <input name="FontScaleX">
-                              <expression available="False">
-                                <expression-string>1</expression-string>
-                              </expression>
-                            </input>
-                            <input name="IsBold">
-                              <expression available="False">
-                                <expression-string>False</expression-string>
-                              </expression>
-                            </input>
-                            <input name="FontScaleY">
-                              <expression available="False">
-                                <expression-string>1</expression-string>
-                              </expression>
-                            </input>
-                            <input name="IsItalic">
-                              <expression available="False">
-                                <expression-string>False</expression-string>
-                              </expression>
-                            </input>
-                            <input name="TextDirection">
-                              <expression available="False">
-                                <expression-string>LeftToRight</expression-string>
-                              </expression>
-                            </input>
-                            <input name="HorizontalAlignment">
-                              <expression available="False">
-                                <expression-string>Left</expression-string>
-                              </expression>
-                            </input>
-                            <input name="VerticalAlignment">
-                              <expression available="False">
-                                <expression-string>Top</expression-string>
-                              </expression>
-                            </input>
-                          </inputs>
-                          <userXML />
-                        </subObject>
-                        <subObject name="DrawAction" type="Matrox.DesignAssistant.Core.Annotations.DrawAction, Matrox.DesignAssistant.Core, Version=10.0.454.0, Culture=neutral, PublicKeyToken=726f03a4652993c7" id="0405babc-0c30-4e53-a62d-e3cc79c15edc" Version="10.0.454.0">
-                          <expression>
-                            <expression-string></expression-string>
-                          </expression>
-                          <inputs>
-                            <input name="CanRun">
-                              <expression>
-                                <expression-string>None</expression-string>
-                              </expression>
-                            </input>
-                            <input name="Enabled">
-                              <expression available="False">
-                                <expression-string>True</expression-string>
-                              </expression>
-                            </input>
-                            <input name="TriggerEvent">
-                              <expression>
-                                <expression-string>Default</expression-string>
-                              </expression>
-                            </input>
-                            <input name="WaitInspectionEnd">
-                              <expression available="False">
-                                <expression-string>False</expression-string>
-                              </expression>
-                            </input>
-                          </inputs>
-                          <userXML />
-                        </subObject>
-                        <input name="MaximumAccumulations">
-                          <expression>
-                            <expression-string>2000</expression-string>
-                          </expression>
-                        </input>
-                        <input name="Thickness">
-                          <expression>
-                            <expression-string>Default</expression-string>
-                          </expression>
-                        </input>
-                      </inputs>
-                      <userXML />
-                      <annotation name="STag Markers" type="STagFinderPackage.STagAnnotation" isordered="False" drawingorder="1" />
-                    </subObject>
-                  </collectionItems>
-                  <userXML />
-                </objectCollection>
-                <objectCollection name="ClearActions" type="Matrox.DesignAssistant.Core.Annotations.Groups.ClearGroupActionCollection, Matrox.DesignAssistant.Core, Version=10.0.454.0, Culture=neutral, PublicKeyToken=726f03a4652993c7" id="c81a7766-7d8a-4b8c-8553-0b4e64e63c6c" Version="10.0.454.0">
-                  <expression>
-                    <expression-string></expression-string>
-                  </expression>
-                  <collectionItems>
-                    <subObject name="ClearAction" type="Matrox.DesignAssistant.Core.Annotations.Groups.ClearGroupAction, Matrox.DesignAssistant.Core, Version=10.0.454.0, Culture=neutral, PublicKeyToken=726f03a4652993c7" id="07130a3d-565b-424a-93b1-7258eba131cd" Version="10.0.454.0">
-                      <inputs>
-                        <input name="CanRun">
-                          <expression>
-                            <expression-string>None</expression-string>
-                          </expression>
-                        </input>
-                        <input name="Enabled">
-                          <expression available="False">
-                            <expression-string>True</expression-string>
-                          </expression>
-                        </input>
-                        <input name="TriggerEvent">
-                          <expression>
-                            <expression-string>Inspection.StartEvent</expression-string>
-                          </expression>
-                        </input>
-                        <input name="WaitInspectionEnd">
-                          <expression available="False">
-                            <expression-string>False</expression-string>
-                          </expression>
-                        </input>
-                      </inputs>
-                      <userXML />
-                    </subObject>
-                  </collectionItems>
-                  <userXML />
-                </objectCollection>
-              </inputs>
-              <userXML />
-            </subObject>
-          </collectionItems>
-          <userXML />
-        </objectCollection>
-        <input name="Axis3DLength">
-          <expression>
-            <expression-string>50</expression-string>
-          </expression>
-        </input>
-        <input name="Thickness">
-          <expression>
-            <expression-string>3</expression-string>
-          </expression>
-        </input>
-        <input name="Thickness3D">
-          <expression>
-            <expression-string>3</expression-string>
-          </expression>
-        </input>
-      </inputs>
-      <userXML />
-    </setting>
     <setting name="ActionsContainer" type="Matrox.DesignAssistant.Core.Events.ActionsContainer, Matrox.DesignAssistant.Core, Version=10.0.454.0, Culture=neutral, PublicKeyToken=726f03a4652993c7" id="41b0b8e9-1c64-486d-9fce-a7bb3f3f39d8" Version="10.0.454.0">
       <inputs>
         <objectCollection name="Actions" type="Matrox.DesignAssistant.Core.Events.ActionCollection, Matrox.DesignAssistant.Core, Version=10.0.454.0, Culture=neutral, PublicKeyToken=726f03a4652993c7" id="046c3cac-79c0-4692-a1a7-5769d0852846" Version="10.0.454.0">
@@ -1881,36 +1638,6 @@
       </inputs>
       <userXML />
     </setting>
-    <setting name="InspectionSettings" type="Matrox.DesignAssistant.Core.Events.InspectionEventsSettings, Matrox.DesignAssistant.Core, Version=10.0.454.0, Culture=neutral, PublicKeyToken=726f03a4652993c7" id="8e45c1cb-b340-4a52-96df-c409d2c11a72" Version="10.0.454.0">
-      <inputs>
-        <input name="EndEvent">
-          <expression>
-            <expression-string>Flowcharts("MainFlowchart").Loop.EndEvent</expression-string>
-          </expression>
-        </input>
-        <input name="StartEvent">
-          <expression>
-            <expression-string>Flowcharts("MainFlowchart").Camera.EndEvent</expression-string>
-          </expression>
-        </input>
-      </inputs>
-      <userXML />
-    </setting>
-    <setting name="RuntimeMonitoringSettings" type="Matrox.DesignAssistant.Core.Projects.RuntimeMonitoringSettings, Matrox.DesignAssistant.Core, Version=10.0.454.0, Culture=neutral, PublicKeyToken=726f03a4652993c7" id="11c2dcff-8180-4c65-b16d-4f7306631d18" Version="10.0.454.0">
-      <inputs>
-        <input name="EnableRuntimeMonitoring">
-          <expression>
-            <expression-string>True</expression-string>
-          </expression>
-        </input>
-        <input name="EnableRuntimeStatistics">
-          <expression>
-            <expression-string>True</expression-string>
-          </expression>
-        </input>
-      </inputs>
-      <userXML />
-    </setting>
     <setting name="OperatorViewToolbarSettings" type="Matrox.DesignAssistant.Core.Projects.OperatorViewToolbarSettings, Matrox.DesignAssistant.Core, Version=10.0.454.0, Culture=neutral, PublicKeyToken=726f03a4652993c7" id="e866be53-b8b5-4420-a93a-2c74668c5b2a" Version="10.0.454.0">
       <inputs>
         <input name="AutoHide">
@@ -1956,6 +1683,36 @@
         <input name="StartMinimized">
           <expression>
             <expression-string>False</expression-string>
+          </expression>
+        </input>
+      </inputs>
+      <userXML />
+    </setting>
+    <setting name="InspectionSettings" type="Matrox.DesignAssistant.Core.Events.InspectionEventsSettings, Matrox.DesignAssistant.Core, Version=10.0.454.0, Culture=neutral, PublicKeyToken=726f03a4652993c7" id="8e45c1cb-b340-4a52-96df-c409d2c11a72" Version="10.0.454.0">
+      <inputs>
+        <input name="EndEvent">
+          <expression>
+            <expression-string>Flowcharts("MainFlowchart").Loop.EndEvent</expression-string>
+          </expression>
+        </input>
+        <input name="StartEvent">
+          <expression>
+            <expression-string>Flowcharts("MainFlowchart").Camera.EndEvent</expression-string>
+          </expression>
+        </input>
+      </inputs>
+      <userXML />
+    </setting>
+    <setting name="RuntimeMonitoringSettings" type="Matrox.DesignAssistant.Core.Projects.RuntimeMonitoringSettings, Matrox.DesignAssistant.Core, Version=10.0.454.0, Culture=neutral, PublicKeyToken=726f03a4652993c7" id="11c2dcff-8180-4c65-b16d-4f7306631d18" Version="10.0.454.0">
+      <inputs>
+        <input name="EnableRuntimeMonitoring">
+          <expression>
+            <expression-string>True</expression-string>
+          </expression>
+        </input>
+        <input name="EnableRuntimeStatistics">
+          <expression>
+            <expression-string>True</expression-string>
           </expression>
         </input>
       </inputs>
@@ -2030,6 +1787,256 @@
           </AutomaticLabelProvider>
         </AutomaticLabelProviders>
       </userXML>
+    </setting>
+    <setting name="AnnotationGroupContainer" type="Matrox.DesignAssistant.Core.Annotations.Groups.AnnotationGroupContainer, Matrox.DesignAssistant.Core, Version=10.0.454.0, Culture=neutral, PublicKeyToken=726f03a4652993c7" id="a526a99a-fc22-49a5-ae6e-9156e42923dd" Version="10.0.454.0">
+      <inputs>
+        <objectCollection name="AnnotationGroups" type="Matrox.DesignAssistant.Core.Annotations.Groups.SharedAnnotationGroupCollection, Matrox.DesignAssistant.Core, Version=10.0.454.0, Culture=neutral, PublicKeyToken=726f03a4652993c7" id="54e669b0-b708-4a36-aa4d-c6954d335da7" Version="10.0.454.0">
+          <expression>
+            <expression-string></expression-string>
+          </expression>
+          <collectionItems>
+            <subObject name="Group2" type="Matrox.DesignAssistant.Core.Annotations.Groups.SharedAnnotationGroup, Matrox.DesignAssistant.Core, Version=10.0.454.0, Culture=neutral, PublicKeyToken=726f03a4652993c7" id="2251f875-0816-4e9d-8f3c-dd8f6568b3b2" Version="10.0.454.0">
+              <inputs>
+                <objectCollection name="Annotations" type="Matrox.DesignAssistant.Core.Annotations.AnnotationCollection, Matrox.DesignAssistant.Core, Version=10.0.454.0, Culture=neutral, PublicKeyToken=726f03a4652993c7" id="c006500b-118d-4617-ad9a-3ec849788e07" Version="10.0.454.0">
+                  <expression>
+                    <expression-string></expression-string>
+                  </expression>
+                  <collectionItems>
+                    <subObject name="STagMarkers" type="STagFinderPackage.STagAnnotation, STagFinderPackage, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" id="8a7d2e09-1b9d-4630-a99d-4073f313db88" Version="10.0.454.0">
+                      <inputs>
+                        <input name="Visible">
+                          <expression>
+                            <expression-string>True</expression-string>
+                          </expression>
+                        </input>
+                        <input name="Editable">
+                          <expression available="False">
+                            <expression-string>False</expression-string>
+                          </expression>
+                        </input>
+                        <objectCollection name="Options" type="Matrox.DesignAssistant.Core.Steps.Annotations.AnnotationOptionCollection, Matrox.DesignAssistant.Core, Version=10.0.454.0, Culture=neutral, PublicKeyToken=726f03a4652993c7" id="974aa64e-4560-470a-b32c-e64d0765aadd" Version="10.0.454.0">
+                          <expression>
+                            <expression-string></expression-string>
+                          </expression>
+                          <collectionItems>
+                            <subObject name="ShowSTags" type="STagFinderPackage.STagDrawOption, STagFinderPackage, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" id="59216ce7-6e5e-41e6-97d2-89270f40bcb1" Version="10.0.454.0">
+                              <inputs>
+                                <input name="Visible">
+                                  <expression>
+                                    <expression-string>True</expression-string>
+                                  </expression>
+                                </input>
+                                <input name="Color">
+                                  <expression>
+                                    <expression-string>COLOR("Red")</expression-string>
+                                  </expression>
+                                </input>
+                              </inputs>
+                              <userXML />
+                              <option name="ShowSTags" />
+                            </subObject>
+                          </collectionItems>
+                          <userXML />
+                        </objectCollection>
+                        <input name="Step">
+                          <expression>
+                            <expression-string>Flowcharts("MainFlowchart").STagFinderStep</expression-string>
+                          </expression>
+                        </input>
+                        <subObject name="Label" type="Matrox.DesignAssistant.Core.Steps.Annotations.AnnotationLabel, Matrox.DesignAssistant.Core, Version=10.0.454.0, Culture=neutral, PublicKeyToken=726f03a4652993c7" id="63379f47-2294-49ae-9a63-8c98d204237e" Version="10.0.454.0">
+                          <expression available="False">
+                            <expression-string></expression-string>
+                          </expression>
+                          <inputs>
+                            <input name="Visible">
+                              <expression available="False">
+                                <expression-string>False</expression-string>
+                              </expression>
+                            </input>
+                            <input name="Text">
+                              <expression available="False">
+                                <expression-string></expression-string>
+                              </expression>
+                            </input>
+                            <input name="TextColor">
+                              <expression available="False">
+                                <expression-string>Default</expression-string>
+                              </expression>
+                            </input>
+                            <input name="BackgroundColor">
+                              <expression available="False">
+                                <expression-string>COLOR("LightGray")</expression-string>
+                              </expression>
+                            </input>
+                            <input name="BackgroundMode">
+                              <expression available="False">
+                                <expression-string>Transparent</expression-string>
+                              </expression>
+                            </input>
+                            <input name="AutoselectFont">
+                              <expression available="False">
+                                <expression-string>True</expression-string>
+                              </expression>
+                            </input>
+                            <input name="Font">
+                              <expression available="False">
+                                <expression-string>Default</expression-string>
+                              </expression>
+                            </input>
+                            <input name="FontType">
+                              <expression available="False">
+                                <expression-string>TrueType</expression-string>
+                              </expression>
+                            </input>
+                            <input name="BitmapFontSize">
+                              <expression available="False">
+                                <expression-string>Small</expression-string>
+                              </expression>
+                            </input>
+                            <input name="TrueTypeFontSize">
+                              <expression available="False">
+                                <expression-string>12</expression-string>
+                              </expression>
+                            </input>
+                            <input name="FontScaleX">
+                              <expression available="False">
+                                <expression-string>1</expression-string>
+                              </expression>
+                            </input>
+                            <input name="IsBold">
+                              <expression available="False">
+                                <expression-string>False</expression-string>
+                              </expression>
+                            </input>
+                            <input name="FontScaleY">
+                              <expression available="False">
+                                <expression-string>1</expression-string>
+                              </expression>
+                            </input>
+                            <input name="IsItalic">
+                              <expression available="False">
+                                <expression-string>False</expression-string>
+                              </expression>
+                            </input>
+                            <input name="TextDirection">
+                              <expression available="False">
+                                <expression-string>LeftToRight</expression-string>
+                              </expression>
+                            </input>
+                            <input name="HorizontalAlignment">
+                              <expression available="False">
+                                <expression-string>Left</expression-string>
+                              </expression>
+                            </input>
+                            <input name="VerticalAlignment">
+                              <expression available="False">
+                                <expression-string>Top</expression-string>
+                              </expression>
+                            </input>
+                          </inputs>
+                          <userXML />
+                        </subObject>
+                        <subObject name="DrawAction" type="Matrox.DesignAssistant.Core.Annotations.DrawAction, Matrox.DesignAssistant.Core, Version=10.0.454.0, Culture=neutral, PublicKeyToken=726f03a4652993c7" id="0405babc-0c30-4e53-a62d-e3cc79c15edc" Version="10.0.454.0">
+                          <expression>
+                            <expression-string></expression-string>
+                          </expression>
+                          <inputs>
+                            <input name="CanRun">
+                              <expression>
+                                <expression-string>None</expression-string>
+                              </expression>
+                            </input>
+                            <input name="Enabled">
+                              <expression available="False">
+                                <expression-string>True</expression-string>
+                              </expression>
+                            </input>
+                            <input name="TriggerEvent">
+                              <expression>
+                                <expression-string>Default</expression-string>
+                              </expression>
+                            </input>
+                            <input name="WaitInspectionEnd">
+                              <expression available="False">
+                                <expression-string>False</expression-string>
+                              </expression>
+                            </input>
+                          </inputs>
+                          <userXML />
+                        </subObject>
+                        <input name="MaximumAccumulations">
+                          <expression>
+                            <expression-string>2000</expression-string>
+                          </expression>
+                        </input>
+                        <input name="Thickness">
+                          <expression>
+                            <expression-string>Default</expression-string>
+                          </expression>
+                        </input>
+                      </inputs>
+                      <userXML />
+                      <annotation name="STag Markers" type="STagFinderPackage.STagAnnotation" isordered="False" drawingorder="1" />
+                    </subObject>
+                  </collectionItems>
+                  <userXML />
+                </objectCollection>
+                <objectCollection name="ClearActions" type="Matrox.DesignAssistant.Core.Annotations.Groups.ClearGroupActionCollection, Matrox.DesignAssistant.Core, Version=10.0.454.0, Culture=neutral, PublicKeyToken=726f03a4652993c7" id="c81a7766-7d8a-4b8c-8553-0b4e64e63c6c" Version="10.0.454.0">
+                  <expression>
+                    <expression-string></expression-string>
+                  </expression>
+                  <collectionItems>
+                    <subObject name="ClearAction" type="Matrox.DesignAssistant.Core.Annotations.Groups.ClearGroupAction, Matrox.DesignAssistant.Core, Version=10.0.454.0, Culture=neutral, PublicKeyToken=726f03a4652993c7" id="07130a3d-565b-424a-93b1-7258eba131cd" Version="10.0.454.0">
+                      <inputs>
+                        <input name="CanRun">
+                          <expression>
+                            <expression-string>None</expression-string>
+                          </expression>
+                        </input>
+                        <input name="Enabled">
+                          <expression available="False">
+                            <expression-string>True</expression-string>
+                          </expression>
+                        </input>
+                        <input name="TriggerEvent">
+                          <expression>
+                            <expression-string>Inspection.StartEvent</expression-string>
+                          </expression>
+                        </input>
+                        <input name="WaitInspectionEnd">
+                          <expression available="False">
+                            <expression-string>False</expression-string>
+                          </expression>
+                        </input>
+                      </inputs>
+                      <userXML />
+                    </subObject>
+                  </collectionItems>
+                  <userXML />
+                </objectCollection>
+              </inputs>
+              <userXML />
+            </subObject>
+          </collectionItems>
+          <userXML />
+        </objectCollection>
+        <input name="Axis3DLength">
+          <expression>
+            <expression-string>50</expression-string>
+          </expression>
+        </input>
+        <input name="Thickness">
+          <expression>
+            <expression-string>3</expression-string>
+          </expression>
+        </input>
+        <input name="Thickness3D">
+          <expression>
+            <expression-string>3</expression-string>
+          </expression>
+        </input>
+      </inputs>
+      <userXML />
     </setting>
     <setting name="PerformanceSettings" type="Matrox.DesignAssistant.Core.Projects.PerformanceSettings, Matrox.DesignAssistant.Core, Version=10.0.454.0, Culture=neutral, PublicKeyToken=726f03a4652993c7" id="5e58165a-d9d6-4901-8c69-afe02296b75a" Version="10.0.454.0">
       <inputs>

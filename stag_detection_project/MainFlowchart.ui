@@ -2,7 +2,7 @@
 <UIConfiguration version="10.0.454.0">
   <Flowchart name="MainFlowchart" id="492c8fb0-3d2b-4200-ac60-c1ec7a2a8aba" scale="1">
     <imageInfos />
-    <Step name="FlowchartStart" id="f746a9cc-a5a5-40ef-8292-72ca01618028" multiDisplayViewMode="Single" quickRunEnabled="True">
+    <Step name="FlowchartStart" id="536c5bc8-ba41-4fe5-aaaa-099337df115f" multiDisplayViewMode="Single" quickRunEnabled="True">
       <annotations-manager visible="True">
         <annotations-Display1>
           <annotations>
@@ -4833,7 +4833,7 @@
         </annotations-Display4>
       </annotations-manager>
       <imageInfos>
-        <imageInfo linkPath="Camera.Image" colorMap="None" viewMode="Default" viewBitShift="1" zoomFactor="1" panOffsetX="1156" panOffsetY="703" />
+        <imageInfo linkPath="Camera.Image" colorMap="None" viewMode="Default" viewBitShift="1" zoomFactor="0.25" panOffsetX="0" panOffsetY="0" />
         <imageInfo linkPath="Camera.CorrectedImage" colorMap="Default" viewMode="AutoScale" viewBitShift="0" zoomFactor="1" panOffsetX="1087.5" panOffsetY="810.375" />
         <imageInfo linkPath="Camera.DepthMap" colorMap="Default" viewMode="Default" viewBitShift="0" />
         <imageInfo linkPath="Camera.PointCloud" colorMap="Default" viewMode="Default" viewBitShift="0" />
@@ -4841,7 +4841,7 @@
         <imageInfo linkPath="Camera.CameraLive" colorMap="Default" viewMode="Default" viewBitShift="0" />
       </imageInfos>
       <displayInfo-Display1 linkPath="Camera.Image" isShowingDisplay3D="False">
-        <display2D colorMap="None" viewMode="Default" viewBitShift="1" zoomFactor="1" panOffsetX="1156" panOffsetY="703" />
+        <display2D colorMap="None" viewMode="Default" viewBitShift="1" zoomFactor="4" panOffsetX="1211.625" panOffsetY="952.25" />
         <display3D isViewInitialized="False" azimuth="0" elevation="0" roll="0" distance="0" interestPoint="Infinity;Infinity;Infinity" colorComponent="Range" colorMap="Jet" rangeColorMap="Jet" intensityColorMap="None" meshAppearance="Solid" showAxes="False" pointSize="1" backgroundMode="Gradient" />
       </displayInfo-Display1>
       <displayInfo-Display2 linkPath="Camera.Image" isShowingDisplay3D="False">
@@ -4942,10 +4942,10 @@
       </annotations-manager>
       <imageInfos>
         <imageInfo linkPath="Remap.Image" colorMap="Default" viewMode="Default" viewBitShift="0" />
-        <imageInfo linkPath="Remap.OutputImage" colorMap="Default" viewMode="Default" viewBitShift="0" zoomFactor="4" panOffsetX="1168" panOffsetY="970" />
+        <imageInfo linkPath="Remap.OutputImage" colorMap="Default" viewMode="Default" viewBitShift="0" zoomFactor="2" panOffsetX="1120.25" panOffsetY="912.5" />
       </imageInfos>
       <displayInfo-Display1 linkPath="Remap.OutputImage" isShowingDisplay3D="False">
-        <display2D colorMap="None" viewMode="Default" viewBitShift="1" zoomFactor="4" panOffsetX="1168" panOffsetY="970" />
+        <display2D colorMap="None" viewMode="Default" viewBitShift="1" zoomFactor="2" panOffsetX="1120.25" panOffsetY="912.5" />
         <display3D isViewInitialized="False" azimuth="0" elevation="0" roll="0" distance="0" interestPoint="Infinity;Infinity;Infinity" colorComponent="Range" colorMap="Jet" rangeColorMap="Jet" intensityColorMap="None" meshAppearance="Solid" showAxes="False" pointSize="1" backgroundMode="Gradient" />
       </displayInfo-Display1>
       <displayInfo-Display2 linkPath="Remap.OutputImage" isShowingDisplay3D="False">
@@ -4960,6 +4960,215 @@
         <display2D colorMap="None" viewMode="Default" viewBitShift="1" />
         <display3D isViewInitialized="False" azimuth="0" elevation="0" roll="0" distance="0" interestPoint="Infinity;Infinity;Infinity" colorComponent="Range" colorMap="Jet" rangeColorMap="Jet" intensityColorMap="None" meshAppearance="Solid" showAxes="False" pointSize="1" backgroundMode="Gradient" />
       </displayInfo-Display4>
+    </Step>
+    <Step name="CommReader" id="6155df79-d861-4853-b8af-aa4e37138fd3" multiDisplayViewMode="Single" quickRunEnabled="True">
+      <annotations-manager visible="True">
+        <annotations-Display1>
+          <annotations>
+            <step name="Camera" isSameStep="False" visible="False" expanded="False" callout="None" filter="Basic">
+              <annotation name="Projection box" visible="True" expanded="False" />
+              <annotation name="Absolute coordinates" visible="False" expanded="False" />
+              <annotation name="Output coordinates" visible="True" expanded="False" />
+              <annotation name="Absolute coordinates (Corrected)" visible="False" expanded="False" />
+              <annotation name="Relative coordinates (Corrected)" visible="False" expanded="False" />
+              <annotation name="Absolute coordinates (DepthMap)" visible="False" expanded="False" />
+              <annotation name="Relative coordinates (DepthMap)" visible="True" expanded="False" />
+              <annotation name="Absolute coordinates (Profile)" visible="False" expanded="False" />
+              <annotation name="Relative coordinates (Profile)" visible="True" expanded="False" />
+              <annotation name="Absolute coordinates (PointCloud)" visible="False" expanded="False" />
+              <annotation name="Relative coordinates (PointCloud)" visible="True" expanded="False" />
+            </step>
+            <step name="STagFinderStep" isSameStep="False" visible="False" expanded="False" callout="None" filter="Basic">
+              <annotation name="STag Markers" visible="True" expanded="False" />
+            </step>
+          </annotations>
+        </annotations-Display1>
+        <annotations-Display2>
+          <annotations>
+            <step name="Camera" isSameStep="False" visible="False" expanded="False" callout="None" filter="Basic">
+              <annotation name="Projection box" visible="True" expanded="False" />
+              <annotation name="Absolute coordinates" visible="False" expanded="False" />
+              <annotation name="Output coordinates" visible="True" expanded="False" />
+              <annotation name="Absolute coordinates (Corrected)" visible="False" expanded="False" />
+              <annotation name="Relative coordinates (Corrected)" visible="False" expanded="False" />
+              <annotation name="Absolute coordinates (DepthMap)" visible="False" expanded="False" />
+              <annotation name="Relative coordinates (DepthMap)" visible="True" expanded="False" />
+              <annotation name="Absolute coordinates (Profile)" visible="False" expanded="False" />
+              <annotation name="Relative coordinates (Profile)" visible="True" expanded="False" />
+              <annotation name="Absolute coordinates (PointCloud)" visible="False" expanded="False" />
+              <annotation name="Relative coordinates (PointCloud)" visible="True" expanded="False" />
+            </step>
+            <step name="STagFinderStep" isSameStep="False" visible="False" expanded="False" callout="None" filter="Basic">
+              <annotation name="STag Markers" visible="True" expanded="False" />
+            </step>
+          </annotations>
+        </annotations-Display2>
+        <annotations-Display3>
+          <annotations>
+            <step name="Camera" isSameStep="False" visible="False" expanded="False" callout="None" filter="Basic">
+              <annotation name="Projection box" visible="True" expanded="False" />
+              <annotation name="Absolute coordinates" visible="False" expanded="False" />
+              <annotation name="Output coordinates" visible="True" expanded="False" />
+              <annotation name="Absolute coordinates (Corrected)" visible="False" expanded="False" />
+              <annotation name="Relative coordinates (Corrected)" visible="False" expanded="False" />
+              <annotation name="Absolute coordinates (DepthMap)" visible="False" expanded="False" />
+              <annotation name="Relative coordinates (DepthMap)" visible="True" expanded="False" />
+              <annotation name="Absolute coordinates (Profile)" visible="False" expanded="False" />
+              <annotation name="Relative coordinates (Profile)" visible="True" expanded="False" />
+              <annotation name="Absolute coordinates (PointCloud)" visible="False" expanded="False" />
+              <annotation name="Relative coordinates (PointCloud)" visible="True" expanded="False" />
+            </step>
+            <step name="STagFinderStep" isSameStep="False" visible="False" expanded="False" callout="None" filter="Basic">
+              <annotation name="STag Markers" visible="True" expanded="False" />
+            </step>
+          </annotations>
+        </annotations-Display3>
+        <annotations-Display4>
+          <annotations>
+            <step name="Camera" isSameStep="False" visible="False" expanded="False" callout="None" filter="Basic">
+              <annotation name="Projection box" visible="True" expanded="False" />
+              <annotation name="Absolute coordinates" visible="False" expanded="False" />
+              <annotation name="Output coordinates" visible="True" expanded="False" />
+              <annotation name="Absolute coordinates (Corrected)" visible="False" expanded="False" />
+              <annotation name="Relative coordinates (Corrected)" visible="False" expanded="False" />
+              <annotation name="Absolute coordinates (DepthMap)" visible="False" expanded="False" />
+              <annotation name="Relative coordinates (DepthMap)" visible="True" expanded="False" />
+              <annotation name="Absolute coordinates (Profile)" visible="False" expanded="False" />
+              <annotation name="Relative coordinates (Profile)" visible="True" expanded="False" />
+              <annotation name="Absolute coordinates (PointCloud)" visible="False" expanded="False" />
+              <annotation name="Relative coordinates (PointCloud)" visible="True" expanded="False" />
+            </step>
+            <step name="STagFinderStep" isSameStep="False" visible="False" expanded="False" callout="None" filter="Basic">
+              <annotation name="STag Markers" visible="True" expanded="False" />
+            </step>
+          </annotations>
+        </annotations-Display4>
+      </annotations-manager>
+      <imageInfos />
+      <displayInfo-Display1 linkPath="Camera.Image" isShowingDisplay3D="False">
+        <display2D colorMap="None" viewMode="Default" viewBitShift="1" zoomFactor="0.25" panOffsetX="0" panOffsetY="0" />
+        <display3D isViewInitialized="False" azimuth="0" elevation="0" roll="0" distance="0" interestPoint="Infinity;Infinity;Infinity" colorComponent="Range" colorMap="Jet" rangeColorMap="Jet" intensityColorMap="None" meshAppearance="Solid" showAxes="False" pointSize="1" backgroundMode="Gradient" />
+      </displayInfo-Display1>
+      <displayInfo-Display2 linkPath="Camera.Image" isShowingDisplay3D="False">
+        <display2D colorMap="None" viewMode="Default" viewBitShift="1" />
+        <display3D isViewInitialized="False" azimuth="0" elevation="0" roll="0" distance="0" interestPoint="Infinity;Infinity;Infinity" colorComponent="Range" colorMap="Jet" rangeColorMap="Jet" intensityColorMap="None" meshAppearance="Solid" showAxes="False" pointSize="1" backgroundMode="Gradient" />
+      </displayInfo-Display2>
+      <displayInfo-Display3 linkPath="Camera.Image" isShowingDisplay3D="False">
+        <display2D colorMap="None" viewMode="Default" viewBitShift="1" />
+        <display3D isViewInitialized="False" azimuth="0" elevation="0" roll="0" distance="0" interestPoint="Infinity;Infinity;Infinity" colorComponent="Range" colorMap="Jet" rangeColorMap="Jet" intensityColorMap="None" meshAppearance="Solid" showAxes="False" pointSize="1" backgroundMode="Gradient" />
+      </displayInfo-Display3>
+      <displayInfo-Display4 linkPath="Camera.Image" isShowingDisplay3D="False">
+        <display2D colorMap="None" viewMode="Default" viewBitShift="1" />
+        <display3D isViewInitialized="False" azimuth="0" elevation="0" roll="0" distance="0" interestPoint="Infinity;Infinity;Infinity" colorComponent="Range" colorMap="Jet" rangeColorMap="Jet" intensityColorMap="None" meshAppearance="Solid" showAxes="False" pointSize="1" backgroundMode="Gradient" />
+      </displayInfo-Display4>
+      <resultcolumns>
+        <column header="Field" index="0" />
+        <column header="Data Type" index="1" />
+        <column header="Value" index="2" />
+        <column header="Execution Time" index="3" />
+      </resultcolumns>
+    </Step>
+    <Step name="Condition" id="f94bd2e5-0ef5-4dd9-bf35-aad4cb93858f" multiDisplayViewMode="Single" quickRunEnabled="True">
+      <annotations-manager visible="True">
+        <annotations-Display1>
+          <annotations>
+            <step name="Camera" isSameStep="False" visible="True" expanded="False" callout="None" filter="Basic">
+              <annotation name="Projection box" visible="True" expanded="False" />
+              <annotation name="Absolute coordinates" visible="False" expanded="False" />
+              <annotation name="Output coordinates" visible="True" expanded="False" />
+              <annotation name="Absolute coordinates (Corrected)" visible="False" expanded="False" />
+              <annotation name="Relative coordinates (Corrected)" visible="False" expanded="False" />
+              <annotation name="Absolute coordinates (DepthMap)" visible="False" expanded="False" />
+              <annotation name="Relative coordinates (DepthMap)" visible="True" expanded="False" />
+              <annotation name="Absolute coordinates (Profile)" visible="False" expanded="False" />
+              <annotation name="Relative coordinates (Profile)" visible="True" expanded="False" />
+              <annotation name="Absolute coordinates (PointCloud)" visible="False" expanded="False" />
+              <annotation name="Relative coordinates (PointCloud)" visible="True" expanded="False" />
+            </step>
+            <step name="STagFinderStep" isSameStep="False" visible="False" expanded="False" callout="None" filter="Basic">
+              <annotation name="STag Markers" visible="True" expanded="False" />
+            </step>
+          </annotations>
+        </annotations-Display1>
+        <annotations-Display2>
+          <annotations>
+            <step name="Camera" isSameStep="False" visible="True" expanded="False" callout="None" filter="Basic">
+              <annotation name="Projection box" visible="True" expanded="False" />
+              <annotation name="Absolute coordinates" visible="False" expanded="False" />
+              <annotation name="Output coordinates" visible="True" expanded="False" />
+              <annotation name="Absolute coordinates (Corrected)" visible="False" expanded="False" />
+              <annotation name="Relative coordinates (Corrected)" visible="False" expanded="False" />
+              <annotation name="Absolute coordinates (DepthMap)" visible="False" expanded="False" />
+              <annotation name="Relative coordinates (DepthMap)" visible="True" expanded="False" />
+              <annotation name="Absolute coordinates (Profile)" visible="False" expanded="False" />
+              <annotation name="Relative coordinates (Profile)" visible="True" expanded="False" />
+              <annotation name="Absolute coordinates (PointCloud)" visible="False" expanded="False" />
+              <annotation name="Relative coordinates (PointCloud)" visible="True" expanded="False" />
+            </step>
+            <step name="STagFinderStep" isSameStep="False" visible="False" expanded="False" callout="None" filter="Basic">
+              <annotation name="STag Markers" visible="True" expanded="False" />
+            </step>
+          </annotations>
+        </annotations-Display2>
+        <annotations-Display3>
+          <annotations>
+            <step name="Camera" isSameStep="False" visible="True" expanded="False" callout="None" filter="Basic">
+              <annotation name="Projection box" visible="True" expanded="False" />
+              <annotation name="Absolute coordinates" visible="False" expanded="False" />
+              <annotation name="Output coordinates" visible="True" expanded="False" />
+              <annotation name="Absolute coordinates (Corrected)" visible="False" expanded="False" />
+              <annotation name="Relative coordinates (Corrected)" visible="False" expanded="False" />
+              <annotation name="Absolute coordinates (DepthMap)" visible="False" expanded="False" />
+              <annotation name="Relative coordinates (DepthMap)" visible="True" expanded="False" />
+              <annotation name="Absolute coordinates (Profile)" visible="False" expanded="False" />
+              <annotation name="Relative coordinates (Profile)" visible="True" expanded="False" />
+              <annotation name="Absolute coordinates (PointCloud)" visible="False" expanded="False" />
+              <annotation name="Relative coordinates (PointCloud)" visible="True" expanded="False" />
+            </step>
+            <step name="STagFinderStep" isSameStep="False" visible="False" expanded="False" callout="None" filter="Basic">
+              <annotation name="STag Markers" visible="True" expanded="False" />
+            </step>
+          </annotations>
+        </annotations-Display3>
+        <annotations-Display4>
+          <annotations>
+            <step name="Camera" isSameStep="False" visible="True" expanded="False" callout="None" filter="Basic">
+              <annotation name="Projection box" visible="True" expanded="False" />
+              <annotation name="Absolute coordinates" visible="False" expanded="False" />
+              <annotation name="Output coordinates" visible="True" expanded="False" />
+              <annotation name="Absolute coordinates (Corrected)" visible="False" expanded="False" />
+              <annotation name="Relative coordinates (Corrected)" visible="False" expanded="False" />
+              <annotation name="Absolute coordinates (DepthMap)" visible="False" expanded="False" />
+              <annotation name="Relative coordinates (DepthMap)" visible="True" expanded="False" />
+              <annotation name="Absolute coordinates (Profile)" visible="False" expanded="False" />
+              <annotation name="Relative coordinates (Profile)" visible="True" expanded="False" />
+              <annotation name="Absolute coordinates (PointCloud)" visible="False" expanded="False" />
+              <annotation name="Relative coordinates (PointCloud)" visible="True" expanded="False" />
+            </step>
+            <step name="STagFinderStep" isSameStep="False" visible="False" expanded="False" callout="None" filter="Basic">
+              <annotation name="STag Markers" visible="True" expanded="False" />
+            </step>
+          </annotations>
+        </annotations-Display4>
+      </annotations-manager>
+      <imageInfos />
+      <displayInfo-Display1 linkPath="Camera.Image" isShowingDisplay3D="False">
+        <display2D colorMap="None" viewMode="Default" viewBitShift="1" zoomFactor="0.25" panOffsetX="0" panOffsetY="0" />
+        <display3D isViewInitialized="False" azimuth="0" elevation="0" roll="0" distance="0" interestPoint="Infinity;Infinity;Infinity" colorComponent="Range" colorMap="Jet" rangeColorMap="Jet" intensityColorMap="None" meshAppearance="Solid" showAxes="False" pointSize="1" backgroundMode="Gradient" />
+      </displayInfo-Display1>
+      <displayInfo-Display2 linkPath="Camera.Image" isShowingDisplay3D="False">
+        <display2D colorMap="None" viewMode="Default" viewBitShift="1" />
+        <display3D isViewInitialized="False" azimuth="0" elevation="0" roll="0" distance="0" interestPoint="Infinity;Infinity;Infinity" colorComponent="Range" colorMap="Jet" rangeColorMap="Jet" intensityColorMap="None" meshAppearance="Solid" showAxes="False" pointSize="1" backgroundMode="Gradient" />
+      </displayInfo-Display2>
+      <displayInfo-Display3 linkPath="Camera.Image" isShowingDisplay3D="False">
+        <display2D colorMap="None" viewMode="Default" viewBitShift="1" />
+        <display3D isViewInitialized="False" azimuth="0" elevation="0" roll="0" distance="0" interestPoint="Infinity;Infinity;Infinity" colorComponent="Range" colorMap="Jet" rangeColorMap="Jet" intensityColorMap="None" meshAppearance="Solid" showAxes="False" pointSize="1" backgroundMode="Gradient" />
+      </displayInfo-Display3>
+      <displayInfo-Display4 linkPath="Camera.Image" isShowingDisplay3D="False">
+        <display2D colorMap="None" viewMode="Default" viewBitShift="1" />
+        <display3D isViewInitialized="False" azimuth="0" elevation="0" roll="0" distance="0" interestPoint="Infinity;Infinity;Infinity" colorComponent="Range" colorMap="Jet" rangeColorMap="Jet" intensityColorMap="None" meshAppearance="Solid" showAxes="False" pointSize="1" backgroundMode="Gradient" />
+      </displayInfo-Display4>
+      <forcedBranch forcedBranch="" />
     </Step>
     <Step name="STagFinderStep" id="79416791-1d28-4f8b-8554-bd0befbd2e40" multiDisplayViewMode="Single" quickRunEnabled="False">
       <annotations-manager visible="True">
@@ -5269,10 +5478,10 @@
         </annotations-Display4>
       </annotations-manager>
       <imageInfos>
-        <imageInfo linkPath="STagFinderStep.Image" colorMap="Default" viewMode="Default" viewBitShift="0" zoomFactor="4" panOffsetX="1175.25" panOffsetY="983.75" />
+        <imageInfo linkPath="STagFinderStep.Image" colorMap="Default" viewMode="Default" viewBitShift="0" zoomFactor="4" panOffsetX="1194.5" panOffsetY="969.75" />
       </imageInfos>
       <displayInfo-Display1 linkPath="STagFinderStep.Image" isShowingDisplay3D="False">
-        <display2D colorMap="None" viewMode="Default" viewBitShift="1" zoomFactor="4" panOffsetX="1175.25" panOffsetY="983.75" />
+        <display2D colorMap="None" viewMode="Default" viewBitShift="1" zoomFactor="4" panOffsetX="1194.5" panOffsetY="969.75" />
         <display3D isViewInitialized="False" azimuth="0" elevation="0" roll="0" distance="0" interestPoint="Infinity;Infinity;Infinity" colorComponent="Range" colorMap="Jet" rangeColorMap="Jet" intensityColorMap="None" meshAppearance="Solid" showAxes="False" pointSize="1" backgroundMode="Gradient" />
       </displayInfo-Display1>
       <displayInfo-Display2 linkPath="STagFinderStep.Image" isShowingDisplay3D="False">
@@ -5284,6 +5493,107 @@
         <display3D isViewInitialized="False" azimuth="0" elevation="0" roll="0" distance="0" interestPoint="Infinity;Infinity;Infinity" colorComponent="Range" colorMap="Jet" rangeColorMap="Jet" intensityColorMap="None" meshAppearance="Solid" showAxes="False" pointSize="1" backgroundMode="Gradient" />
       </displayInfo-Display3>
       <displayInfo-Display4 linkPath="STagFinderStep.Image" isShowingDisplay3D="False">
+        <display2D colorMap="None" viewMode="Default" viewBitShift="1" />
+        <display3D isViewInitialized="False" azimuth="0" elevation="0" roll="0" distance="0" interestPoint="Infinity;Infinity;Infinity" colorComponent="Range" colorMap="Jet" rangeColorMap="Jet" intensityColorMap="None" meshAppearance="Solid" showAxes="False" pointSize="1" backgroundMode="Gradient" />
+      </displayInfo-Display4>
+    </Step>
+    <Step name="CommWriter" id="810f5129-46fc-455d-b9e3-ca425c1a9d35" multiDisplayViewMode="Single" quickRunEnabled="True">
+      <annotations-manager visible="True">
+        <annotations-Display1>
+          <annotations>
+            <step name="Camera" isSameStep="False" visible="False" expanded="False" callout="None" filter="Basic">
+              <annotation name="Projection box" visible="True" expanded="False" />
+              <annotation name="Absolute coordinates" visible="False" expanded="False" />
+              <annotation name="Output coordinates" visible="True" expanded="False" />
+              <annotation name="Absolute coordinates (Corrected)" visible="False" expanded="False" />
+              <annotation name="Relative coordinates (Corrected)" visible="False" expanded="False" />
+              <annotation name="Absolute coordinates (DepthMap)" visible="False" expanded="False" />
+              <annotation name="Relative coordinates (DepthMap)" visible="True" expanded="False" />
+              <annotation name="Absolute coordinates (Profile)" visible="False" expanded="False" />
+              <annotation name="Relative coordinates (Profile)" visible="True" expanded="False" />
+              <annotation name="Absolute coordinates (PointCloud)" visible="False" expanded="False" />
+              <annotation name="Relative coordinates (PointCloud)" visible="True" expanded="False" />
+            </step>
+            <step name="STagFinderStep" isSameStep="False" visible="False" expanded="False" callout="None" filter="Basic">
+              <annotation name="STag Markers" visible="True" expanded="False" />
+            </step>
+          </annotations>
+        </annotations-Display1>
+        <annotations-Display2>
+          <annotations>
+            <step name="Camera" isSameStep="False" visible="False" expanded="False" callout="None" filter="Basic">
+              <annotation name="Projection box" visible="True" expanded="False" />
+              <annotation name="Absolute coordinates" visible="False" expanded="False" />
+              <annotation name="Output coordinates" visible="True" expanded="False" />
+              <annotation name="Absolute coordinates (Corrected)" visible="False" expanded="False" />
+              <annotation name="Relative coordinates (Corrected)" visible="False" expanded="False" />
+              <annotation name="Absolute coordinates (DepthMap)" visible="False" expanded="False" />
+              <annotation name="Relative coordinates (DepthMap)" visible="True" expanded="False" />
+              <annotation name="Absolute coordinates (Profile)" visible="False" expanded="False" />
+              <annotation name="Relative coordinates (Profile)" visible="True" expanded="False" />
+              <annotation name="Absolute coordinates (PointCloud)" visible="False" expanded="False" />
+              <annotation name="Relative coordinates (PointCloud)" visible="True" expanded="False" />
+            </step>
+            <step name="STagFinderStep" isSameStep="False" visible="False" expanded="False" callout="None" filter="Basic">
+              <annotation name="STag Markers" visible="True" expanded="False" />
+            </step>
+          </annotations>
+        </annotations-Display2>
+        <annotations-Display3>
+          <annotations>
+            <step name="Camera" isSameStep="False" visible="False" expanded="False" callout="None" filter="Basic">
+              <annotation name="Projection box" visible="True" expanded="False" />
+              <annotation name="Absolute coordinates" visible="False" expanded="False" />
+              <annotation name="Output coordinates" visible="True" expanded="False" />
+              <annotation name="Absolute coordinates (Corrected)" visible="False" expanded="False" />
+              <annotation name="Relative coordinates (Corrected)" visible="False" expanded="False" />
+              <annotation name="Absolute coordinates (DepthMap)" visible="False" expanded="False" />
+              <annotation name="Relative coordinates (DepthMap)" visible="True" expanded="False" />
+              <annotation name="Absolute coordinates (Profile)" visible="False" expanded="False" />
+              <annotation name="Relative coordinates (Profile)" visible="True" expanded="False" />
+              <annotation name="Absolute coordinates (PointCloud)" visible="False" expanded="False" />
+              <annotation name="Relative coordinates (PointCloud)" visible="True" expanded="False" />
+            </step>
+            <step name="STagFinderStep" isSameStep="False" visible="False" expanded="False" callout="None" filter="Basic">
+              <annotation name="STag Markers" visible="True" expanded="False" />
+            </step>
+          </annotations>
+        </annotations-Display3>
+        <annotations-Display4>
+          <annotations>
+            <step name="Camera" isSameStep="False" visible="False" expanded="False" callout="None" filter="Basic">
+              <annotation name="Projection box" visible="True" expanded="False" />
+              <annotation name="Absolute coordinates" visible="False" expanded="False" />
+              <annotation name="Output coordinates" visible="True" expanded="False" />
+              <annotation name="Absolute coordinates (Corrected)" visible="False" expanded="False" />
+              <annotation name="Relative coordinates (Corrected)" visible="False" expanded="False" />
+              <annotation name="Absolute coordinates (DepthMap)" visible="False" expanded="False" />
+              <annotation name="Relative coordinates (DepthMap)" visible="True" expanded="False" />
+              <annotation name="Absolute coordinates (Profile)" visible="False" expanded="False" />
+              <annotation name="Relative coordinates (Profile)" visible="True" expanded="False" />
+              <annotation name="Absolute coordinates (PointCloud)" visible="False" expanded="False" />
+              <annotation name="Relative coordinates (PointCloud)" visible="True" expanded="False" />
+            </step>
+            <step name="STagFinderStep" isSameStep="False" visible="False" expanded="False" callout="None" filter="Basic">
+              <annotation name="STag Markers" visible="True" expanded="False" />
+            </step>
+          </annotations>
+        </annotations-Display4>
+      </annotations-manager>
+      <imageInfos />
+      <displayInfo-Display1 linkPath="Camera.Image" isShowingDisplay3D="False">
+        <display2D colorMap="None" viewMode="Default" viewBitShift="1" />
+        <display3D isViewInitialized="False" azimuth="0" elevation="0" roll="0" distance="0" interestPoint="Infinity;Infinity;Infinity" colorComponent="Range" colorMap="Jet" rangeColorMap="Jet" intensityColorMap="None" meshAppearance="Solid" showAxes="False" pointSize="1" backgroundMode="Gradient" />
+      </displayInfo-Display1>
+      <displayInfo-Display2 linkPath="Camera.Image" isShowingDisplay3D="False">
+        <display2D colorMap="None" viewMode="Default" viewBitShift="1" />
+        <display3D isViewInitialized="False" azimuth="0" elevation="0" roll="0" distance="0" interestPoint="Infinity;Infinity;Infinity" colorComponent="Range" colorMap="Jet" rangeColorMap="Jet" intensityColorMap="None" meshAppearance="Solid" showAxes="False" pointSize="1" backgroundMode="Gradient" />
+      </displayInfo-Display2>
+      <displayInfo-Display3 linkPath="Camera.Image" isShowingDisplay3D="False">
+        <display2D colorMap="None" viewMode="Default" viewBitShift="1" />
+        <display3D isViewInitialized="False" azimuth="0" elevation="0" roll="0" distance="0" interestPoint="Infinity;Infinity;Infinity" colorComponent="Range" colorMap="Jet" rangeColorMap="Jet" intensityColorMap="None" meshAppearance="Solid" showAxes="False" pointSize="1" backgroundMode="Gradient" />
+      </displayInfo-Display3>
+      <displayInfo-Display4 linkPath="Camera.Image" isShowingDisplay3D="False">
         <display2D colorMap="None" viewMode="Default" viewBitShift="1" />
         <display3D isViewInitialized="False" azimuth="0" elevation="0" roll="0" distance="0" interestPoint="Infinity;Infinity;Infinity" colorComponent="Range" colorMap="Jet" rangeColorMap="Jet" intensityColorMap="None" meshAppearance="Solid" showAxes="False" pointSize="1" backgroundMode="Gradient" />
       </displayInfo-Display4>

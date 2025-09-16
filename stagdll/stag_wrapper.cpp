@@ -38,7 +38,7 @@ static const Mat DIST_COEFFS = (Mat_<double>(1, 4) <<
 // —————————————————————————————————————————
 // 2) Tag edge length (mm)
 // —————————————————————————————————————————
-static const float FIDUCIAL_EDGE_LENGTH_MM = 69.0f;
+// static const float FIDUCIAL_EDGE_LENGTH_MM = 69.0f;
 
 // —————————————————————————————————————————
 // 3) Knew (undistorted intrinsics), cached per image size
@@ -111,7 +111,8 @@ extern "C" STAG_API void FindStagCorners(
     int width, int height,
     double* result,
     int resultLen,
-    int error_correction
+    int error_correction,
+    double FIDUCIAL_EDGE_LENGTH_MM
 ) {
     const int kMinLen = 23;
     if (!result || resultLen < kMinLen || !image || width <= 0 || height <= 0) {
@@ -165,7 +166,7 @@ extern "C" STAG_API void FindStagCorners(
     }
 
     // 3) 3D object points for square tag centered at origin on z=0
-    const float s2 = FIDUCIAL_EDGE_LENGTH_MM * 0.5f;
+    const float s2 = (float) FIDUCIAL_EDGE_LENGTH_MM * 0.5f;
     std::vector<cv::Point3f> objPts = {
         {-s2, +s2, 0.0f},  // 0: TL
         {+s2, +s2, 0.0f},  // 1: TR

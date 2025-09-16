@@ -1,187 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <flowchart id="492c8fb0-3d2b-4200-ac60-c1ec7a2a8aba" version="10.0.454.0" description="">
-  <Variables id="ffe72ab9-b88c-4613-bb0a-2a6e0ad20b59" name="Variables">
-    <Variable name="bool_CRSuccess" persistentState="NotPersistent" type="Matrox.DesignAssistant.Core.Flowcharts.Variable`1[[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], Matrox.DesignAssistant.Core, Version=10.0.454.0, Culture=neutral, PublicKeyToken=726f03a4652993c7" linkedAssemblies="Matrox.DesignAssistant.Core, Version=10.0.454.0, Culture=neutral, PublicKeyToken=726f03a4652993c7" description="" typeName="Boolean" id="3a9970d8-f3ea-47e6-8049-51d1aa178890" Version="10.0.454.0">
-      <inputs>
-        <input name="InitialValue">
-          <expression>
-            <expression-string>False</expression-string>
-          </expression>
-        </input>
-        <input name="ResetPoint">
-          <expression>
-            <expression-string>NeverReset</expression-string>
-          </expression>
-        </input>
-      </inputs>
-      <userXML />
-    </Variable>
-    <Variable name="bool_DebugFlag" persistentState="NotPersistent" type="Matrox.DesignAssistant.Core.Flowcharts.Variable`1[[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], Matrox.DesignAssistant.Core, Version=10.0.454.0, Culture=neutral, PublicKeyToken=726f03a4652993c7" linkedAssemblies="Matrox.DesignAssistant.Core, Version=10.0.454.0, Culture=neutral, PublicKeyToken=726f03a4652993c7" description="" typeName="Boolean" id="31b0880d-c1d8-444d-8100-cf1f470b5ac0" Version="10.0.454.0">
-      <inputs>
-        <input name="InitialValue">
-          <expression>
-            <expression-string>True</expression-string>
-          </expression>
-        </input>
-        <input name="ResetPoint">
-          <expression>
-            <expression-string>NeverReset</expression-string>
-          </expression>
-        </input>
-      </inputs>
-      <userXML />
-    </Variable>
-    <Variable name="bool_DMASuccess" persistentState="NotPersistent" type="Matrox.DesignAssistant.Core.Flowcharts.Variable`1[[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], Matrox.DesignAssistant.Core, Version=10.0.454.0, Culture=neutral, PublicKeyToken=726f03a4652993c7" linkedAssemblies="Matrox.DesignAssistant.Core, Version=10.0.454.0, Culture=neutral, PublicKeyToken=726f03a4652993c7" description="" typeName="Boolean" id="7117e4e3-0668-4f36-adfd-3a49079a13cb" Version="10.0.454.0">
-      <inputs>
-        <input name="InitialValue">
-          <expression>
-            <expression-string>False</expression-string>
-          </expression>
-        </input>
-        <input name="ResetPoint">
-          <expression>
-            <expression-string>NeverReset</expression-string>
-          </expression>
-        </input>
-      </inputs>
-      <userXML />
-    </Variable>
-    <Variable name="bool_FindFiducialFailure" persistentState="NotPersistent" type="Matrox.DesignAssistant.Core.Flowcharts.Variable`1[[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], Matrox.DesignAssistant.Core, Version=10.0.454.0, Culture=neutral, PublicKeyToken=726f03a4652993c7" linkedAssemblies="Matrox.DesignAssistant.Core, Version=10.0.454.0, Culture=neutral, PublicKeyToken=726f03a4652993c7" description="" typeName="Boolean" id="bc29a701-47de-4251-b610-d5e6babf56d0" Version="10.0.454.0">
-      <inputs>
-        <input name="InitialValue">
-          <expression>
-            <expression-string>False</expression-string>
-          </expression>
-        </input>
-        <input name="ResetPoint">
-          <expression>
-            <expression-string>NeverReset</expression-string>
-          </expression>
-        </input>
-      </inputs>
-      <userXML />
-    </Variable>
-    <Variable name="bool_FindFiducialSuccess" persistentState="NotPersistent" type="Matrox.DesignAssistant.Core.Flowcharts.Variable`1[[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], Matrox.DesignAssistant.Core, Version=10.0.454.0, Culture=neutral, PublicKeyToken=726f03a4652993c7" linkedAssemblies="Matrox.DesignAssistant.Core, Version=10.0.454.0, Culture=neutral, PublicKeyToken=726f03a4652993c7" description="" typeName="Boolean" id="964dfdd3-dc71-4558-9b7d-e93ad6844c5b" Version="10.0.454.0">
-      <inputs>
-        <input name="InitialValue">
-          <expression>
-            <expression-string>False</expression-string>
-          </expression>
-        </input>
-        <input name="ResetPoint">
-          <expression>
-            <expression-string>NeverReset</expression-string>
-          </expression>
-        </input>
-      </inputs>
-      <userXML />
-    </Variable>
-    <Variable name="Cbool_UseCodeReaderStep" persistentState="NotPersistent" type="Matrox.DesignAssistant.Core.Flowcharts.Variable`1[[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], Matrox.DesignAssistant.Core, Version=10.0.454.0, Culture=neutral, PublicKeyToken=726f03a4652993c7" linkedAssemblies="Matrox.DesignAssistant.Core, Version=10.0.454.0, Culture=neutral, PublicKeyToken=726f03a4652993c7" description="" typeName="Boolean" id="cb4a10ca-4364-4c66-b4ff-92c68c181d1c" Version="10.0.454.0">
-      <inputs>
-        <input name="InitialValue">
-          <expression>
-            <expression-string>False</expression-string>
-          </expression>
-        </input>
-        <input name="ResetPoint">
-          <expression>
-            <expression-string>NeverReset</expression-string>
-          </expression>
-        </input>
-      </inputs>
-      <userXML />
-    </Variable>
-    <Variable name="Cint_MaxDecodeTries" persistentState="NotPersistent" type="Matrox.DesignAssistant.Core.Flowcharts.DoubleVariable, Matrox.DesignAssistant.Core, Version=10.0.454.0, Culture=neutral, PublicKeyToken=726f03a4652993c7" linkedAssemblies="Matrox.DesignAssistant.Core, Version=10.0.454.0, Culture=neutral, PublicKeyToken=726f03a4652993c7" description="" typeName="Numeric" id="76baf17b-9574-4b6f-870e-38881df63f78" Version="10.0.454.0">
-      <inputs>
-        <input name="InitialValue">
-          <expression>
-            <expression-string>1</expression-string>
-          </expression>
-        </input>
-        <input name="ResetPoint">
-          <expression>
-            <expression-string>NeverReset</expression-string>
-          </expression>
-        </input>
-      </inputs>
-      <userXML />
-    </Variable>
-    <Variable name="Cstr_MagicString" persistentState="NotPersistent" type="Matrox.DesignAssistant.Core.Flowcharts.Variable`1[[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], Matrox.DesignAssistant.Core, Version=10.0.454.0, Culture=neutral, PublicKeyToken=726f03a4652993c7" linkedAssemblies="Matrox.DesignAssistant.Core, Version=10.0.454.0, Culture=neutral, PublicKeyToken=726f03a4652993c7" description="" typeName="String" id="10283b65-e5c9-495e-a053-f083be9bc230" Version="10.0.454.0">
-      <inputs>
-        <input name="InitialValue">
-          <expression>
-            <expression-string>!</expression-string>
-          </expression>
-        </input>
-        <input name="ResetPoint">
-          <expression>
-            <expression-string>NeverReset</expression-string>
-          </expression>
-        </input>
-      </inputs>
-      <userXML />
-    </Variable>
-    <Variable name="int_Counter" persistentState="NotPersistent" type="Matrox.DesignAssistant.Core.Flowcharts.DoubleVariable, Matrox.DesignAssistant.Core, Version=10.0.454.0, Culture=neutral, PublicKeyToken=726f03a4652993c7" linkedAssemblies="Matrox.DesignAssistant.Core, Version=10.0.454.0, Culture=neutral, PublicKeyToken=726f03a4652993c7" description="" typeName="Numeric" id="426daccb-4745-417d-a3fe-e41426901e2d" Version="10.0.454.0">
-      <inputs>
-        <input name="InitialValue">
-          <expression>
-            <expression-string>0</expression-string>
-          </expression>
-        </input>
-        <input name="ResetPoint">
-          <expression>
-            <expression-string>NeverReset</expression-string>
-          </expression>
-        </input>
-      </inputs>
-      <userXML />
-    </Variable>
-    <Variable name="str_CellSize" persistentState="NotPersistent" type="Matrox.DesignAssistant.Core.Flowcharts.Variable`1[[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], Matrox.DesignAssistant.Core, Version=10.0.454.0, Culture=neutral, PublicKeyToken=726f03a4652993c7" linkedAssemblies="Matrox.DesignAssistant.Core, Version=10.0.454.0, Culture=neutral, PublicKeyToken=726f03a4652993c7" description="" typeName="String" id="ada4a20d-26cd-4692-b8fa-fbfdcf3d990d" Version="10.0.454.0">
-      <inputs>
-        <input name="InitialValue">
-          <expression>
-            <expression-string></expression-string>
-          </expression>
-        </input>
-        <input name="ResetPoint">
-          <expression>
-            <expression-string>NeverReset</expression-string>
-          </expression>
-        </input>
-      </inputs>
-      <userXML />
-    </Variable>
-    <Variable name="str_CodePositionX" persistentState="NotPersistent" type="Matrox.DesignAssistant.Core.Flowcharts.Variable`1[[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], Matrox.DesignAssistant.Core, Version=10.0.454.0, Culture=neutral, PublicKeyToken=726f03a4652993c7" linkedAssemblies="Matrox.DesignAssistant.Core, Version=10.0.454.0, Culture=neutral, PublicKeyToken=726f03a4652993c7" description="" typeName="String" id="ec25a4ad-320b-4a55-a1d4-1bc01971742f" Version="10.0.454.0">
-      <inputs>
-        <input name="InitialValue">
-          <expression>
-            <expression-string></expression-string>
-          </expression>
-        </input>
-        <input name="ResetPoint">
-          <expression>
-            <expression-string>NeverReset</expression-string>
-          </expression>
-        </input>
-      </inputs>
-      <userXML />
-    </Variable>
-    <Variable name="str_CodePositionY" persistentState="NotPersistent" type="Matrox.DesignAssistant.Core.Flowcharts.Variable`1[[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], Matrox.DesignAssistant.Core, Version=10.0.454.0, Culture=neutral, PublicKeyToken=726f03a4652993c7" linkedAssemblies="Matrox.DesignAssistant.Core, Version=10.0.454.0, Culture=neutral, PublicKeyToken=726f03a4652993c7" description="" typeName="String" id="349626f1-2fde-4bd7-95f2-5179c8ce278e" Version="10.0.454.0">
-      <inputs>
-        <input name="InitialValue">
-          <expression>
-            <expression-string></expression-string>
-          </expression>
-        </input>
-        <input name="ResetPoint">
-          <expression>
-            <expression-string>NeverReset</expression-string>
-          </expression>
-        </input>
-      </inputs>
-      <userXML />
-    </Variable>
-  </Variables>
+  <Variables id="ffe72ab9-b88c-4613-bb0a-2a6e0ad20b59" name="Variables" />
   <StaticImages />
   <flowchartElements>
     <step name="CameraSettingsCopy" enabled="True" resettable="False" persistentState="NotPersistent" type="Matrox.DesignAssistant.Steps.CameraSettingsPackage.CameraSettings, Matrox.DesignAssistant.Steps.CameraSettingsPackage, Version=10.0.454.0, Culture=neutral, PublicKeyToken=726f03a4652993c7" id="05fb0c82-9dc5-4fdd-ab01-48dcaefa99a2" Version="10.0.454.0">
@@ -361,12 +180,12 @@
         </input>
         <input name="ExposureTime">
           <expression available="False">
-            <expression-string>1</expression-string>
+            <expression-string>2</expression-string>
           </expression>
         </input>
         <input name="InputGain">
           <expression available="False">
-            <expression-string>100</expression-string>
+            <expression-string>50</expression-string>
           </expression>
         </input>
         <input name="CameraName">
@@ -972,7 +791,7 @@
                 </input>
                 <input name="StartValue">
                   <expression available="False">
-                    <expression-string>33</expression-string>
+                    <expression-string>38</expression-string>
                   </expression>
                 </input>
                 <input name="StdDevStartValue">
@@ -1073,7 +892,7 @@
                 </input>
                 <input name="StartValue">
                   <expression>
-                    <expression-string>71</expression-string>
+                    <expression-string>95</expression-string>
                   </expression>
                 </input>
                 <input name="StdDevStartValue">
@@ -1088,7 +907,7 @@
                 </input>
                 <input name="EndValue">
                   <expression>
-                    <expression-string>185</expression-string>
+                    <expression-string>138</expression-string>
                   </expression>
                 </input>
                 <input name="StdDevEndValue">
@@ -1117,31 +936,221 @@
           </inputs>
           <userXML />
         </step>
-        <step name="STagFinderStep" enabled="True" resettable="False" persistentState="NotPersistent" type="STagFinderPackage.STagFinder, STagFinderPackage, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" id="79416791-1d28-4f8b-8554-bd0befbd2e40" Version="10.0.454.0">
+        <step name="CommReader" enabled="True" resettable="False" persistentState="NotPersistent" type="Matrox.DesignAssistant.Steps.CommReaderPackage.CommReader, Matrox.DesignAssistant.Steps.CommReaderPackage, Version=10.0.454.0, Culture=neutral, PublicKeyToken=726f03a4652993c7" id="6155df79-d861-4853-b8af-aa4e37138fd3" Version="10.0.454.0">
           <inputs>
             <input name="Comment">
               <expression>
                 <expression-string></expression-string>
               </expression>
             </input>
-            <input name="errorCorrection">
+            <objectCollection name="Fields" type="Matrox.DesignAssistant.Core.Platforms.PLCDataCollection, Matrox.DesignAssistant.Core, Version=10.0.454.0, Culture=neutral, PublicKeyToken=726f03a4652993c7" id="3458d088-7abd-45f3-befc-afcdeaf17f0f" Version="10.0.454.0">
               <expression>
-                <expression-string>40</expression-string>
+                <expression-string></expression-string>
               </expression>
-            </input>
-            <input name="Image">
-              <expression>
-                <expression-string need-link-container="True">Remap.OutputImage</expression-string>
-              </expression>
-            </input>
+              <collectionItems>
+                <subObject name="Fiducial_Size_MM" type="Matrox.DesignAssistant.Core.Platforms.CommReaderField, Matrox.DesignAssistant.Core, Version=10.0.454.0, Culture=neutral, PublicKeyToken=726f03a4652993c7" id="0ffb381e-d4aa-4186-bfaf-4ed1255971f2" Version="10.0.454.0">
+                  <userXML />
+                </subObject>
+                <subObject name="Max_Error_Correction" type="Matrox.DesignAssistant.Core.Platforms.CommReaderField, Matrox.DesignAssistant.Core, Version=10.0.454.0, Culture=neutral, PublicKeyToken=726f03a4652993c7" id="17d27282-070f-46c8-a7b5-6c53b8c562f7" Version="10.0.454.0">
+                  <userXML />
+                </subObject>
+              </collectionItems>
+              <userXML />
+            </objectCollection>
             <input name="ResetPoint">
               <expression available="False">
-                <expression-string>InspectionStart</expression-string>
+                <expression-string>NeverReset</expression-string>
               </expression>
             </input>
           </inputs>
           <userXML />
         </step>
+        <condition enabled="True" type="Matrox.DesignAssistant.Core.Flowcharts.Condition, Matrox.DesignAssistant.Core, Version=10.0.454.0, Culture=neutral, PublicKeyToken=726f03a4652993c7">
+          <ifPath>
+            <ifStep>
+              <step name="Condition" enabled="True" resettable="True" persistentState="NotPersistent" type="Matrox.DesignAssistant.Core.Flowcharts.If, Matrox.DesignAssistant.Core, Version=10.0.454.0, Culture=neutral, PublicKeyToken=726f03a4652993c7" id="f94bd2e5-0ef5-4dd9-bf35-aad4cb93858f" Version="10.0.454.0">
+                <inputs>
+                  <input name="Comment">
+                    <expression>
+                      <expression-string></expression-string>
+                    </expression>
+                  </input>
+                  <input name="Condition">
+                    <expression>
+                      <expression-string need-link-container="True">CommReader.Fields("Fiducial_Size_MM").Value &gt; 0</expression-string>
+                    </expression>
+                  </input>
+                  <input name="ResetPoint">
+                    <expression>
+                      <expression-string>InspectionStart</expression-string>
+                    </expression>
+                  </input>
+                </inputs>
+                <userXML />
+              </step>
+            </ifStep>
+            <flowchartElements>
+              <step name="STagFinderStep" enabled="True" resettable="False" persistentState="NotPersistent" type="STagFinderPackage.STagFinder, STagFinderPackage, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" id="79416791-1d28-4f8b-8554-bd0befbd2e40" Version="10.0.454.0">
+                <inputs>
+                  <input name="Comment">
+                    <expression>
+                      <expression-string></expression-string>
+                    </expression>
+                  </input>
+                  <input name="errorCorrection">
+                    <expression>
+                      <expression-string need-link-container="True">CommReader.Fields("Max_Error_Correction").Value</expression-string>
+                    </expression>
+                  </input>
+                  <input name="FIDUCIAL_EDGE_LENGTH_MM">
+                    <expression>
+                      <expression-string need-link-container="True">CommReader.Fields("Fiducial_Size_MM").Value</expression-string>
+                    </expression>
+                  </input>
+                  <input name="Image">
+                    <expression>
+                      <expression-string need-link-container="True">Remap.OutputImage</expression-string>
+                    </expression>
+                  </input>
+                  <input name="ResetPoint">
+                    <expression available="False">
+                      <expression-string>InspectionStart</expression-string>
+                    </expression>
+                  </input>
+                </inputs>
+                <userXML />
+              </step>
+              <step name="CommWriter" enabled="True" resettable="False" persistentState="NotPersistent" type="Matrox.DesignAssistant.Steps.CommWriterPackage.CommWriter, Matrox.DesignAssistant.Steps.CommWriterPackage, Version=10.0.454.0, Culture=neutral, PublicKeyToken=726f03a4652993c7" id="810f5129-46fc-455d-b9e3-ca425c1a9d35" Version="10.0.454.0">
+                <inputs>
+                  <input name="Comment">
+                    <expression>
+                      <expression-string></expression-string>
+                    </expression>
+                  </input>
+                  <objectCollection name="Fields" type="Matrox.DesignAssistant.Core.Platforms.PLCDataCollection, Matrox.DesignAssistant.Core, Version=10.0.454.0, Culture=neutral, PublicKeyToken=726f03a4652993c7" id="57777830-cc6c-4fc4-b60b-a6da1ad494a7" Version="10.0.454.0">
+                    <expression>
+                      <expression-string></expression-string>
+                    </expression>
+                    <collectionItems>
+                      <subObject name="num_found" type="Matrox.DesignAssistant.Core.Platforms.CommWriterField, Matrox.DesignAssistant.Core, Version=10.0.454.0, Culture=neutral, PublicKeyToken=726f03a4652993c7" id="2ee868e1-4770-4e93-af02-fa27431411d1" Version="10.0.454.0">
+                        <inputs>
+                          <input name="Enabled">
+                            <expression>
+                              <expression-string>True</expression-string>
+                            </expression>
+                          </input>
+                          <input name="Value">
+                            <expression expression-type="System.Int32, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
+                              <expression-string need-link-container="True">STagFinderStep.MarkerCount</expression-string>
+                            </expression>
+                          </input>
+                        </inputs>
+                        <userXML />
+                      </subObject>
+                      <subObject name="fid1_x" type="Matrox.DesignAssistant.Core.Platforms.CommWriterField, Matrox.DesignAssistant.Core, Version=10.0.454.0, Culture=neutral, PublicKeyToken=726f03a4652993c7" id="c939d281-b8ee-4669-a05f-f83a684665af" Version="10.0.454.0">
+                        <inputs>
+                          <input name="Enabled">
+                            <expression>
+                              <expression-string>True</expression-string>
+                            </expression>
+                          </input>
+                          <input name="Value">
+                            <expression expression-type="System.Double, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
+                              <expression-string need-link-container="True">STagFinderStep.fid1_x</expression-string>
+                            </expression>
+                          </input>
+                        </inputs>
+                        <userXML />
+                      </subObject>
+                      <subObject name="fid1_y" type="Matrox.DesignAssistant.Core.Platforms.CommWriterField, Matrox.DesignAssistant.Core, Version=10.0.454.0, Culture=neutral, PublicKeyToken=726f03a4652993c7" id="676e22a3-7a64-49c3-ab00-54538e13eb38" Version="10.0.454.0">
+                        <inputs>
+                          <input name="Enabled">
+                            <expression>
+                              <expression-string>True</expression-string>
+                            </expression>
+                          </input>
+                          <input name="Value">
+                            <expression expression-type="System.Double, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
+                              <expression-string need-link-container="True">STagFinderStep.fid1_y</expression-string>
+                            </expression>
+                          </input>
+                        </inputs>
+                        <userXML />
+                      </subObject>
+                      <subObject name="fid1_z" type="Matrox.DesignAssistant.Core.Platforms.CommWriterField, Matrox.DesignAssistant.Core, Version=10.0.454.0, Culture=neutral, PublicKeyToken=726f03a4652993c7" id="9a0f4a6f-90a1-4f01-9611-9077c6371d7f" Version="10.0.454.0">
+                        <inputs>
+                          <input name="Enabled">
+                            <expression>
+                              <expression-string>True</expression-string>
+                            </expression>
+                          </input>
+                          <input name="Value">
+                            <expression expression-type="System.Double, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
+                              <expression-string need-link-container="True">STagFinderStep.fid1_z</expression-string>
+                            </expression>
+                          </input>
+                        </inputs>
+                        <userXML />
+                      </subObject>
+                      <subObject name="fid2_x" type="Matrox.DesignAssistant.Core.Platforms.CommWriterField, Matrox.DesignAssistant.Core, Version=10.0.454.0, Culture=neutral, PublicKeyToken=726f03a4652993c7" id="39e9616b-4334-4c41-aaf7-b1f313fb2107" Version="10.0.454.0">
+                        <inputs>
+                          <input name="Enabled">
+                            <expression>
+                              <expression-string>True</expression-string>
+                            </expression>
+                          </input>
+                          <input name="Value">
+                            <expression expression-type="System.Double, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
+                              <expression-string need-link-container="True">STagFinderStep.fid2_x</expression-string>
+                            </expression>
+                          </input>
+                        </inputs>
+                        <userXML />
+                      </subObject>
+                      <subObject name="fid2_y" type="Matrox.DesignAssistant.Core.Platforms.CommWriterField, Matrox.DesignAssistant.Core, Version=10.0.454.0, Culture=neutral, PublicKeyToken=726f03a4652993c7" id="51a21cea-0cb9-472b-9dd7-0bf0b5210f70" Version="10.0.454.0">
+                        <inputs>
+                          <input name="Enabled">
+                            <expression>
+                              <expression-string>True</expression-string>
+                            </expression>
+                          </input>
+                          <input name="Value">
+                            <expression expression-type="System.Double, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
+                              <expression-string need-link-container="True">STagFinderStep.fid2_y</expression-string>
+                            </expression>
+                          </input>
+                        </inputs>
+                        <userXML />
+                      </subObject>
+                      <subObject name="fid2_z" type="Matrox.DesignAssistant.Core.Platforms.CommWriterField, Matrox.DesignAssistant.Core, Version=10.0.454.0, Culture=neutral, PublicKeyToken=726f03a4652993c7" id="be328d82-9aad-4687-9e3e-33ecd3060dd7" Version="10.0.454.0">
+                        <inputs>
+                          <input name="Enabled">
+                            <expression>
+                              <expression-string>True</expression-string>
+                            </expression>
+                          </input>
+                          <input name="Value">
+                            <expression expression-type="System.Double, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
+                              <expression-string need-link-container="True">STagFinderStep.fid2_z</expression-string>
+                            </expression>
+                          </input>
+                        </inputs>
+                        <userXML />
+                      </subObject>
+                    </collectionItems>
+                    <userXML />
+                  </objectCollection>
+                  <input name="ResetPoint">
+                    <expression available="False">
+                      <expression-string>NeverReset</expression-string>
+                    </expression>
+                  </input>
+                </inputs>
+                <userXML />
+              </step>
+            </flowchartElements>
+          </ifPath>
+        </condition>
         <step name="LoopEnd" enabled="True" resettable="True" persistentState="NotPersistent" type="Matrox.DesignAssistant.Core.Flowcharts.LoopEndStep, Matrox.DesignAssistant.Core, Version=10.0.454.0, Culture=neutral, PublicKeyToken=726f03a4652993c7" id="05bbe1a3-ab3a-4dc6-bdda-62a7721df50e" Version="10.0.454.0">
           <inputs>
             <input name="Comment">
